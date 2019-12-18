@@ -1,0 +1,13 @@
+name: intuitive-ds-book
+title: intuitive-ds-book
+username: barcikrobert
+account: barcikrobert
+server: bookdown.org
+hostUrl: https://bookdown.org/__api__
+appId: 3454
+bundleId: 16691
+url: https://bookdown.org/barcikrobert/intuitive-ds-book/
+when: 1576675455.23542
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: _bookdown_files/intuitive-ds-book_files/figure-latex/nice-fig-1.pdf
