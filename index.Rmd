@@ -1,5 +1,5 @@
 --- 
-title: "A Minimal Book Example"
+title: "Becoming Citizen Data Scientist"
 author: "Robert Barcik"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site

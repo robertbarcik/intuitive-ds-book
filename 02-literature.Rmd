@@ -1,3 +1,51 @@
-# Literature
+# Observer
 
-Here is a review of existing methods.
+## About this level
+
+We will need to develop your skills in three different areas:
+- Soft understanding
+- Programming 
+- Statistics
+
+Once you reach this level, you will be able to act as an Observer of a Data Science project. You are not yet directly able to contribute to it (such as through coding), but you will be able to use outputs of it and help with the inputs. Thus if you are a campaigns manager in marketing department, you will know what to ask Data Scientists for and how can you use it. Also, you will have some basic tools with which you can evaluate whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in Gargage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn).
+
+**insert garbage in garbage out**
+
+
+## Data and Information
+
+*What is data and what is information?*
+
+Information is what we are able to derive from data. 
+
+When building a Data Science project, we base it on *data* and we shape its design on *information*. Such Data Science project will then create new information which we can use and are creating a benefit.
+
+When it comes to data, there are two areas which I observe. 
+- Sensory Data that relate solely to machinery.
+- Human related data that relate to human behavior.
+
+
+## Biased Data
+
+*Are all human-related data good to be used?*
+Simple answer is NO. There is a lot of data from my perspective which are just wrong to be used and you as a Citizen Data Scientist should not use. I do now wish to talk now about *data quality* issues, but about the nature of data, which is connected with how the data came into existence.  
+
+There are a lot of datasets which came to existence by asking people regarding their state or opinion. Take elections for instance. If you look at US elections, for a very long time it was seemingly impossible that Trump will win the elections. Yet, he won, even though the data from polls told us otherwise. What happened is that this (poll) dataset was created by asking people, while unfortunately it is in human nature that:
+- people lie with purpose
+- people are lazy
+- people want to appear different than they are
+
+Thereafter, when your Data Science project is working with people, you should not rely on data which were created through *asking*. I will be honest, from my perspective all survey data are just wrong and in nowadays world, I would simply skip this practice. 
+
+Let's assume you work in a bank and your task is to develop a Data Science model which will automatically be granting loans. As you are working within loans department, you very well know that the primary factor for whether your bank will grant a loan is the income of a customer. You also know that there is a field in your database that says "income" to each one of your customers. Problem solved right? You just collect a few more fields and create a model as you were asked. Well, I recommend something different.  
+
+If you will ask around you will find out that this "income" field was created through self-reporting of your customers. When they are setting up their account, the advisor in a branch will ask them what is their income and they report figure X. Trust me when I say, that due to one of the reasons listed above, the customer will report a wrong number. Ok then, you tell yourself that you are smarter than that and decide to observe customer's incoming salary transactions which you have tagged in your system. You have overcome the problem of self-reported information, right? You deploy your model into production and run your automatic loaning system. 
+
+What will happen is that in some time frauds will arise and there will be a lot of customers who took huge loans and do not pay them back. How could this happen? Well, people learned how to cheat your model for their own benefit. Fraudsters are now once a month sending each other transactions which are tagged by your system as salaries and thereafter your "income" field for this customer is huge. They are then automatically granted significant loans.
+
+So, how can we solve this? **The key is to obtain information which is desired through data which were created by human, while he was doing something completely natural and at best unrelated.** You need to think about an action, or a process of a customer though which he/she unknowingly *displays* his/her truthful income. What about groceries? We all do grocery shopping, thereafter this might be a reliable source of information. What if you look at how much this customer is spending for groceries monthly and relate it to his/hers assumed income. If you have reported 1500 Euro income, how comes that you only spend 100 Euro for groceries? This is of course not a perfect solution, but what I am trying to translate is the **thinking** about how to solve the problem with bias about human-related data.
+
+
+
+The falacy of absolute numbers
+For many years what matters a lot is a conversion rate or a success rate. I recommend though to be careful with it.
