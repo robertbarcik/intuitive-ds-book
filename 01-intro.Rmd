@@ -1,21 +1,76 @@
-# Introduction {#intro}
+# Being Aware {#this-book}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+## The Four Cornerstones
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+You might quickly notice that this book is structured quite differently compared to other offerings on the market. Let me reason about that, even before I introduce you to the structure and the transformation that the book offers. I have been a lecturer and trainer for quite a few years and I always notice that actually content does not matter as much as the **path through the content**.  
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+This book is built on four cornerstones:
+- Data Science is a practice of using data to create a direct benefit.
+- Citizen Data Scientist is valuable position and achievable by anyone.
+- There are 6 levels of Citizen Data Scientist and these should act as a learning curve.
+- Math is not required as a teaching tool in order to train a Citizen Data Scientist and can be replaced by visualisation and intuition.
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+Did I go crazy claiming that anyone can become a Data Scientist? And what about the Math which is appraised by everyone as the crucial tool within data science?!? Maybe I have, but these cornerstones (assumptions) worked for me as well as for my students within the past years.
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+## Defining Data Science
+When it comes to defining Data Science, it is really crucial to define what Data Science *is not*, because often times people think about methods, instead of the field itself.
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+## Citizen Data Scientist
+You most likely heard about Data Scienstits, but who are Citizen Data Scientists? I think they are the most crucial people in the future of the field. You heard me right, not the original Data Scientists, but the new generation of Citizen Data Scientists. Let me show you why.  
+
+Data Science as field has been around for decades in one form or another. There has been market analysts, risk modellers, product developers, artificial intelligence developers and so on. If we however relate to the definition of Data Science above in a way that a Data Scientist can essentially come to any company and make use of its data to create benefit, we can go back to the millenia breakthrough. Universities start to offer programs with names like "Data Analysis", "Business Intelligence" and first candidates are leaving these programs. It feels like the field is growing tremedously - growth in GPU powers, Deep Learning, Automated Machine Learning products. Especially since 2010s, job advertisments revolving around Data Science are exploding! Though is the field really growing from the perspective of market? I would say very slowly, simply because the *created benefit for companies (and customers)* is growing slowly.  
+
+This is cause by the fact that the field is still relying on the slow and linear growth of the first generation of Data Scientists - ones having formal education, being able to guarantee the work and so on. What however starts to occur, is that people who do not have formal education or direct experience start to come to job interviews. Let me tell you one story from my past.  
+
+I worked in large organization with thousands of employees as a Data Scientist. All of a sudden I received an email from a colleague I never heard of before. She claimed that she is really passionate about the methods of predictive modelling and Data Science and is eager to apply these methods in her CRM department. We met and she showed me R-script in which she tried a bunch of Machine Learning algorithms and preprocessing methods. What I did in turn was that I encouraged her to continue with the passion because the field has a future and I advised her about further methods she can try.  
+
+Only years later, I realized my mistakes in that meeting and that I met one of the first Citizen Data Scientists. I then learned that she left the company as she never managed to get her passion to productive work. I was one of the reasons why she churned because I gave her advice on how to become the first generation Data Scientist, not the second generation Citizen Data Scientist. Let's look at the definition by Gartner in 2016:  
+
+**Citizen data science bridges the gap between mainstream self-service data discovery by business users and the advanced analytics techniques of data scientists.**
+
+This colleague of mine was originally in the first part of definition, while I was in the second part of it. She was trying to become a bridge between the two, without even realising it! Unfortunately I am only smarter several years later and when the same situation happens these days, I react in a different way. Also, the company which I work for now is smarter and allows for different direction. 
+
+Why do companies need Citizen Data Scientists and why they should focus on them instead of the first generation of Data Scientists?
+
+## The 6 levels
+
+You can have a great content, great exercises, but unless I am able to keep you motivated and you feel like you are growing with every module finished, my course/book is not good. That is why this book sets 6 levels through which you will be growing. With each new level, your power within data science will inherently grow and so will your value for employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in real world! 
+As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
+
+**Being Aware** - You know what the field is about, what it can and cannot achieve. Learning: 1 hour
+
+**Observer** - You are able to observe a data science project running, without being able to contribute to it. You are though able to make use of the outputs of a Data Science project as well as help with inputs for such project. 5 hours
+
+**Contributor** - You are able to assume a (simple) task(s) within Data Science project, and create a benefit to the project productively. 30 hours
+
+**Statistician** - You are able to assume any basic task within a Data Science project and hold responsibility for statistical parts. 80 hours
+
+**Project Responsible** - You are able to define Data Science project and execute it. 40 hours
+
+**Guru** - You are able to grow Data Science initiative in your organization both effectively (hiring) as well as conceptually (specializations). 40 hours
+
+Each of these levels is very different both from the content perspective, as well as from desirable approach by you. For example, on a Statistician level, you are going to be focused solely on statistical formulas and their intuition. All of a sudden, this stops and in order to become a Project Responsible, we are going to sharpen your soft skills, such as how to organize a team effectively.  
+
+What is the biggest struggle of anyone who would like to become a (Citizen) Data Scientist? To get real world experience and practice. Whatever people claim within their online courses and trainings, the trainer will **never** be able to offer you what is awaiting for you in the real world of Data Science. The only truthful way is hence to go to a real project, with which there is another problem.  
+
+You come to a job interview (external or internal one) and say that you have been learning and would like to become part of this Data Science project. The conversation might go as follows:  
+
+*Interviewer*: Great to see your interest. So how can you contribute to our projects and help out?  
+*You*: Well, I learned a bit of Python, I am able to put together some basic statistical model and also do some preprocessing.
+
+Let me stop here for a second and explain to you what is happening behind this scene of this situation, which is happening probably hundreds of times every day. You are having hard time *selling* yourself and interviewer is having hard time *evaluating* your qualities. You are both stuck, due to simple reason - you have listed skills instead of capability to contribute. 
+
+Now let's do a similar conversation and we will reuse one of the levels from above as your answer:
+
+*Interviewer*: Great to see your interest. So how can you contribute to our projects and help out?  
+*You*: I am able to act as an "Observer" to your Data Science projects. This means that I cannot directly contribute to it's productive code pipeline, but I am able to help out with inputs and outputs. Due to my extensive background in Retail Banking, I know what features might be interesting to collect about customers and used in models and also how to apply outputs of your project in Marketing Campaigns.
+
+Do you *feel* the difference between the two conversations? Instead of talking about skills, you started to talk about a possible contribution which you can do. Moreover, you had a space to relate to your previous field - we all have something where we are coming from. This is what really matters for Citizen Data Scientist - show possible contribution that will be impacting the project directly.
+
+## Learning Without Math
+Mathematics is undoubtedly the foundation of many fields, Data Science being one of them. If one masters it, incredible beauties will uncover in a lot of mathematical formulae and deep understanding of many concepts can be achieved. It has only one problem..."it's f_____g hard to learn!!!". I personally know only two kinds of people. First group are ones who are comfortable with math - they liked the subject since many years and have the incredible patience to learn it. Most of the times they also invested into some form of formal education within math. The second group are people who don't like it and whenever they meet it, they search for *intuitions* and workarounds just to get the piece of work done. The share of people who belong to the latter group is 95% and that could be a sad fact for a field like Data Science which would like to grow, while being based heavily on Math.  
+
+In my perspective, the first generation of Data Scientists are primarily the ones who are fine with map and the second generation belongs to the non-likers. Now let me tell you, it's perfectly fine and natural. Who should adjust? Should it be 95% of population or teaching methods of Data Science? Let me bet on the latter...  
+
+That is why *this book will not teach anything through mathematics*. I honestly believe that in order to train a Citizen Data Scientist, math is not only un-needed but also un-recommended, based on my argumentation above.
