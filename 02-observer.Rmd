@@ -1,4 +1,4 @@
-# Observer
+# Observer {#observer}
 
 ## About this level
 
@@ -11,23 +11,17 @@ Once you reach this level, you will be able to act as an Observer of a Data Scie
 
 **insert garbage in garbage out**
 
+## Be Curious
+You are already at the level where curiosity will be what keeps you growing. 
 
-## Data and Information
-
-*What is data and what is information?*
-
-Information is what we are able to derive from data. 
-
-When building a Data Science project, we base it on *data* and we shape its design on *information*. Such Data Science project will then create new information which we can use and are creating a benefit.
+## Be Skeptical
 
 When it comes to data, there are two areas which I observe. 
 - Sensory Data that relate solely to machinery.
 - Human related data that relate to human behavior.
 
+**Are all human-related data good to be used?**
 
-## Biased Data
-
-*Are all human-related data good to be used?*
 Simple answer is NO. There is a lot of data from my perspective which are just wrong to be used and you as a Citizen Data Scientist should not use. I do now wish to talk now about *data quality* issues, but about the nature of data, which is connected with how the data came into existence.  
 
 There are a lot of datasets which came to existence by asking people regarding their state or opinion. Take elections for instance. If you look at US elections, for a very long time it was seemingly impossible that Trump will win the elections. Yet, he won, even though the data from polls told us otherwise. What happened is that this (poll) dataset was created by asking people, while unfortunately it is in human nature that:
@@ -41,9 +35,11 @@ Let's assume you work in a bank and your task is to develop a Data Science model
 
 If you will ask around you will find out that this "income" field was created through self-reporting of your customers. When they are setting up their account, the advisor in a branch will ask them what is their income and they report figure X. Trust me when I say, that due to one of the reasons listed above, the customer will report a wrong number. Ok then, you tell yourself that you are smarter than that and decide to observe customer's incoming salary transactions which you have tagged in your system. You have overcome the problem of self-reported information, right? You deploy your model into production and run your automatic loaning system. 
 
-What will happen is that in some time frauds will arise and there will be a lot of customers who took huge loans and do not pay them back. How could this happen? Well, people learned how to cheat your model for their own benefit. Fraudsters are now once a month sending each other transactions which are tagged by your system as salaries and thereafter your "income" field for this customer is huge. They are then automatically granted significant loans.
+What will happen is that in some time frauds will arise and there will be a lot of customers who took huge loans and do not pay them back. How could this happen? Well, people learned how to cheat your model for their own benefit. Fraudsters are now once a month sending each other transactions which are tagged by your system as salaries and thereafter your "income" field for this customer is huge. They are then automatically granted significant loans. So, how can we solve this? 
 
-So, how can we solve this? **The key is to obtain information which is desired through data which were created by human, while he was doing something completely natural and at best unrelated.** You need to think about an action, or a process of a customer though which he/she unknowingly *displays* his/her truthful income. What about groceries? We all do grocery shopping, thereafter this might be a reliable source of information. What if you look at how much this customer is spending for groceries monthly and relate it to his/hers assumed income. If you have reported 1500 Euro income, how comes that you only spend 100 Euro for groceries? This is of course not a perfect solution, but what I am trying to translate is the **thinking** about how to solve the problem with bias about human-related data.
+>The key is to obtain information which is desired through data which were created by human, while he was doing something completely natural and at best unrelated.
+
+You need to think about an action, or a process of a customer though which he/she unknowingly *displays* his/her truthful income. What about groceries? We all do grocery shopping, thereafter this might be a reliable source of information. What if you look at how much this customer is spending for groceries monthly and relate it to his/hers assumed income. If you have reported 1500 Euro income, how comes that you only spend 100 Euro for groceries? This is of course not a perfect solution, but what I am trying to translate is the **skeptical thinking** about how to solve the problem with bias about human-related data.
 
 ## Data Science Project
 
@@ -63,26 +59,40 @@ I could go on, but I guess you already have the picture of what is the single re
 
 Essentially, all data science is about are **hypothesis**. This is how hypothesis is defined by Oxford dictionary:
 
-*a supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation.*
+>a supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation.
 
-You would be surprised how many Data Scientists are forgetting some parts of this definition so I would like to focus on it. At the beginning of a project you **suppose** something can be done - "We are able to find ideal locations for our retail stores.". Then you examine whether you already do not have enough evidence which would answer your supposition - "There is no other retailer similar to us in a given country and as we are new to the country we also have no knowledge." 
+You would be surprised by how many Data Scientists are forgetting some parts of this definition so I would like to focus on it. At the beginning of a project you **suppose** something can be done - "We are able to find ideal locations for our retail stores.". Then you examine whether you already do not have enough evidence which would answer your supposition - "There is no other retailer similar to us in a given country and as we are new to the country we also have no knowledge." 
 
 ## Your Contribution
 
 *How can I contribute to Data Science project?*
 
-I have to make a small assumption here about who you are. You are someone who works in domain - for example banking, paper industry, insurance, car sales, anything. You either have formal education in this domain, or working experience. This means that you have something that no Data Scientist has - specific knowledge of the domain. Thereafter, as we already mentioned, you can contribute to the Data Science project in two ways already on this level: *contribute through inputs and through outputs*.  
+I have to make a small assumption here about who you are. You are someone who works in domain - for example banking, paper industry, insurance, car sales, anything. You either have formal education in this domain, or working experience. This means that you have something that no Data Scientist has - specific knowledge of the domain. Thereafter, as we already mentioned, you can contribute to the Data Science project in two ways already on this level: 
 
-As you already know, the basis of every Data Science project are data. As you have domain knowledge, you might now about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past. My project was using log data from a mobile application, whereas users had to go through several screens in order to complete purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping of from the sales process at various point. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from call centre, which moves the project a light year ahead!
+>As Observer, contribute through inputs and through outputs, not into the central process.
 
-Secondly, every data science project should produce an information that will be used to create benefit. This component of the Data Science project is often times underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the *information* was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this *information* could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the *information* they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the *information* which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit our of Data Science project.
+As you already know, the basis of every Data Science project are *data* (input). As you have domain knowledge, you might now about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past. My project was using log data from a mobile application, whereas users had to go through several screens in order to complete purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping of from the sales process at various point. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from call centre, which moves the project a light year ahead!
+
+Secondly, every data science project should produce an *information* (output) that will be used to create benefit. This component of the Data Science project is often times underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the *information* was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this *information* could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the *information* they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the *information* which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit our of Data Science project.
+
+## Data and Computing
 
 *How is data represented?*
-If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often times think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers 
+If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often times think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers were presented data through punchcards.
 
-**insert picture of some early computer**
+```{r punch-cards, echo = FALSE, fig.cap='Example of how one of the earliest versions of computer from IBM saw data - as punchards with holes (1's) and not-holes (0's).'}
+knitr::include_graphics("resources/02-observer/punch-cards.png")
+```
 
-Now what we often times make mistake with is that we **overestimate powers of computers** and we think that they understand anything - texts, colours, pictures. Well, they don't. THey only really well understand numbers. Thereafter a lot of tasks of Data Scientists revolves around representing data well for the computer. I was on a conference where a Scandinavian bank was representing their project of revealing fraud transaction by the means of Data Science. Transaction usually looks as something like following:
+How is it possible that two values are enough to represent anything to the computer? Through converting of numbers into binary:
+
+```{r text-to-binary, echo = FALSE, fig.cap='Example of how texts and numbers can be encoded into binary.'}
+knitr::include_graphics("resources/02-observer/text-to_binary")
+```
+
+Now what we often times make mistake with is that we **overestimate powers of computers** and we think that they understand anything - texts, colours, pictures. Well, they don't. They only really well understand numbers as these can be easily converted into binary form. Thereafter a lot of tasks of Data Scientists revolves around representing data well for the computer. If a Data Sciene project intends to work with images or texts, one of the most crucial tasks is, how do we convert these to numbers, so that they can be represented well for computer in binary forms?
+
+I was on a conference where a Scandinavian bank was representing their project of revealing fraud transaction by the means of Data Science. Transaction usually looks as something like following:
 
 **insert example of a transaction**
 
@@ -90,40 +100,114 @@ However what a presenter showed was something like following:
 
 **insert Danske representation of a transaction**
 
-One of the keys of their project is how the transactions were represented to the computer (and algorithm). We will ge tmore into this later.
+One of the keys of their project is how the transactions were represented to the computer (and algorithm). We will get more into this later. Important message that I would like you to learn now is that data representation is one of the key components of successful Data Science.
 
 *How does my PC handle data?*
-As soon as you start a Data Science project, you will be facing hardware limitations. Simple reason for this is that hardware costs. Sure, you can purchase a hardware and have no flexible costs, but this hardware will be getting outdated. Thereafter, every Data Science project will be optimizing for as little hardware requirements as needed to fulfill particular task. These requirements will be coming from four crucial componenets that a computer has and I think it is hence crucial for you to learn about them now.
+As soon as you start a Data Science project, you will be facing hardware limitations. Simple reason for this is that hardware costs. Sure, you can purchase a hardware and have no variable costs, but this hardware will be getting outdated or you might incur opportunity costs. Thereafter, every Data Science project will be optimizing for as little hardware requirements as needed to fulfill particular task. These requirements will be coming from four crucial componenets that a computer has and I think it is hence crucial for you to learn about them now.
+
+In order to process data, and run Data Science project, following four components will be needed and this is how I think about them:
+
+* CPU (processor). 
+* RAM
+* Harddisk
+* GPU (graphical processing unit)
 
 *What is a csv?*
-Now that we know what data is, we also know what we aim to do with it and how will we manage with our computer, it is time to get our hands on some data. The simplest representation of a dataset is through so called "csv" or "comma-separated-values".
+Now that we know what data is, we also know what we aim to do with it and how will we manage with our computer, it is time to get our hands on some data. The simplest representation of a dataset is through so called "csv" or "comma-separated-values". In plain form, these might look something like this.
+
+**Example of one customer data in comma-separated-values form.**
+
+If you ever worked in Excel, when you are saving document, you can decide to save it as ".csv". This is by the way a good practice.
+
+*What is an observation and a feature?*
+Data Science project will be aimed at certain phenomena which is of our *interest*. This can be our customer base, weather, how certain machine operates, how our colleagues work - anything. In order to apply Data Science to this phenomena, we will need to **describe it through observations and features**. *Observation* is some small unit from our phemena such as a day, one customer, one colleague, one moment of machine's operation. Secondly, *feature* is characteristic of an observation, such as temperature in a given day, age of one customer, arrival of our colleague to work or speed of machine's operation. Here is a small table to summarize it:
+
+| Phenomena | Observation | Feature |
+| --------: | ----------: |  -----: | 
+| weather | day/hour/minute | humidity |
+| customer base | one customer | age of customer|
+
+Throughout your entire career, you will be meeting these two concepts of *observation* and *feature*. These will vary in forms, but the way we described it now will always hold. Thereafter we can adjust our csv file and we can represent in it one customer with some of his features. As a standard, *features* are displayed in **columns**.
+
+**Example of one customer data in comma-separated-values form.**
 
 *What is a "flat table"?*
+We now leared how to store data about one customer, but we have many customers right? To store data about all of them in reasonable form, we will use a flat table. It is common to store *observations* in rows. Thereafter, we can just add several rows, representing several customers.
 
+**Example of one customer data in comma-separated-values form.**
+
+*What is granularity?*
+Even though we can now store customer's features nicely, we still haven't won due to the issue of *granularity*. Some of the features about a customer will have different *granularity level* and we are unable to store them in the same table in a nice way. What if we wanted to store cups of coffee per day, per customer. With our current knowledge we could do something like this. 
+
+**Example of one customer data in comma-separated-values form.**
+
+Ugly right? We need to solve this by introducing more tables, whereas these are on different granularity level. We will call this relational database.
 
 *What is a relational database?*
-Refer maybe to Oracle?
+Edgar Frank Codd at IBM in 1970 in his paper "A Relational Model of Data for Large Shared Data Banks", introduced a concept of how the problem above can be solved in a neat way. Luckily for us Data Scientists, Oracle implemented this idea into a working software solution in 1979 (Ever wondered how that company became so successful? This is it.).  
 
-*What are inputs for data science?*
+We create two tables, with different granularities separately. The only extra point which we need to specify is how are these linked together - for example customer name. 
 
+**Example of one customer data in comma-separated-values form.**
 
-*How does my PC view features?*
-Numerical and categorical features.
+## Using Data
 
-*What tools and languages will I meet?*
+*Can we already do Data Science?*
+Now that we constructed ourselves a small relational database with everything that we know about our customer base, are we ready to do Data Science? Yes, so let's give it a try. We are a coffee seller and we are interested at which age group drinks most of the coffee, so that we can better target our marketing efforts. 
+
+*Do I have to do it in this cumbersome way?*
+Luckily, software can of course help us. Now it is time to turn into learning *what* software can help is and *how*. We will need an Integrated-Development-Environment (IDE), engine and maybe a library.
+
 *What is an IDE, engine and package/library?*
-Even though you are right now at the level of Observer, you might already come in touch with programmes or libraries which make Data Science projects. Thereafter, it is important to understand a terminology here. The most obvious are so called IDEs - Integrated Development Environments. These are pretty and easy to work in. Currently, some of the most popular ones among Data Scientists are R-Studio and Jupyter Notebooks. This will be a program which tuns on a computer (either a physical one or somewhere on the server), that allows you to utilize some computing *engine*.
+Even though you are right now at the level of Observer, you might already come in touch with programs or libraries which make Data Science projects. Thereafter, it is important to understand a terminology here. The most obvious are so called IDEs - Integrated Development Environments. These are pretty and easy to work in. Currently, some of the most popular ones among Data Scientists are R-Studio and Jupyter Notebooks. This will be a program which runs on a computer (either a physical one or somewhere on the server), that allows you to utilize some computing *engine*.
 
 There are two very popular engines, which are actually competing with each other - R and Python. Imagine these as a set of functions which are very robust and people like to use them because they are well developed and once a Data Scientist works with them, he can be sure that his work will run.  
 
 Finally there are libraries. The engines as weel as IDEs are many times licensed under open-source. This makes a lot of sense, because people have a motivation to contribute to these. How will they contribute though? It would be very tricky to integrate work of thousands of people though single software - may it be R or Python. For that, we have *libraries*. These are way smaller sets of functions, which usually serve a specific purpose. For example, even though R serves Data Scientists, you might decide to write specific library which will be for Data Scientists which are trying to predict zombie apocalypse. You will include a set of specific functions in your library and you may decide to publish it so that other people can use it.
 
 *What is R?*
+R is engine (or programming language) in which a lot of Data Scientists today work, because of its simplicity and statistical powers. We are able to solve our task with it with several *lines of code* while we make use of functions which someone else predefined for us. Here is how a solution looks.
+
+**insert R solution to the problem**
+
+Let's talk a little bit about what happens. 
+The function mean comes from a predefined library called base.
+
+It's a bit ugly though, as we did not use any pretty IDE. We can write the same code in R-Studio IDE. This is how it looks.
+
+**insert R-Studio solution**
+
+Data Scientists of course like this as you can visually distinguish between various elements. The IDE will have much greater functionalities compared to only working in programming language, but we will get to that later.
 
 *What is Python?*
 
+
 *What is Knime?*
-Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which does not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.
+Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which does not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.  
+
+When thinking about Knime, we can forget our distinction between engine and IDE, here we get both things in one. One important difference to R and Python is that here we are not expected to explicitly write code in order to fulfill our data science task. Let's give it a try.
+
+**insert Knime example**
+
+As you can see we are again doing the same steps, just this time they are represented with visual modules instead of lines of code.
+
+*Should I use R, Python or Knime?*
+As you are on the level of Observer, you should not choose any. At this point, you should only be able to observe a Data Science project, thereafter when your colleagues say that they work in certain language (most likely one of these three), you know what they talk about and you can see ona very basic level what they are doing.
+
+## Machine Learning
+
+*What is Machine Learning?*
+If you open the Wikipedia page about Machine Learning, most likely it will be defined through the definition of Arthur Samuel from 1959:
+
+>Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence.
+
+
+
+When people present to you Machine Learning, they are often times going to show you pictures like this to look cool.
+
+*How do I use data for data science?*
+
+*What is a target feature?*
 
 *What is machine learning?*
 Machine Learning is crucial part of Data Science. Often times when I see courses or training materials, this area is postponed until the student learns a lot of basics, such as data preprocessing. Only then, it is believed, you should be exposed to Machine Learning. I believe the opposite - you should meet it already now (as an Observer), due to two reasons. Firstly, as already mentioned, Machine Learning is something like a hearth of Data Science. Secondly, it will keep your motivation higher - you need to know some cool things that you will be able to do once you finish this book.  
@@ -148,6 +232,9 @@ I will recall one Kaggle competition to give you and example (we will get to tho
 *What is classification?*
 *How do I evaluate if classification model is good?*
 
+
+*How does my PC view features?*
+Numerical and categorical features.
 
 Are data scientists evil? Is there a reason why to be scared of these stalkers?
 
