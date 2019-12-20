@@ -45,7 +45,120 @@ What will happen is that in some time frauds will arise and there will be a lot 
 
 So, how can we solve this? **The key is to obtain information which is desired through data which were created by human, while he was doing something completely natural and at best unrelated.** You need to think about an action, or a process of a customer though which he/she unknowingly *displays* his/her truthful income. What about groceries? We all do grocery shopping, thereafter this might be a reliable source of information. What if you look at how much this customer is spending for groceries monthly and relate it to his/hers assumed income. If you have reported 1500 Euro income, how comes that you only spend 100 Euro for groceries? This is of course not a perfect solution, but what I am trying to translate is the **thinking** about how to solve the problem with bias about human-related data.
 
+## Data Science Project
 
+*How does Data Science project create benefit?*
+
+Let's start from the very end, what should a project generate. It should be new information, in various form, that creates benefit for a person or company that financed this project. Let me emphasize the point of that the project creates *new information, not new data*. This is because data by themselves, have no benefit, and thereafter there would be no point in running a project that creates data and not information. This information can be in various forms, so let's take a look at some examples:
+
+- When I was at university I was tasked with creation of project, which would take recordings of people walking and it should create an information of whether people on the recordings are suffering from Parkinson's disease or not. Having this information created various benefits, for instance (if working properly), expensive time of doctor is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
+
+- Once I ran a project which was supposed to determine a location of newly opened retail stores in a country. The input for my project was the network of roads and cities in the country with their respective counts of inhabitants. The information which my project was creating was a potential position of retail stores that would be optimized for a distribution of roads and where people live. This information created a clear benefit - competitive advantage for particular retailer.
+
+- Numerous times in the past I was asked to determine customer's probability to purchase an item. My project always took as an input various customer data such as their demographics while it predicted a probability to purchase particular item (information). This information has a benefit that a business representative can then decide whether he/she will invest into marketing for particular customer.
+
+I could go on, but I guess you already have the picture of what is the single requirement of any Data Science project - creating an information from which we benefit. The beneficial information can now really vary in forms. It can be anything as you already saw, but I would like to broaden your horizon even more. The output of a Data cience project can be a single diagram, or even a sentence (thereafter it does not have to be predictive modelling or optimization only). 
+
+*How does Data Science project look like?*
+
+Essentially, all data science is about are **hypothesis**. This is how hypothesis is defined by Oxford dictionary:
+
+*a supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation.*
+
+You would be surprised how many Data Scientists are forgetting some parts of this definition so I would like to focus on it. At the beginning of a project you **suppose** something can be done - "We are able to find ideal locations for our retail stores.". Then you examine whether you already do not have enough evidence which would answer your supposition - "There is no other retailer similar to us in a given country and as we are new to the country we also have no knowledge." 
+
+## Your Contribution
+
+*How can I contribute to Data Science project?*
+
+I have to make a small assumption here about who you are. You are someone who works in domain - for example banking, paper industry, insurance, car sales, anything. You either have formal education in this domain, or working experience. This means that you have something that no Data Scientist has - specific knowledge of the domain. Thereafter, as we already mentioned, you can contribute to the Data Science project in two ways already on this level: *contribute through inputs and through outputs*.  
+
+As you already know, the basis of every Data Science project are data. As you have domain knowledge, you might now about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past. My project was using log data from a mobile application, whereas users had to go through several screens in order to complete purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping of from the sales process at various point. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from call centre, which moves the project a light year ahead!
+
+Secondly, every data science project should produce an information that will be used to create benefit. This component of the Data Science project is often times underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the *information* was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this *information* could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the *information* they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the *information* which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit our of Data Science project.
+
+*How is data represented?*
+If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often times think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers 
+
+**insert picture of some early computer**
+
+Now what we often times make mistake with is that we **overestimate powers of computers** and we think that they understand anything - texts, colours, pictures. Well, they don't. THey only really well understand numbers. Thereafter a lot of tasks of Data Scientists revolves around representing data well for the computer. I was on a conference where a Scandinavian bank was representing their project of revealing fraud transaction by the means of Data Science. Transaction usually looks as something like following:
+
+**insert example of a transaction**
+
+However what a presenter showed was something like following:
+
+**insert Danske representation of a transaction**
+
+One of the keys of their project is how the transactions were represented to the computer (and algorithm). We will ge tmore into this later.
+
+*How does my PC handle data?*
+As soon as you start a Data Science project, you will be facing hardware limitations. Simple reason for this is that hardware costs. Sure, you can purchase a hardware and have no flexible costs, but this hardware will be getting outdated. Thereafter, every Data Science project will be optimizing for as little hardware requirements as needed to fulfill particular task. These requirements will be coming from four crucial componenets that a computer has and I think it is hence crucial for you to learn about them now.
+
+*What is a csv?*
+Now that we know what data is, we also know what we aim to do with it and how will we manage with our computer, it is time to get our hands on some data. The simplest representation of a dataset is through so called "csv" or "comma-separated-values".
+
+*What is a "flat table"?*
+
+
+*What is a relational database?*
+Refer maybe to Oracle?
+
+*What are inputs for data science?*
+
+
+*How does my PC view features?*
+Numerical and categorical features.
+
+*What tools and languages will I meet?*
+*What is an IDE, engine and package/library?*
+Even though you are right now at the level of Observer, you might already come in touch with programmes or libraries which make Data Science projects. Thereafter, it is important to understand a terminology here. The most obvious are so called IDEs - Integrated Development Environments. These are pretty and easy to work in. Currently, some of the most popular ones among Data Scientists are R-Studio and Jupyter Notebooks. This will be a program which tuns on a computer (either a physical one or somewhere on the server), that allows you to utilize some computing *engine*.
+
+There are two very popular engines, which are actually competing with each other - R and Python. Imagine these as a set of functions which are very robust and people like to use them because they are well developed and once a Data Scientist works with them, he can be sure that his work will run.  
+
+Finally there are libraries. The engines as weel as IDEs are many times licensed under open-source. This makes a lot of sense, because people have a motivation to contribute to these. How will they contribute though? It would be very tricky to integrate work of thousands of people though single software - may it be R or Python. For that, we have *libraries*. These are way smaller sets of functions, which usually serve a specific purpose. For example, even though R serves Data Scientists, you might decide to write specific library which will be for Data Scientists which are trying to predict zombie apocalypse. You will include a set of specific functions in your library and you may decide to publish it so that other people can use it.
+
+*What is R?*
+
+*What is Python?*
+
+*What is Knime?*
+Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which does not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.
+
+*What is machine learning?*
+Machine Learning is crucial part of Data Science. Often times when I see courses or training materials, this area is postponed until the student learns a lot of basics, such as data preprocessing. Only then, it is believed, you should be exposed to Machine Learning. I believe the opposite - you should meet it already now (as an Observer), due to two reasons. Firstly, as already mentioned, Machine Learning is something like a hearth of Data Science. Secondly, it will keep your motivation higher - you need to know some cool things that you will be able to do once you finish this book.  
+
+To explain you properly what Machine Learning is, I need to go into history of computing. Why did computers arise? They arose to simplify or automate tasks done by humans. One such task was to count consensus data (the survey done every 10 years which observes a population of a certain country). The problem in 1920s was that it took over 10 years to count and process the data from a consensus, thereafter making it quite worthless. 
+
+**insert IBM story**
+
+This was great for a couple of decades. Having computers with certain rules which were doing what otherwise humans could do, was really helping humanity. Rules have problems though - they have hard and strict boundaries. If you want to design a great rule based system, you need to be really careful so that you encode all the *patterns* which are in the data. Firstly, it is very hard to encode all the patters into our model. Secondly, our population and data change over time. Due to that, even if you manage to encode all of the rules, very quickly will these become outdated simply due to changing nature of our world.
+
+*Do I need machine learning?*
+*How much does machine learning cost?*
+These are questions that even experienced Data Scientists often times forget to ask and they end up with what I call "overkill". If you are considering application of machine learning, the first thing you should ask yourself is whether simpler methods cannot answer your hypothesis.
+
+I will recall one Kaggle competition to give you and example (we will get to those later). The competition was regarding game for kids. This game includes various activities such as videos, games and assesments (test). The task for a Machine Learning was to predict how many attempts will it take the kid to pass a certain assessment. There were many people who instantly jumped to Machine Learning and spent hours trying to apply Machine Learning to the problem, while thinking that their solution is pretty decent. All of a sudden a solution came which contained only 10 lines of code. All that the author of this submission did was that he looked at the absolute average of attempts that kids needed to solve a particular assignment. He then made only these predictions and beaten everyone's Machine Learning solution. He set a new baseline of what people need to beat in order to justify the use of Machine Lerning. Keep this in mind and in the future always consider such a baseline.
+
+
+*What is supervised learning?*
+*What is correlation?*
+*What is regression?*
+*How do I know if regression model is good?*
+*What is classification?*
+*How do I evaluate if classification model is good?*
+
+
+Are data scientists evil? Is there a reason why to be scared of these stalkers?
+
+Propensity models
+Can two models and their respective probabilities be really compared?
+
+Customer and user
+You need to distinguish between the two
 
 The falacy of absolute numbers
 For many years what matters a lot is a conversion rate or a success rate. I recommend though to be careful with it.
+
+Should I focus on how my code looks?
+I have a saying: "People have feelings. They feel when you code like sh_t."
