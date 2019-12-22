@@ -1,0 +1,20 @@
+# Contributor: Part I {#contributor-III}
+
+## Collaboration & Git
+
+*How do I collaborate?*
+
+*What is code versioning?*
+
+*How do you use Git?*
+
+## Learning
+
+*What is Kaggle?*
+
+*What learning sources are there?*
+
+*Most common errors.*
+
+*How do I "Google" for debugging?*
+

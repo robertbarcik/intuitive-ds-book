@@ -1,0 +1,45 @@
+# Contributor: Part II {#contributor-II}
+
+## Data Preprocessing
+
+*What are feature types?*
+
+*How do I describe data?*
+For both types of features, describe what we observe such as mean or median.
+
+*What is data aggregation?*
+
+*What are missing values?*
+
+*What are extreme values?*
+
+
+## Data Visualisation
+
+*Why do we need visualisations?*
+
+*How do I visualise numeric features?*
+
+*How do I visualise categorical features?*
+
+*How do I combine visualisation of two features?*
+
+
+## Statistics
+*What is normal distribution?*
+
+*What are independent features and dependent feature?*
+
+*What do I do with improperly distributet regression dependent feature?*
+
+*What do I do with imbalanced classification dependent feature?*
+
+*What is a hypothesis?*
+
+*What is a cost function?*
+
+*What is simplest regression model?*
+
+*What is simplest classification model?*
+
+

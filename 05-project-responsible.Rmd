@@ -1,3 +1,22 @@
 # Project Responsible {#project-responsible}
 
-We have finished a nice book.
+## Organizing a Project
+How to organize a team?
+How to lead a project?
+How to estimate timeline and budget for your project?
+When to apply which tools?
+What is adaptive transformation?
+How to assemble a team for data science project?
+How to find opportunities for a project?
+How to set a timeline for a project?
+
+## Statistics
+Feature importance in detail
+Local Interpretations
+AutoML Pipeline
+Timeseries
+Non-stationary variables
+Support Vector Machines
+Feature scaling
+
+## Data Engineering

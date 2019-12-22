@@ -1,0 +1,30 @@
+# Uncategorized topics {#butter-knife}
+
+This chapter contains a list of topics which I consider interesting but I am unable to currently categorize them anywhere.
+
+Spark
+Bayesian methods
+Text processing
+Topic modelling
+Shell and Bash?
+
+## Be Curious
+You are already at the level where curiosity will be what keeps you growing. With this chapter we are starting with a new practice that I will be leaving recommendations for additional sources that you can read 
+
+Is Machine Learning Unethical or Racist?
+
+Are data scientists evil? Is there a reason why to be scared of these stalkers?
+
+Propensity models
+Can two models and their respective probabilities be really compared?
+
+Customer and user
+You need to distinguish between the two
+
+The falacy of absolute numbers
+For many years what matters a lot is a conversion rate or a success rate. I recommend though to be careful with it.
+
+Should I focus on how my code looks?
+I have a saying: "People have feelings. They feel when you code like sh_t."
+
+Long and wide format of data
