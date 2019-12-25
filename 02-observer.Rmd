@@ -559,7 +559,7 @@ ggplot(train, aes(x = living_area, y = price_sold)) +
 
 This confirms our past experience, that the price of a house will be heavily determined by the living area. Our task is now to **train the model**. You will learn technical details of how to do this in the upcoming chapter (Contributor), we now only need to understand the logic. The trained regression model will attempt to fit a line, which will describe our training data well.
 
-```{r plot-training-regression, include=FALSE}
+```{r plot-training-regression-2, include=FALSE}
 ggplot(train, aes(x = living_area, y = price_sold)) + 
   geom_point() + 
   labs(x = "Living are in square meters", y = "Price of house sold in Euro") + 
@@ -569,7 +569,7 @@ ggplot(train, aes(x = living_area, y = price_sold)) +
 
 Once the model is trained, we can forget our training data and are left only with **trained model**. In the picture below, this is represented by our regression line.
 
-```{r plot-training-regression, include=FALSE}
+```{r plot-training-regression-3, include=FALSE}
 ggplot(train, aes(x = living_area, y = price_sold)) + 
   geom_point(color = "white") + 
   labs(x = "Living are in square meters", y = "Price of house sold in Euro") + 
@@ -579,13 +579,13 @@ ggplot(train, aes(x = living_area, y = price_sold)) +
 
 We can now use this model to predict for us a price of a house, based on provided living area. The living are of our house of interest has a living area of 80 square metres. We look at our horizontal axis and find a a value of our independent feature - 80. We now draw a vertical line up and wait until it intercects with our regression line. That is the **prediction of our model**. The only thing we have to do now is that we draw a horizontal line to the left and read out the predicted price for this house. In this case, 67500 Euro.
 
-```{r mapping-regression, echo = FALSE, fig.cap='By inputting a value of our independent feature into regression model, we obtain it's prediction.'}
+```{r mapping-regression, echo = FALSE, fig.cap='By inputting a value of our independent feature into regression model, we obtain its prediction.'}
 knitr::include_graphics("resources/02-observer/mapping-regression.jpg")
 ```
 
 We can replicate this process on our dataset.
 
-```{r plot-training-regression, include=FALSE}
+```{r plot-training-regression-4, include=FALSE}
 ggplot(train, aes(x = living_area, y = price_sold)) + 
   geom_point(color = "white") + 
   labs(x = "Living are in square meters", y = "Price of house sold in Euro") + 

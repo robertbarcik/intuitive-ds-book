@@ -52,6 +52,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -70,7 +107,8 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Foreword</a><ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#development-and-to-do"><i class="fa fa-check"></i><b>1.1</b> Development and To-do</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#current-state-of-this-book"><i class="fa fa-check"></i><b>1.1</b> Current state of this book</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#development-and-to-do"><i class="fa fa-check"></i><b>1.2</b> Development and To-do</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="being-aware.html"><a href="being-aware.html"><i class="fa fa-check"></i><b>2</b> Being Aware</a><ul>
 <li class="chapter" data-level="2.1" data-path="being-aware.html"><a href="being-aware.html#five-cornerstones"><i class="fa fa-check"></i><b>2.1</b> Five Cornerstones</a></li>
@@ -95,8 +133,9 @@
 <li class="chapter" data-level="3.7" data-path="observer.html"><a href="observer.html#basics-of-machine-learning"><i class="fa fa-check"></i><b>3.7</b> Basics of Machine Learning</a></li>
 <li class="chapter" data-level="3.8" data-path="observer.html"><a href="observer.html#supervised-learning"><i class="fa fa-check"></i><b>3.8</b> Supervised Learning</a></li>
 <li class="chapter" data-level="3.9" data-path="observer.html"><a href="observer.html#pitfalls-of-machine-learning"><i class="fa fa-check"></i><b>3.9</b> Pitfalls of Machine Learning</a></li>
-<li class="chapter" data-level="3.10" data-path="observer.html"><a href="observer.html#regression-and-classification"><i class="fa fa-check"></i><b>3.10</b> Regression and Classification</a></li>
-<li class="chapter" data-level="3.11" data-path="observer.html"><a href="observer.html#level-2-reached"><i class="fa fa-check"></i><b>3.11</b> Level 2 Reached</a></li>
+<li class="chapter" data-level="3.10" data-path="observer.html"><a href="observer.html#regression"><i class="fa fa-check"></i><b>3.10</b> Regression</a></li>
+<li class="chapter" data-level="3.11" data-path="observer.html"><a href="observer.html#classification"><i class="fa fa-check"></i><b>3.11</b> Classification</a></li>
+<li class="chapter" data-level="3.12" data-path="observer.html"><a href="observer.html#level-2-reached"><i class="fa fa-check"></i><b>3.12</b> Level 2 Reached</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="contributor-I.html"><a href="contributor-I.html"><i class="fa fa-check"></i><b>4</b> Contributor: Part I</a><ul>
 <li class="chapter" data-level="4.1" data-path="contributor-I.html"><a href="contributor-I.html#soft-skills"><i class="fa fa-check"></i><b>4.1</b> Soft skills</a></li>
@@ -626,8 +665,8 @@ Figure 3.25: An overview in terminology and use of datasets for training and val
 <p>We said that if model is <strong>overfitted</strong>, it is great at describing training data, but poor at describing unseen data. When we fitted the model, we see that it is making great predictions about the first four months of our meal consumption. In most of the days, it can really pinpoint the exact amount of meals which were consumed. For instance, when we made Spaghetti Carbonara, the model correctly predicted that 187 portions are going to be consumed. That sounds amazing! We use the model to make predictions for the most recent month, during which we one day cooked Spaghetti Bolognese, which are just different alternation of Spaghetti. We hence presume that our model will be again great. To our surprise, it predicts that 190 meals will be consumed, while in reality we sell only 110 meals. Our model is overfitted and failed to generalize to unseen (validation) data. We hence know that we cannot use it to predict our unlabelled data (tomorrow).</p>
 <p>We defined <strong>underfitted</strong> model as one which is poor at describing <em>both</em> training and unseen data. This one will be hence even easier to spot. When we cooked Spaghetti Carbonara, it predicted 130 meals, while really 187 meals were consumed. In the last month, which the model did not see, when we cooked Spaghetti Bolognese, the prediction by the model was 143 meals, while we really sold 110 meals. We can see that the model was poor at describing both of these meals.</p>
 </div>
-<div id="regression-and-classification" class="section level2">
-<h2><span class="header-section-number">3.10</span> Regression and Classification</h2>
+<div id="regression" class="section level2">
+<h2><span class="header-section-number">3.10</span> Regression</h2>
 <p><em>What is regression?</em> It is now time that we expand our Machine Learning mind map. Supervised learning has several subfields, which are influenced by the form of our target feature. In this level, we are going to learn about regression and binary classification. Let’s start with <strong>regression</strong>.</p>
 <div class="figure"><span id="fig:machine-learning-areas-2"></span>
 <img src="resources/02-observer/machine-learning-areas-2.png" alt="First area of Supervised Learning that we will focus on is Regression." width="359" />
@@ -648,11 +687,18 @@ Figure 3.26: First area of Supervised Learning that we will focus on is Regressi
 <li>If the house is nearby a lake or coast, the price increases.</li>
 <li>If the house is renovated in the past 10 years, or built within the past 10 years, its price will be higher.</li>
 </ul>
-<p>We can start building <strong>regression model</strong> with single independent feature only (to make it simple), which will be the living area of a house. As we discussed we start with <strong>training data</strong>. To obtain these, we look at the historical sales of houses in the area. We make a simple plot, which shows how the area of a house and the houses final sale price worked in the past.</p>
-<p>This confirms our past experience, that the price of a house will be heavily determined by the living area. Our task is now to <strong>train the model</strong>. You will learn technical details of how to do this in the upcoming chapter (Contributor), we now only need to understand the logic.</p>
-<p>Once the model is trained, we can forget our training data and are left only with <strong>trained model</strong>.</p>
-<p>We can now use this model to predict for us a price of a house, based on provided living area.</p>
-<p>As we mentioned, the price of a house is of course determined by many more factors. In the upcoming chapters, we will construct a detailed elaboration on this example of predicting house prices.</p>
+<p>We can start building a <strong>regression model</strong> with single independent feature only (to make it simple), which will be the living area of a house. As we discussed we start with <strong>training data</strong>. To obtain these, we look at the historical sales of houses in the area. We make a simple plot, which shows how the area of a house and the houses final sale price worked in the past.</p>
+<p>This confirms our past experience, that the price of a house will be heavily determined by the living area. Our task is now to <strong>train the model</strong>. You will learn technical details of how to do this in the upcoming chapter (Contributor), we now only need to understand the logic. The trained regression model will attempt to fit a line, which will describe our training data well.</p>
+<p>Once the model is trained, we can forget our training data and are left only with <strong>trained model</strong>. In the picture below, this is represented by our regression line.</p>
+<p>We can now use this model to predict for us a price of a house, based on provided living area. The living are of our house of interest has a living area of 80 square metres. We look at our horizontal axis and find a a value of our independent feature - 80. We now draw a vertical line up and wait until it intercects with our regression line. That is the <strong>prediction of our model</strong>. The only thing we have to do now is that we draw a horizontal line to the left and read out the predicted price for this house. In this case, 67500 Euro.</p>
+<div class="figure"><span id="fig:mapping-regression"></span>
+<img src="resources/02-observer/mapping-regression.jpg" alt="By inputting a value of our independent feature into regression model, we obtain its prediction."  />
+<p class="caption">
+Figure 3.27: By inputting a value of our independent feature into regression model, we obtain its prediction.
+</p>
+</div>
+<p>We can replicate this process on our dataset.</p>
+<p>We have now managed to fit a <strong>regression</strong>. In case you are headed to the more advanced levels, such as Contributor, you are going to learn exact techniques of how this is done, but as I said, on this level it is sufficient if you are aware of the conceptual steps when fitting a regression model. As we mentioned, the price of a house is of course determined by many more factors. In the upcoming chapters, we will also construct a detailed elaboration on this example of predicting house prices.</p>
 <p><em>How do I know if regression model is good?</em></p>
 <p>As an Observer, you need to be able to do a basic evaluation of a regression model, when you see one. You are not supposed to calculate it yourself, just observe it. The most basic evaluation of a regression model is through <strong>average error</strong>. How is this error calculated?</p>
 <blockquote>
@@ -660,32 +706,72 @@ Figure 3.26: First area of Supervised Learning that we will focus on is Regressi
 </blockquote>
 <p>This definition contains a few new things, so let’s take it step by step. We have trained our model on <em>training data</em> and we want it to make prediction on <em>unlabelled data</em>. We have though already mentioned that part of our training data will be put aside and used as <em>validation data</em>. This is a dataset that we will use to calculate the average error of our regression model.</p>
 <p><strong>Single error</strong> is what we obtain first. We take one house from our validation data and let the model make a prediction for this house. The prediction is going to say that this house will be sold for 87 000 Euro. As we know the actual sale price for which this house has been sold, we can <strong>compare the predicted value, with actual value</strong> for which this house was sold - 92 000 Euro.</p>
-<p><strong>insert drawn picture of an error</strong></p>
+<div class="figure"><span id="fig:single-error"></span>
+<img src="resources/02-observer/single-error.jpg" alt="Single error (on one observation) is obtained by taking the difference between actual and predicted value."  />
+<p class="caption">
+Figure 3.28: Single error (on one observation) is obtained by taking the difference between actual and predicted value.
+</p>
+</div>
 <p>The very same procedure we now do for all houses which we are making prediction for.</p>
-<p><strong>insert picture of all single errors</strong></p>
-<p>All that we now need to do is to calculate average out of these errors. To calculate an average error, we only need to sum all of the errors made by the model and divide by number of observations. In our case it can look as something like following.</p>
-<p><strong>Insert average error picture calculation</strong></p>
-<p>Also context matters. If we look at the erorrs made above, the average error is only 4 000 Euro, which seems fine. From a context perspective, what will happen is that we will be under-pricing the houses which we put up for sale. This is a problem because the seller for which we are selling the house will be unhappy - his/her house is sold for less money than it actually could be. Thereafter we should not only rely on the statistical calculation of a model error but <strong>also consider the error from context perspective</strong>.</p>
-<p>That is not all. Sometimes, the overall view on the error, such as absolute error or average error can be rather misleading. Let’s say we are a bank and we are predicting what is the income of a customer. Our regression model is trained and we see that the error which it has is on average 15 Euro on every customer prediction. By the first look, this seems great right? Let’s though examine the model deeper and see what is happening.</p>
-<p><strong>insert plot of income predictions</strong></p>
-<p>Discuss error.</p>
-<p>We can see that our model is super accurate for predictions for customers with income 0 Euro (such as students and unemployed people). The error here is close to 0 Euro, so we can be satisfied with our model performance for this set of customers. However, when we look at the right side of the plot, we start to see that our model is very wrong for customers with income over 500 Euro. The errors are often times around 100 Euro. Is this a problem? Data Scientist wouldn’t be sure most likely as for him/her is about fitting of overally good model.</p>
-<p>This is a point where you as a Citizen Data Scientist with context knowledge need to step in. You know that the customers with 0 Euro income are not that interesting for your bank. The customers which actually matter are the ones with high income, because they are very profitable for you. That is why this <em>regression model</em> is bad, even though from pure statistics it looks good (fact that we on average make an error of 15 Euro).</p>
-<p><em>What is binary classification?</em> We can now move to <em>binary classification</em>, which is a supervised model, where target feature can have only two values. These two values can have various forms:</p>
+<div class="figure"><span id="fig:all-errors"></span>
+<img src="resources/02-observer/all-errors.jpg" alt="We repeat the same procedure and obtain a single error from all observations."  />
+<p class="caption">
+Figure 3.29: We repeat the same procedure and obtain a single error from all observations.
+</p>
+</div>
+<p>All that we now need to do is to calculate average out of these errors. To calculate an average error, we only need to sum all of the errors made by the model and divide by number of observations. There is a small trick though. Some of the errors have negative and some have positive sign, as they were obtained using same calculation <strong>actual value - predicted value</strong>.</p>
+<ul>
+<li>If actual value is higher (80 000 Euro) than predicted value (67 500 Euro), the resulting single error will be positive (13 500 Euro).</li>
+<li>If actual value is lower (50 000 Euro) than predicted value (57 500 Euro), the resulting single error will be negative (-7 500 Euro).</li>
+</ul>
+<p>If we would now sum them all up, it would be a terrible mistake as negative errors would be cancelling out with positive errors such as: 13 500 + (-7500) = 6000 Euro. What Data Scientist usually does is that he/she uses squaring to the power of two and then using square root. This removes all the negative signs and we can happily sum up together all the errors to calculate average error. That is why when you will see a Machine Learning regression model reporting its accuracy often times say something like root-mean-squared-error (rmse). All that is happening here is that we are calculating mean-error, we just need to get rid of the negative signs.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Let&#39;s sum together all single errors which we did (gotten rid of negative signs).</span>
+sum_of_errors =<span class="st"> </span><span class="dv">13500</span> <span class="op">+</span><span class="st"> </span><span class="dv">7500</span> <span class="op">+</span><span class="st"> </span><span class="dv">5000</span> <span class="op">+</span><span class="st"> </span><span class="dv">850</span> <span class="op">+</span><span class="st"> </span><span class="dv">12000</span> <span class="op">+</span><span class="st"> </span><span class="dv">3500</span>
+<span class="co">#Now we calculate mean (average) error by simply dividing by total number of houses which we are evaluating.</span>
+mean_error =<span class="st"> </span>sum_of_errors <span class="op">/</span><span class="st"> </span><span class="dv">6</span>
+
+<span class="kw">print</span>(mean_error)</code></pre></div>
+<pre><code>## [1] 7058.333</code></pre>
+<p>As you can see, from numerical perspective, it is rather simple to evaluate how successful regression is. We can simply calculate the <em>root-mean-squared-error</em> which will already give us a solid estimate. In our case, this was 7058 Euro, which seems fine. Our model is far from perfect, but it can quickly give us an estimation of what the house is worth. Unfotnately we need to be a bit more careful, let’s again look at our predictions and actual values.</p>
+<div class="figure"><span id="fig:lucrative-houses"></span>
+<img src="resources/02-observer/lucrative-houses.jpg" alt="We repeat the same procedure and obtain a single error from all observations."  />
+<p class="caption">
+Figure 3.30: We repeat the same procedure and obtain a single error from all observations.
+</p>
+</div>
+<p>Sometimes, the overall view on the error, such as absolute error or average error can be rather misleading. If you noticed, three of the most expensive houses have been heavily <strong>underpriced by the model</strong>. This is caused simply by the fact that our regression model is not equally good at all levels of house prices. Now from context perspective, this can be a big issue as we are underpricing the most lucrative houses! Our lucrative clients can get pretty unhappy about that.</p>
+</div>
+<div id="classification" class="section level2">
+<h2><span class="header-section-number">3.11</span> Classification</h2>
+<p><em>What is binary classification?</em></p>
+<p>We can now move to <em>binary classification</em>, which is a supervised model, where target feature can have only two values. These two values can have various forms:</p>
 <p><em>True, False </em>Buy, No-Buy <em>Will run through, Will not run through </em>Healthy, Not healthy</p>
 <div class="figure"><span id="fig:machine-learning-areas-3"></span>
 <img src="resources/02-observer/machine-learning-areas-3.png" alt="Second are of Supervised learning that we will go through is Binary Classification." width="358" />
 <p class="caption">
-Figure 3.27: Second are of Supervised learning that we will go through is Binary Classification.
+Figure 3.31: Second are of Supervised learning that we will go through is Binary Classification.
 </p>
 </div>
-<p><em>How do I evaluate if classification model is good?</em> Discuss imbalaned classification issue.</p>
+<p><em>How do I evaluate if classification model is good?</em></p>
+<p>Discuss imbalaned classification issue.</p>
 <p>Discuss confusion matrix and predicting of what actually matters for us.</p>
 </div>
 <div id="level-2-reached" class="section level2">
-<h2><span class="header-section-number">3.11</span> Level 2 Reached</h2>
-<p>Congratulations! You have just reached level 2 - Observer.</p>
-<p>Here are key takeaways from this chapter.</p>
+<h2><span class="header-section-number">3.12</span> Level 2 Reached</h2>
+<p>Congratulations! You have just reached level 2 - Observer. You are now able to join a Data Science initiative around you - it can be some public project, pro-bono project, or a project which is being developed inside your company. Moreover, if you are applying for a position related to a Data Science, you can claim that you are on Observer Level. This means that you know what is going on within the project, and you should be able to help with inputs, outputs, and do some basic evaluations of the project.</p>
+<p>Here are some key takeaways from this chapter:</p>
+<ul>
+<li>Always remain skeptical about whether your data can even answer the problem which you are trying to solve.</li>
+<li>Try to avoid using self-reported (human-related data) as these can be a subject to heavy biases.</li>
+<li>Remember that Data Science project tries to explain the phenomena through observations and their features (characteristics).</li>
+<li>Simplest form of representing data is through a flat table, in a csv format.</li>
+<li>If we have data of different granularity, we might want to use a concept of relational databse to represent these properly.</li>
+<li>Data can be loaded into into an environment which can help us with processing of it. These vary from ones which are programming heavy - R and Python, to some which are more visual, but can be less flexible, such as Knime.</li>
+<li>Machine Learning might be a hearth of Data Science. We train a model using training data, validate its predictive power on validation data and then use it for predicting unlabelled data.</li>
+<li>Be aware of not overfitting or underfitting of your model.</li>
+<li>Regression is a field of Supervised Learning, where our target feature is of numeric kind. We evaluate its success through measures such as root-mean-squared-error, though we are carefully looking at the single errors and their cotextual meaning.</li>
+<li>Binary Classification is another field of Supervised Learning, where our target feature only has two values. We evaluate its success through measures such as Recall, Precision or Accuracy. We though carefully look at confusion matrix.</li>
+</ul>
 
 </div>
 </div>
