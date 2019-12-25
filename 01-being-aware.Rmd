@@ -2,7 +2,7 @@
 
 ## Five Cornerstones
 
-You will quickly notice that this book is structured quite differently compared to other offerings on the market. Let me reason about that, even before I introduce you to the structure and the transformation that the book offers. I have been a lecturer and trainer for a few years and I always notice that content does not matter as much as the *path through the content* as well as the *assumptions upon which the content is built*. Only if both of these are fine, the book/course/training can offer you (the reader/student) a **transformation** - taking you from where you are, to where you want to be. In this case I am hoping you would like to make a living within Data Science or create some kick-a__ project within it!
+You will quickly notice that this book is structured quite differently compared to other offerings on the market. Let me reason about that, even before I introduce you to the structure and the transformation that the book offers. I have been a lecturer/trainer for a few years and I always notice that content does not matter as much as the *path through the content* as well as the *assumptions upon which the content is built*. Only if both of these are fine, the book/course/training can offer you (the reader/student) a **transformation** - taking you from where you are, to where you want to be. In this case I am hoping you would like to make a living within Data Science or create some amazing project within it!
 
 This book is hence built on five cornerstones:  
 
@@ -16,14 +16,21 @@ Did I go crazy claiming that anyone can become a Data Scientist? And what about 
 
 ## Defining Data Science
 
-The very first thing that I would like to do is to answer a simple question: *What is data and what is information?* The difference between the two is in their value. *Data* inherently do not have any value for their owner, simply because he/she cannot do anything beneficial upon them. On the other hand *information* can be valuable for its owner. These two are however thinnly connected - as *information* is derived from *data*, while this process is called *Data Science*. I will give you an example from my recent past on how I got a value out of Data Science.  
+The very first thing that I would like to do is to answer a simple question: *What is data and what is information?* The difference between the two is in their value. *Data* inherently do not have any value for their owner, simply because he/she cannot do anything beneficial upon them. On the other hand, *information* can be valuable for its owner. These two are however thinnly connected - as *information* is derived from *data*, while this process is called *Data Science*. I will give you an example from my recent past on how I got a value out of Data Science.  
 
 I was always interested in my sleep, as I know that in order to live a happy life, I shall sleep well. The only two things I know really is how long I sleep and how do I feel in the morning. I then found an app on my phone which was promising to analyze my sleep and give me recommendations on how to improve my sleep. The app is using accelerometer in my phone, recording my movements at night. During the first two nights, the app only collected *data* - every morning I was able to see various graphs on how I slept. After a week though, recommendations came such as "when you go to bed late, around 23:00, even if you sleep full 8 hours, your sleep quality suffers.". This is already *information* which had a value for me. The app is Data Science *process* of creating valuable informaton from data.  
 
 If you now turn to search engines and start to search for Data Science terms, you will be overwhelmed by articles and (unfortunately) buzzwords - Machine Learning, Data Preprocessing, Artificiall Intelligence, Tensorflow, R, Python. These are at the end only *methods* and tools of Data Science to achieve a result which we described above. Do not get confused or overwhelmed by these. The book which you are reading is a way how to master these methods, but first I want you to truly and depply understand the cruial things and ideas of Data Science. This might actually be the most important message from this book (that is why it is in the beginning) - always keep in mind that the methods should always serve the purpose which Data Science has.
 
+>Data Science is merely an art of turning data into information, which provides benefit.
+
 ## Defining Data Scientist
-Now that we know what Data Science is, it is quite easy to define who a Data Scientist is. He/She is a practitioner of this field, who uses its methods to achieve its goal. Usually, Data Scientist has general education in three area - Programming, Mathematics and Statistics. Notice that none of these areas deal with *context* or *domain* such as Banking, Medicine or Engineering. Thus Data Scientist - by definition, should be *domain-agnostic*. He/she should be able to join any of mentioned domains, and many more, apply the methods of Data Science to fulfill the goal of creating value, through information, out of data. This is very important point for you as you will now see.
+
+Now that we know what Data Science is, it is quite easy to define who a Data Scientist is. He/She is a practitioner of this field, who uses its methods to achieve its goal. Usually, Data Scientist has general education in three area - Programming, Mathematics and Statistics. Notice that none of these areas deal with *context* or *domain* such as Banking, Medicine or Engineering. Thus Data Scientist - by definition, should be *domain-agnostic*. We can see this also in the definition within Oxford Dictionary:
+
+> a person employed to analyse and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making
+
+He/she should be able to join any of mentioned domains, and many more, apply the methods of Data Science to fulfill the goal of creating value, through information, out of data. This is very important point for you as you will now see.
 
 ## The Struggle of Data Science
 
@@ -53,13 +60,19 @@ This colleague of mine was originally in the first part of definition (business 
 She had something that I could never have - expertise in her CRM department and if I was about to give her advice now it would be:
 
 - Focus on how a predictive model will create benefit in your department. Unless you create a benefit, whatever we code is worthless.
+- Focus on applying in your project your domain knowledge. Only you know it, I don't.
 - Here is a (short) list of things you should try in your R-script (most of which you already have). You do not need to push for more complex methods and crazy good programming, what you have is already enough. If something more complex is required later on, I will do it for you.
 
 Ehm, exact opposite of what I originally did, right? **Citizen Data Scientist therefore stays in his/her original deparment and context, and only to a required (limited) extend enhances her knowledge on Data Science, so that he/she can create the value**. He/she posesses edge over (first generation) of Data Scientist in the context knowledge and can hence create more valuable products.
 
 ## Value of Citizen Data Scientist
 
-As everyone says it these days - data are everywhere, companies just need to start utilizing them. We can hence take as granted that Data Science will have justification in upcoming years. Though why do companies need Citizen Data Scientists and why they should focus on them instead of the first generation of Data Scientists? Simply because the *growth in created benefit* will be much greater as there can be multiple of them compared to Data Scientists and they are much closer to the context. They know better what needs to be optimized and in which way, because the context (business area) is their origin. Is it necessary then that every Citizen Data Scientist is on the same level of knowledge? Of course not, that is why I will be basing this book on 6 levels of Citizen Data Scientist, which should only achieve a level suitable for his/her involvement to Data Science.  
+As everyone says it these days - data are everywhere, companies just need to start utilizing them. We can thus take as granted that Data Science will have justification in upcoming years. Though why do companies need Citizen Data Scientists and why they should focus on them instead of the first generation of Data Scientists? Simply because the *growth in created benefit* will be much greater through
+
+- Possibility of having higher counts of Citizen Data Scientists, as compared to Data Scientists due to the fact that extensive formal education is not required.
+- Possibility of having more impactful Data Science projects as these will be integrated better to the business, if created by properly trained Citizen Data Scientists.
+
+Citizen Data Scientists do know better what needs to be optimized and in which way, because the context (business area) is their origin. Is it necessary then that every Citizen Data Scientist is on the same level of knowledge? Of course not, that is why I will be basing this book on 6 levels of Citizen Data Scientist, which should only achieve a level suitable for his/her involvement to Data Science. So, do you want to become one of them?  
 
 What happens with the original (first generation) Data Scientists? We will still need them, just in slightly different role as until now. They become heavy developers, guarantors and trainers. Whenever a complex problem occurs, which needs technically challenging solution, it will be them who focus on it. The thing is, that in many organizations, there is only a handful of such problems, that is why this makes sense. Secondly, they act as guarantors of solutions developed by Citizen Data Scientists. This again makes sense, because reading through something and commenting on it takes a fraction of time as compared to developing it. Finally, they should act as trainers as there is a need to train, coach and mentor a *lot* of Citizen Data Scientists. 
 
@@ -73,8 +86,7 @@ I honestly believe that whomever you are, you can become a Citizen Data Scientis
 
 ## The 6 levels
 
-You can have a great content, great exercises, but unless I am able to keep you motivated during your jurney and you feel like you are growing with every module finished, my course/book is not good. That is why this book sets 6 levels through which you will be growing. With each new level, your power within Data Science will inherently grow and so will your value for employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in real world! 
-As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
+You can have a great content, great exercises, but unless I am able to keep you motivated during your jurney and you feel like you are growing with every module finished, my course/book is not good. That is why this book sets 6 levels through which you will be growing. With each new level, your power within Data Science will inherently grow and so will your value for employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in real world! As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
 
 **Being Aware**  
 You know what the field is about, what it can and cannot achieve. Learning: 1 hour
@@ -95,6 +107,10 @@ You are able to define Data Science project and execute it. Learning: 40 hours
 You are able to grow Data Science initiative in your organization both effectively (hiring) as well as conceptually (specializations). Learning: 40 hours
 
 Each of these levels is very different both from the content perspective, as well as from desirable approach by you. For example, on a Statistician level, you are going to be focused solely on statistical formulas and their intuition. Be prepared for sitting longer hours, stretching your analytical mind. All of a sudden, this stops and in order to become a Project Responsible, we are going to sharpen your soft skills, such as how to organize a team effectively. It will be needed to free your mind and think about people instead of code.  
+
+> This book unfortunately cannot cover *all* that you should now on each of these levels. What the book intends is to give you *all intuition* and *awareness of concepts* which is required on each level.
+
+The reason why I decided to write this way (not covering concepts through technical details and coding), is that I believe from my experience that once the intuition in the concept is achieved, then it will become rather simple for you to apply it.
 
 ## Real World Experience
 
@@ -120,7 +136,13 @@ Mathematics is undoubtedly the foundation of many fields, Data Science being one
 
 In my perspective, the first generation of Data Scientists are primarily the ones who are fine with map and the second generation belongs to the non-likers. Now let me tell you, it's perfectly fine and natural to not like math and not be comfortable with it. Who should adjust? Should it be 95% of population or teaching methods of Data Science? Let me bet on the latter...  
 
-That is why *this book will not teach anything through mathematics*. I honestly believe that in order to train a Citizen Data Scientist, math is not only un-needed but also un-recommended, based on my argumentation above.
+That is why *this book will not teach anything through mathematics*. I honestly believe that in order to train a Citizen Data Scientist, math is not only un-needed but also un-recommended, based on my argumentation above. 
+
+P.S. There will be a few statistical concepts, so don't blame me if they look like math. As I promised though, there will be no formula, just intuition.
 
 ## Level 1 Reached
-Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what is isn't, what it struggles with and what is the role of Citizen Data Scientist.
+Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what is isn't, what it struggles with and what is the role of Citizen Data Scientist. Here are some key takeaways which you should have from this chapter:
+
+1. Remember the five cornerstones upon which this book is built. If you plan on continue reading it, these will be helpful to keep in mind.
+2. Data Science is an art of creating valuable information out of data.
+3. No training or online course can really prepare you for real world. Hopefully this book will help you to go to field as soon as possible and apply yourself, based on a level which you reached.

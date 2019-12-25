@@ -3,7 +3,13 @@
 ## Soft Skills
 How to find good candidates? - personalities of a data scientist
 How to evaluate external vendors?
-How to train data scientists?
+
+*Personality of a Data Scientist*
+
+*How to train data scientists?*
+
+
+
 How to spread data science in a company?
 Why to contribute to open source communities?
 

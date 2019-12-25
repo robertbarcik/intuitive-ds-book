@@ -1,0 +1,25 @@
+
+Table 1 - Customer information
+
+Customer_Name, 	Age, 	Country_of_residence, 	Eye_colour, 	
+Robert, 	27, 	Slovakia, 		brown,		
+									
+Martin, 	28, 	Sweden, 		blue, 		
+								
+Thomas, 	32, 	Austria, 		brown, 		
+
+------------------------------------------------------------
+
+Table 2 - Cofee drinking information
+
+Customer_Name, 	Day_of_week,	Cups_of_coffee
+Robert, 	Monday,		2
+Robert, 	Tuesday, 	5
+Robert, 	Wednesday,	3
+Robert, 	Thursday,	1
+Martin, 	Tuesday, 	3
+Martin, 	Wednesday, 	5
+Martin, 	Saturday, 	1
+Thomas, 	Wednesday, 	3
+Thomas, 	Saturday, 	1
+

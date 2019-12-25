@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Contributor: Part I | Intuitive Data Science</title>
+  <meta name="description" content="This is a book that allows anyone to become a Citizen Data Scientist in an intuitive way." />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Contributor: Part I | Intuitive Data Science" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a book that allows anyone to become a Citizen Data Scientist in an intuitive way." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Contributor: Part I | Intuitive Data Science" />
+  
+  <meta name="twitter:description" content="This is a book that allows anyone to become a Citizen Data Scientist in an intuitive way." />
+  
+
+<meta name="author" content="Robert Barcik" />
+
+
+<meta name="date" content="2019-12-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="observer.html"/>
+<link rel="next" href="contributor-II.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Becoming Citizen Data Scientist</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Foreword</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#development-and-to-do"><i class="fa fa-check"></i><b>1.1</b> Development and To-do</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="being-aware.html"><a href="being-aware.html"><i class="fa fa-check"></i><b>2</b> Being Aware</a><ul>
+<li class="chapter" data-level="2.1" data-path="being-aware.html"><a href="being-aware.html#five-cornerstones"><i class="fa fa-check"></i><b>2.1</b> Five Cornerstones</a></li>
+<li class="chapter" data-level="2.2" data-path="being-aware.html"><a href="being-aware.html#defining-data-science"><i class="fa fa-check"></i><b>2.2</b> Defining Data Science</a></li>
+<li class="chapter" data-level="2.3" data-path="being-aware.html"><a href="being-aware.html#defining-data-scientist"><i class="fa fa-check"></i><b>2.3</b> Defining Data Scientist</a></li>
+<li class="chapter" data-level="2.4" data-path="being-aware.html"><a href="being-aware.html#the-struggle-of-data-science"><i class="fa fa-check"></i><b>2.4</b> The Struggle of Data Science</a></li>
+<li class="chapter" data-level="2.5" data-path="being-aware.html"><a href="being-aware.html#who-is-citizen-data-scientist"><i class="fa fa-check"></i><b>2.5</b> Who is Citizen Data Scientist</a></li>
+<li class="chapter" data-level="2.6" data-path="being-aware.html"><a href="being-aware.html#value-of-citizen-data-scientist"><i class="fa fa-check"></i><b>2.6</b> Value of Citizen Data Scientist</a></li>
+<li class="chapter" data-level="2.7" data-path="being-aware.html"><a href="being-aware.html#anyone-can-become-citizen-data-scientist"><i class="fa fa-check"></i><b>2.7</b> Anyone Can Become Citizen Data Scientist</a></li>
+<li class="chapter" data-level="2.8" data-path="being-aware.html"><a href="being-aware.html#the-6-levels"><i class="fa fa-check"></i><b>2.8</b> The 6 levels</a></li>
+<li class="chapter" data-level="2.9" data-path="being-aware.html"><a href="being-aware.html#real-world-experience"><i class="fa fa-check"></i><b>2.9</b> Real World Experience</a></li>
+<li class="chapter" data-level="2.10" data-path="being-aware.html"><a href="being-aware.html#learning-without-math"><i class="fa fa-check"></i><b>2.10</b> Learning Without Math</a></li>
+<li class="chapter" data-level="2.11" data-path="being-aware.html"><a href="being-aware.html#level-1-reached"><i class="fa fa-check"></i><b>2.11</b> Level 1 Reached</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="observer.html"><a href="observer.html"><i class="fa fa-check"></i><b>3</b> Observer</a><ul>
+<li class="chapter" data-level="3.1" data-path="observer.html"><a href="observer.html#about-this-level"><i class="fa fa-check"></i><b>3.1</b> About this level</a></li>
+<li class="chapter" data-level="3.2" data-path="observer.html"><a href="observer.html#be-skeptical-about-data"><i class="fa fa-check"></i><b>3.2</b> Be Skeptical About Data</a></li>
+<li class="chapter" data-level="3.3" data-path="observer.html"><a href="observer.html#data-science-project"><i class="fa fa-check"></i><b>3.3</b> Data Science Project</a></li>
+<li class="chapter" data-level="3.4" data-path="observer.html"><a href="observer.html#your-contribution"><i class="fa fa-check"></i><b>3.4</b> Your Contribution</a></li>
+<li class="chapter" data-level="3.5" data-path="observer.html"><a href="observer.html#data-and-computing"><i class="fa fa-check"></i><b>3.5</b> Data and Computing</a></li>
+<li class="chapter" data-level="3.6" data-path="observer.html"><a href="observer.html#using-data"><i class="fa fa-check"></i><b>3.6</b> Using Data</a></li>
+<li class="chapter" data-level="3.7" data-path="observer.html"><a href="observer.html#basics-of-machine-learning"><i class="fa fa-check"></i><b>3.7</b> Basics of Machine Learning</a></li>
+<li class="chapter" data-level="3.8" data-path="observer.html"><a href="observer.html#supervised-learning"><i class="fa fa-check"></i><b>3.8</b> Supervised Learning</a></li>
+<li class="chapter" data-level="3.9" data-path="observer.html"><a href="observer.html#pitfalls-of-machine-learning"><i class="fa fa-check"></i><b>3.9</b> Pitfalls of Machine Learning</a></li>
+<li class="chapter" data-level="3.10" data-path="observer.html"><a href="observer.html#regression-and-classification"><i class="fa fa-check"></i><b>3.10</b> Regression and Classification</a></li>
+<li class="chapter" data-level="3.11" data-path="observer.html"><a href="observer.html#level-2-reached"><i class="fa fa-check"></i><b>3.11</b> Level 2 Reached</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="contributor-I.html"><a href="contributor-I.html"><i class="fa fa-check"></i><b>4</b> Contributor: Part I</a><ul>
+<li class="chapter" data-level="4.1" data-path="contributor-I.html"><a href="contributor-I.html#soft-skills"><i class="fa fa-check"></i><b>4.1</b> Soft skills</a></li>
+<li class="chapter" data-level="4.2" data-path="contributor-I.html"><a href="contributor-I.html#cloud"><i class="fa fa-check"></i><b>4.2</b> Cloud</a></li>
+<li class="chapter" data-level="4.3" data-path="contributor-I.html"><a href="contributor-I.html#databases-and-data-lakes"><i class="fa fa-check"></i><b>4.3</b> Databases and Data Lakes</a></li>
+<li class="chapter" data-level="4.4" data-path="contributor-I.html"><a href="contributor-I.html#sql"><i class="fa fa-check"></i><b>4.4</b> SQL</a></li>
+<li class="chapter" data-level="4.5" data-path="contributor-I.html"><a href="contributor-I.html#programming"><i class="fa fa-check"></i><b>4.5</b> Programming</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="contributor-II.html"><a href="contributor-II.html"><i class="fa fa-check"></i><b>5</b> Contributor: Part II</a><ul>
+<li class="chapter" data-level="5.1" data-path="contributor-II.html"><a href="contributor-II.html#data-preprocessing"><i class="fa fa-check"></i><b>5.1</b> Data Preprocessing</a></li>
+<li class="chapter" data-level="5.2" data-path="contributor-II.html"><a href="contributor-II.html#data-visualisation"><i class="fa fa-check"></i><b>5.2</b> Data Visualisation</a></li>
+<li class="chapter" data-level="5.3" data-path="contributor-II.html"><a href="contributor-II.html#statistics"><i class="fa fa-check"></i><b>5.3</b> Statistics</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="contributor-III.html"><a href="contributor-III.html"><i class="fa fa-check"></i><b>6</b> Contributor: Part I</a><ul>
+<li class="chapter" data-level="6.1" data-path="contributor-III.html"><a href="contributor-III.html#collaboration-git"><i class="fa fa-check"></i><b>6.1</b> Collaboration &amp; Git</a></li>
+<li class="chapter" data-level="6.2" data-path="contributor-III.html"><a href="contributor-III.html#learning"><i class="fa fa-check"></i><b>6.2</b> Learning</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="statistician.html"><a href="statistician.html"><i class="fa fa-check"></i><b>7</b> Statistician</a><ul>
+<li class="chapter" data-level="7.1" data-path="statistician.html"><a href="statistician.html#pipeline"><i class="fa fa-check"></i><b>7.1</b> Pipeline</a></li>
+<li class="chapter" data-level="7.2" data-path="statistician.html"><a href="statistician.html#productive-frameworks"><i class="fa fa-check"></i><b>7.2</b> Productive Frameworks</a></li>
+<li class="chapter" data-level="7.3" data-path="statistician.html"><a href="statistician.html#decision-tree"><i class="fa fa-check"></i><b>7.3</b> Decision Tree</a></li>
+<li class="chapter" data-level="7.4" data-path="statistician.html"><a href="statistician.html#bagging-boosting-stacking"><i class="fa fa-check"></i><b>7.4</b> Bagging, Boosting &amp; Stacking</a></li>
+<li class="chapter" data-level="7.5" data-path="statistician.html"><a href="statistician.html#unsupervised-learning---clustering"><i class="fa fa-check"></i><b>7.5</b> Unsupervised learning - Clustering</a></li>
+<li class="chapter" data-level="7.6" data-path="statistician.html"><a href="statistician.html#unsupervised-learning---data-reduction"><i class="fa fa-check"></i><b>7.6</b> Unsupervised learning - Data Reduction</a></li>
+<li class="chapter" data-level="7.7" data-path="statistician.html"><a href="statistician.html#feature-selection"><i class="fa fa-check"></i><b>7.7</b> Feature Selection</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="project-responsible.html"><a href="project-responsible.html"><i class="fa fa-check"></i><b>8</b> Project Responsible</a><ul>
+<li class="chapter" data-level="8.1" data-path="project-responsible.html"><a href="project-responsible.html#organizing-a-project"><i class="fa fa-check"></i><b>8.1</b> Organizing a Project</a></li>
+<li class="chapter" data-level="8.2" data-path="project-responsible.html"><a href="project-responsible.html#statistics-1"><i class="fa fa-check"></i><b>8.2</b> Statistics</a></li>
+<li class="chapter" data-level="8.3" data-path="project-responsible.html"><a href="project-responsible.html#data-engineering"><i class="fa fa-check"></i><b>8.3</b> Data Engineering</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="butter-knife.html"><a href="butter-knife.html"><i class="fa fa-check"></i><b>9</b> Butter Knife</a><ul>
+<li class="chapter" data-level="9.1" data-path="butter-knife.html"><a href="butter-knife.html#soft-skills-1"><i class="fa fa-check"></i><b>9.1</b> Soft Skills</a></li>
+<li class="chapter" data-level="9.2" data-path="butter-knife.html"><a href="butter-knife.html#algorithmic-feature-generation"><i class="fa fa-check"></i><b>9.2</b> Algorithmic feature generation</a></li>
+<li class="chapter" data-level="9.3" data-path="butter-knife.html"><a href="butter-knife.html#programming-skills"><i class="fa fa-check"></i><b>9.3</b> Programming skills</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="uncategorized-topics.html"><a href="uncategorized-topics.html"><i class="fa fa-check"></i><b>10</b> Uncategorized topics</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intuitive Data Science</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="contributor-I" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Contributor: Part I</h1>
+<div id="soft-skills" class="section level2">
+<h2><span class="header-section-number">4.1</span> Soft skills</h2>
+<p><em>How do I approach a task?</em> What you should be given is clear definition of a task a time frame that you have to fulfill the task. If the task is fairly large, you start by splitting it up to smaller pieces.</p>
+<p>Free up your calendar for 3 hours blocks.</p>
+<p>When approaching your colleagues, do not approach them with a problem, approach them with what is happening and what you would like to happen. If you are not showing or proposing a solution, you are just complaining.</p>
+<p><em>What are legal regulations such as GDPR?</em> As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations.</p>
+<p><em>How do I produce a valuable output for my employer?</em></p>
+</div>
+<div id="cloud" class="section level2">
+<h2><span class="header-section-number">4.2</span> Cloud</h2>
+<p>What is cloud? Will I use cloud as a data scientist? How do I work on cloud?</p>
+</div>
+<div id="databases-and-data-lakes" class="section level2">
+<h2><span class="header-section-number">4.3</span> Databases and Data Lakes</h2>
+<p>What is a database? What is a data lake?</p>
+</div>
+<div id="sql" class="section level2">
+<h2><span class="header-section-number">4.4</span> SQL</h2>
+<p>What is SQL? How do I download entire table using SQL? How do I select columns using SQL? How do I filter rows using SQL? How do I join tables in SQL?</p>
+</div>
+<div id="programming" class="section level2">
+<h2><span class="header-section-number">4.5</span> Programming</h2>
+<p>How do I load data to my IDE? What types of features do we know? What is a function? How do I perform numeric operations in my IDE?</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="observer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="contributor-II.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["intuitive-ds-book.pdf", "intuitive-ds-book.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -12,7 +12,10 @@ How to set a timeline for a project?
 
 ## Statistics
 Feature importance in detail
-Local Interpretations
+
+*What are Local Interpretations?*
+
+
 AutoML Pipeline
 Timeseries
 Non-stationary variables

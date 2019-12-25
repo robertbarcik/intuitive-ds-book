@@ -1,0 +1,56 @@
+# Contributor: Part II {#contributor-II}
+
+## Data Preprocessing
+
+*What are feature types?*
+Numbr of unique values, compared to feature type.
+
+Think about which feature contains more information - numeric does. Ordered categorical does not contain distances.
+
+*How do I describe data?*
+For both types of features, describe what we observe such as mean or median.
+
+Percentiles.
+
+*What is data aggregation?*
+
+*What are missing values?*
+
+*What are extreme values?*
+The abnormal can be just a matter of perspective.
+
+
+*What is data validation?*
+
+
+## Data Visualisation
+
+*Why do we need visualisations?*
+
+Hans Rosling, one of the greatest visualisers of data uses visualisation to break down misconceptions, and also show the message in his data to anyone.
+
+*How do I visualise numeric features?*
+
+*How do I visualise categorical features?*
+
+*How do I combine visualisation of two features?*
+
+
+## Statistics
+*What is normal distribution?*
+
+*What are independent features and dependent feature?*
+
+*What do I do with improperly distributet regression dependent feature?*
+
+*What do I do with imbalanced classification dependent feature?*
+
+*What is a hypothesis?*
+
+*What is a cost function?*
+
+*What is simplest regression model?*
+
+*What is simplest classification model?*
+
+
