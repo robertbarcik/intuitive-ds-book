@@ -1,14 +1,72 @@
 # Project Responsible {#project-responsible}
 
-## Organizing a Project
+Welcome to the level of Project Responsible. This level will broaden your mind mainly in softer areas - I guess it will be well appreciated change after the last chapter full of statistics. What is the most crucial here, is that you learn to see **Data Science project as a product**. This product should have customers,costs, it will have a lifecycle and everything else connected to it. Also, you will need to be able to establish a team of people who will develop this product.  
+
+In the later part of this level we will come back to statistics and programming though. We need to expand your knowledge on advanced topics, such as local interpretations of a model. The reason for this is that even though you will not become an expert on these, it is neccessary to be aware of these if you want to develop Data Science project as a holistic product. Once the baseline is developed, making your product more profitable, might *require* these and hence you will be able to grasp them.
+
+## Data Science project as product
+
+Even without realising, all of us have already developed a product in one way or another. We have been contributing to some product in our professional life, we might have had some extra curriculum project. Maybe it was something very simple, such as cooking for our relatives a festive dinner - that is also a product which will have customers and will be evaluated and used. It is though something different to be **responsible for a product** and that is why we will have upcoming chapters. The key message from my perspective will be to explain to you **adaptive development**, so let's go straight to it.
+
+*What is an adaptive development?*
+
+I will start this section with a very simple definition:
+
+> Your Data Science project needs to be adaptive and customer/user need oriented.
+
+The upcoming sections will be elaborating on this definition, as I believe that in order to lead a successful project and define an efficient team to execute it, the definition shall be followed.  
+
+I am pretty sure that you already heard the term *adaptive* multiple times, most likely with the context of globalization. With the development of Internet technologies, transportation capabilities and internationalization of business, things are simply **faster** then they used to be. I think that this links back to the definition of *capitalism* itself, whereas for this system to work properly, every year we need to achieve growth in what we produce. One sure way how to achieve such growth, is through becoming more efficient. For many years now, as it seems, to become more efficient can be achieved through being *adaptive*.  
+
+As everything around us changes in order to be more effective, we need to be *adaptive* to these changes as well, in order to be even more effective (and successful), than the others. It's a bit crazy thinking, but I believe this is a very simplified version of what is happening. It has it's justification though - even for you as you aspire to be responsible for a Data Science project.  
+
+Most likely, you have heard about Netflix and most likely also watched a movie or series through this service. If you have not, I recommend subscribing to their service and trying it out before you read upcoming lines. By talking about the history of Netflix, I would like to show you, what a definition of *adaptive* means. I would like you to draw inspiration from it, as successful Data Science is and also will be adapting as rapidly as Netflix needed to adapt in the past.  
+
+```{r netflix, echo = FALSE, fig.cap='Netflix is a clear showcase of adaptive development. Photo by John-Mark Smith from Pexels. See at: https://www.pexels.com/@jmark?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels'}
+knitr::include_graphics("resources/05-project-responsible/netflix.jpg")
+```
+
+The story starts at 1997 when the standard of watching movies was through VHS. These were pieces of plastic, which allowed you to watch a movie recorded on them in a cumbersome way. If Netflix wanted to be a traditional movie rental service, they would have taken VHS technology and launched an a brick store to rent them or sell them. They rather focused on *customer need* which was - laziness to go to brick stores to rent a movie every time, and eagerness to watch a lot of them at the comfort of home. What turned our as an ideal solution was to be renting through postal service. You would order a movie and it would be waiting in your post box when you arrive from work. VHS technology was too fragile for transport and expensive to operate. Thus, they decided to go for DVD format. This worked and people liked the service. You picked a movie online, ordered a DVD copy, paid for it a few dollars and it arrived to your post box.  
+
+First successful *adaptation* to *customer need* done. Second one came shortly after, when Netflix allowed customers to be paying flat fee, a membership fee, on a monthly basis as compared to a pay-by-movie format. This turns our to be another successful adaptation as users like it until this day. On the other hand, you have companies unable to realize it even 20 years after Netflix did. Head over to YouTube and find some movie, you will see that it is offered on pay-by-movie basis.  
+
+The use of DVDs was still a hastle though for their customers and Netflix was realising it. As the technology of Internet already developed decent bandwidths, which would allow for reasonable download speed of movies, Netflix thought of new format. They developed a piece of hardware called *Netflix box*. The idea was that in the evening you would choose a movie, the box would download it for you and next evening you can watch it. This would remove the needs for a DVD, while the service would remain having similar traits. The development of this took several years until 2005, when something crucial happened. Here, Netflix showed largest *adaptation* in its history.  
+
+Netflix representatives observed the success of YouTube, which was a different form of video content delivery to the customer - through streaming. Netflix decided to scrape its idea of *box* completely and rather work on delivering content through streaming. It sounds insane even when I think about it today - scraping a technology tha you worked on and switching to something new from a scratch.  
+
+Final piece of visible *adaptation* comes in 2006. Netflix decided to focus on a customer need of now knowing what to watch. The offer of movies was becoming so large, that we would get discouraged to watch a movie during the lengthy process of picking. They launched a public Machine Learning competition to develop a recommendation algorithm for their service. 
+
+I hope that the story of a Netflix will inspire you in your Data Science work as Project Responsible. As you see, truthfull capability to *adapt* and adjust to *customer needs* might be way more difficult and require significantly larger out-of-the-box thinking than you originally thought. It does not matter in which context you are aspiring to become a Citizen Data Scientist, your projects will need to help your company in the strive of becoming more *adaptive*.  Sometimes, this will require a lot of **crazy thinking**.  
+
+*How do I identify what customer/user needs?*
+
+Here comes the trick;
+
+> you should (almost) never ask your customer what he/she wants, you should rather find out.
+
+Do you remember how you in the level Observer learned about the biases in self-reported data? The same principles applies also here - even though people will always tell you what they want, it most likely will not be the same thing as they would use and benefit from.  
+
+Let's tak an example from applying Data Science in Marketing. Propensity models are one of the most applied concepts, regardless of an industry. Your company has a customer base (of thousands or millions of customers) and it also has several products (for example you sell various travel packages as a travel agency). You are hired because the company believes that through the use of data, the set of travel packages can be sold more to your customer base.  
+
+First thing that you need to do is to realise that you have **user and customer**. The user is a person responsible for campaigns within a marketing department. This person will *use* your product and launch campaigns on it. Customers, are your actual customers of a company. Your question is becoming hence even more complex - what does your customer need and what does your user need?
+
+
 How to organize a team?
 How to lead a project?
 How to estimate timeline and budget for your project?
 When to apply which tools?
 What is adaptive transformation?
+
+By being product centric, you really are customer centric.
+
 How to assemble a team for data science project?
 How to find opportunities for a project?
 How to set a timeline for a project?
+
+Maybe something from marketing by Seth?
+
+Maybe soemthing from Sinek regarding Why?
+The project is really trying to reveal why something is happening often times?
 
 ## Statistics
 Feature importance in detail

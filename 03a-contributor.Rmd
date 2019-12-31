@@ -8,11 +8,95 @@ Free up your calendar for 3 hours blocks.
 
 When approaching your colleagues, do not approach them with a problem, approach them with what is happening and what you would like to happen. If you are not showing or proposing a solution, you are just complaining. 
 
+*What is Agile and Scrum?*
+
+It is rather likely that once you join a Data Science project, you will be told that it is organized under Agile Methodology, or using Scrum. When I first time joined these methodologies, it felt like quite a mess. Due to that, I would like to dedicate a section to explain you what these are. As you are learning on a Contributor level, and should already be directly contributing to Data Science workflow, these will become inevitable.  
+
+> Agile, Scrum or any other similar buzzword is simply a way of organizing you and your colelagues so that you are as efficient as possible.
+
+As you will grow your career, you will learn to realize that organizing people is a rather challenging task. There are multiple reasons for this among which; everyone has different motivations, different attitude, different personality and different skillset. This *difference* effect is even more multiplied in a field such as Data Science where for a successful project, you even **need a mixture of roles**. In basic project, you will at least need a Citizen Data Scientist, Data Scientist and Context Representative. In a more complex project, new roles will be needed such as Machine Learning Engineer, Cloud Specialist and Coach.  
+
+The earliest in human history where I was able to track clear signs of what we today call Agile methoology is as early as 1960s. Clearest historical tracks led me to Japan and Toyota, with methodologies like Kaizen. Moreover, when USA wanted to land on the moon, they also used an approach posessing similar traits to what we consider modern today. I am purposely starting by a small class in history, so that you will have the core principles in your mind when you join all the buzzwording of today's applications, such as Scrum. Let's look at the **definition of Kaizen** by Oxford dictionary:  
+
+> a Japanese business philosophy of continuous improvement of working practices, personal efficiency, etc.
+
+Even though this definition is more or less decades old, it is what companies strive to achieve even these days. When you join a Data Science initiative, expect that **continuous improvement** will be expected, both from you as a person, as well as from the product which you are working on.  
+
+One of the companies which have decades ago successfully adopted this methodology was Toyota, with their approach called **The Toyota Way**. They have developed a set of 14 principles. These range from principles such as respect for people up to use of pull systems to avoid overproduction. I would have to write an entire chapter to describe these properly. We will get to more details in later chapters, when as Project Responsible you will need to be aware of more practices in order to successfully lead a project. On a contributor level, this is not required though and I want to consider only on one of these principles - **nemawashi**.
+
+> Make decisions slowly by consensus, thoroughly considering all options; implement decisions rapidly.
+
+As it turns out, is is beneficial to have proper planning of what we plan to create. This planning should be done by multiple people (consensus), we should evaluate multiple options and then we should implement these decisions rapidly. Starts to sound like exactly what we need for Data Science project right? Let's go through the elements one-by-one.  
+
+We will want decisions done by *consensus*. This of course does not mean that the entire organization should agree on what we are thinking to do - only the *right people*. In our case of Data Science project this could be:  
+
+- Citizen Data Scientist (You), who has overview of necessary Data Science priciples as well as context so that the the created project really creates benefit.
+- Data Scientist, who consults and overviews some decisions made by Citizen Data Scientist whenever needed.
+- Context Expert, who might be additionally working on the implementation of the project in the context. 
+- Additional Experts, such as specialists for Data Regulation or Data Logistics, as needed.
+
+As you can see, based on Kaizen, all of these people should be in an agreement of what will be developed as a Data Science project. Often times in nowadays companies, under Agile/Scrum, this **will be referred to as squad**. It is simply the smallest team, which is able to make *all* required decisions that are necessary and has all the capabilities to develop and implement the project.  
+
+We will want to *thoroughly consider all options*. We already discussed in previous chapters that this is really important for a Data Science project as this is an art of creating valuable information out of data. There will always be multiple ways how to solve this requirement. Some will be simple and their created benefit will be questionable. Others will be expensive, they will have a potential to create great benefit but their development will be risky as they are expensive. We will therefore, within our *squad* need a very **proper planning**. When the project is about to begin, you should be sitting together often and through various techniques be coming up with ideas, evaluating them and critisizing them. As you will see in a while, we will not only be planning at the beginning of the project, but also **during the project**, in some two weeks cycles. I am hoping though for this to stick to your mind, planning of a Data Science project is absolutely crucial.  
+
+Finally, we will want to *implement decisions rapidly*. The question is, *how* rapidly? Simple answer is *very*. You may have noticed that many things in Data Science do not take too much time to try. We are learning concepts such as Baseline Model, which are techniques that are aimed at this principle. When you will have a clean dataset, it might take you as little as one day to test the assumption whether Machine Learning makes sense to be used. For larger decisions, such as cleaning of the dataset, these might take a week, which is still rather short time.  
+
+Kaizen even developed a specific model to help us with the rapid implementation of ideas, called **PDCA cycle**. This is simply an abbreviation of:  
+
+1. Plan
+2. Develop
+3. Check
+4. Act
+
+Such cycle might take as little as one or two weeks to be executed. 
+
+```{r toyota, echo = FALSE, fig.cap='Toyota and its implementation of Kaizen principles is a motivation for a way of working of Data Scientists nowadays. Resource from CNN, see at https://edition.cnn.com/travel/article/toyota-kaikan-tour/index.html'}
+knitr::include_graphics("resources/03-contributor/toyota.jpg")
+```
+
+
+As you can see, this single principle of Kaizen is already enough for you as a Contributor to realize how can you work *efficiently*. Let's recap:  
+
+1. You will work in a small team (usually 4-8 people). This team will be able to develop and implement entire project and will be making all the required decisions. Most likely, this will be usually called a *squad* or *cross-functional team*.
+2. You will do thorough planning and evaluation of your options. This will happen not only at the outset of a project but also while you are developing it. This will be referred to as *planning phase* when the project starts and as *sprint planning* or *grooming* during the process of making the project.
+3. You will be rapidly implementing various ideas and testing assumptions. This is going to be happening on weekly or biweekly basis and will be usually referred to as *sprint*.
+
+*Can we finally get to Agile and Scrum?*  
+
+Indeed! Now when you understand core principles that Citizen Data Scientist should stick to when he/she works, relating these to the words Agile and Scrum is rather simple. The principles which I describe above have been in the core of software development in one way or another in multiple systems - rapid application development, dynamic systems development method, scrum, feature driven development, etc. I am not saying that all of these are the same, but that they are just different applications of a few core principles and their enhancements. My key message is;
+
+> whatever working approach you are faced with, such as Agile, remember the core principles described above.
+
+Let's then dig deeper into Agile. In 2001 a group of authors wrote what we call *Agile Manifesto*. There has been numerous discussions around why this was written, but from my perspective it relates to the overall field of IT. You might have heard about the *dot-com bubble*. Before the breakthrough of milleania, the development of Internet caused that there were numerous companies basing their business on the technology of the Internet. Unfortunately, many of them did not do too good of a job and were overvalued. This *bubble* bursted around the breakthrough of milleania and meant a lot of negative implications for IT industry as a whole. It is a bit tricky to backtrace who was to blame for this, whether IT developers, business representatives or venture capitalists. As you are now reading this book to become a member of IT community, I will though bring a short story from this period for your learning. There were cases within this era, when IT developers were charging their companies heavy invoices for adjusting their calendar system. Supposedly, *millenia change* from 1900s to 2000s was a huge issue for company calendar systems and this needed to be worked on seriously. Of course there was nothing to work on and these greedy developers just wanted to earn on opportunity. As you can see, if there were multiple instances of such behaviour within a company, it is a clear indication of why the *bubble* develoepd and bursted. Learning for you, never bulls_it your customers.  
+
+So, why was Agile Manifesto written just after the *dot-com bubble* bursted? In my view, it has something to do with *trust*. The IT sector as a whole needed to regain trust from investors, such as venture capitalists after they blew a lot of money once the bubble bursted and companies lost billions in valuations. One attempt of how to regain trust was to develop a new business model called Software-as-a-Service (SaaS), where software would no longer be bought, but rented by customers on monthly basis. You have a subscription on Google Drive or Dropbox? Welcome to tis model. If you are interested in this, one of the early representatives of this field was Salesforce, which is successful until this day. Coming up with a new business model was not enough though. IT representatives needed to show that they learned, *how software should not be developed* and then proposed how it should be. And there you have it, Agile Manifesto.  
+
+If you will decide to read Agile Manifesto, you will notice a lot more principles than the ones which I described above. Just to show you some:
+
+1. Individuals and Interactions over processes and tools
+2. Working Software over comprehensive documentation
+3. Customer Collaboration over contract negotiation
+4. Responding to Change over following a plan
+
+One thing will strike you though - Data Science is not a software development, or is it? Certainly, Data Science as a field was not around when Agile Manifesto was written, so even if Agile Manifesto is great, it certainly was not developed for Data Science purposes.
+
+*Is Data Science software development?*
+
+Yes and no. In my perspective there is a lot of things which we can learn from software development as Data Scientist (that is under *yes* answer). Drawing inspiritons from coding styles, documentation and comunication styles of successful software developer can really benefit Data Scientist. On the other hand, to my feeling Data Science needs to be significantly closer to context, as compared to software development (that is under *no* answer). If you are a backend developer of mobile application, you do not need to spend so much time with a customer or a user as a Data Scientist needs. Keep this in mind.
+
+> Even though Data Science has a lot to learn from Software Development, it is a different field, which requires closer connection to context, customer or user.
+
+Actually, that is one of the reasons why Gartner in 2016 defined a Citizen Data Scientist, and also why I am now writing this book to help you become one.
+
+
 *What are legal regulations such as GDPR?*
 As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations.
 
 *How do I produce a valuable output for my employer?*
 
+Make 3 hours long blocks, maybe one or two per day. 
+
+*How should I document my work?*
 
 ## Cloud
 
