@@ -98,26 +98,6 @@ Make 3 hours long blocks, maybe one or two per day.
 
 *How should I document my work?*
 
-## Cloud
+*Looking for a job/project*
 
-What is cloud?
-Will I use cloud as a data scientist?
-How do I work on cloud?
-
-## Databases and Data Lakes
-What is a database?
-What is a data lake?
-
-## SQL
-What is SQL?
-How do I download entire table using SQL?
-How do I select columns using SQL?
-How do I filter rows using SQL?
-How do I join tables in SQL?
-
-## Programming
-How do I load data to my IDE?
-What types of features do we know?
-What is a function?
-How do I perform numeric operations in my IDE?
 
