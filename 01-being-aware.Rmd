@@ -24,6 +24,12 @@ If you now turn to search engines and start to search for Data Science terms, yo
 
 >Data Science is merely an art of turning data into information, which provides benefit.
 
+As you will inherently meet all of these weird terms, let's go through them as it can be part of defining what a Data Science is.
+
+**Data Science != Machine Learning != Artificial Intelligence**
+
+
+
 ## Defining Data Scientist
 
 Now that we know what Data Science is, it is quite easy to define who a Data Scientist is. He/She is a practitioner of this field, who uses its methods to achieve its goal. Usually, Data Scientist has general education in three area - Programming, Mathematics and Statistics. Notice that none of these areas deal with *context* or *domain* such as Banking, Medicine or Engineering. Thus Data Scientist - by definition, should be *domain-agnostic*. We can see this also in the definition within Oxford Dictionary:
