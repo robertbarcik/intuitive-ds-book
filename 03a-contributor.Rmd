@@ -104,9 +104,15 @@ Actually, that is one of the reasons why Gartner in 2016 defined a Citizen Data 
 
 
 *What are legal regulations such as GDPR?*
-As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations.
+As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations. As I presume the readers of this book are located within Europe, I will talk about General Data Protection Regulation (GDPR) (if you are from outside, hoooray, the book made it really far!).
 
 *How do I produce a valuable output for my employer?*
+
+You will start working on your new project (possibly job), doing your tasks and even collaborating well with the others, in iterative manner. Now the important thing will be to make sure that you are producing output which is valuable for your employer. I would advice you to focus on two words, while you can pick one which seems more reasonable for you.  
+
+Firstly, focus on **change**. After you did your tasks, did something change? Now this change could be anything. The most obvious change comes in a matter of code, you created a script which does a job that was not in place before. Change however can be also in other areas - you discussed with business stakeholders within a project, and what changed is the level of information which you have about desired output.
+
+Secondly, you might rather focus on **creation**. There might be a lot of mess and noise around you. However as long as you make sure that your work is creating something, you are doing just fine. 
 
 Focus on creation. Creation can be anything.
 
@@ -114,4 +120,5 @@ Focus on creation. Creation can be anything.
 
 *Looking for a job/project*
 
-
+*Conclusion*
+We will revisit all of these ideas at the end of chapter.
