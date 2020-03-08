@@ -1,12 +1,22 @@
 # Contributor: Soft Skills {#contributor-I}
 
 ## Soft skills
+You are now reaching a a Contributor level, at which you should already put your hands on keyboard and do some real Data Science! You are hence going to learn a lot about Data Manipulation, Statistics and Programming in this chapter. Before we get there, it is necessary to learn **how** are you going to do these tasks. 
+
 *How do I approach a task?*
-What you should be given is clear definition of a task a time frame that you have to fulfill the task. If the task is fairly large, you start by splitting it up to smaller pieces.
+After completing this chapter, you will be able to (for example) import, prepare and preprocess data. What I often times see starting Data Scientists struggle with is that they get overwhelmed by the big picture of what they want to do. If you set yourself (or someone else) a task of "preparing data for modelling", you will get lost, trust me. This job shall be splitted into smaller tasks for you to be managable.  
 
-Free up your calendar for 3 hours blocks.
+What you should be given is clear definition of a task a time frame that you have to fulfill the task. If the task is fairly large, you start by *splitting it up to smaller pieces*.
 
-When approaching your colleagues, do not approach them with a problem, approach them with what is happening and what you would like to happen. If you are not showing or proposing a solution, you are just complaining. 
+It is quite likely that you will be helpless with some tasks, which is perfectly fine - you should just ask for help. If there are more experienced Data Scientists around you, it is best to approach them. If not, there is always possibility to search the web for the answer to your issue. Remember one saying:
+
+> Whatever the issue you are having is, there is always someone who had it before you and discussed it somewhere on the web.
+
+As a last resort, if there is noone around to help you, and if Google cannot find the answer, try posting your problem to forums such as Stackoverflow. People will either point you at past posts which were dealing with your issue, or help you solve it.
+
+When approaching your colleagues (or people on Stackoverflow), do not approach them with a problem, approach them with what is happening and what you would like to happen. If you are not showing or proposing a solution, you are just complaining, which is not productive.
+
+Free up your calendar for *3 hours blocks*, at least one or two of these blocks per day. Judging by the fact that you are reading this book, most likely Data Science is not a bread-winning occupation for you right now, which means that your days are occupied by other things, such as meetings. Unfortuantely, Data Science cannot be done during breaks between meetings. From my experience, it takes 1 hour to get your mind properly to the problem, then 1 hour to do meaningful piece of work, and then 1 hour to properly wrap what you just created. I always try to have at least one such block within a day, when I want to do a lot of development on a project, I squeeze in one in the morning (8-11) and one in the afternoon (13-16).
 
 *What is Agile and Scrum?*
 
