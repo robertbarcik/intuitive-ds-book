@@ -14,21 +14,36 @@ In upcoming paragraphs we will answer the following questions:
 
 ## Project & tasks
 
-After completing this chapter, you will be able to (for example) import, prepare and preprocess data. What I often times see starting Data Scientists struggle with is that they get overwhelmed by the big picture of what they want to do. If you set yourself (or someone else) a task of "preparing data for modelling", you will get lost, trust me. This job shall be splitted into smaller tasks for you to be managable.  
+After completing this chapter, you will be able to (for example) import, prepare and preprocess data. What I often times see starting Data Scientists struggle with is that they get overwhelmed by the big picture of what they want to do. If you set yourself (or someone else sets for you) a **project** of "preparing dataset for modelling", you will get lost, trust me. This job shall be splitted by you into **smaller tasks** for you to be managable.  
 
-What you should be given is clear definition of a task a time frame that you have to fulfill the task. If the task is fairly large, you start by *splitting it up to smaller pieces*.
+```{r draft-tasks, echo = FALSE, fig.cap='When you are given your first projects to work on, try to split it into smaller tasks.'}
+knitr::include_graphics("resources/03-contributor/draft-tasks.jpg")
+```
 
-It is quite likely that you will be helpless with some tasks, which is perfectly fine - you should just ask for help. If there are more experienced Data Scientists around you, it is best to approach them. If not, there is always possibility to search the web for the answer to your issue. Remember one saying:
+The picture shows what I often do. In this case, I was given a responsibility to prepare customer data and transactional data for modelling. This includes working with two tables - customer specific data and transactional data by these customers. I start on top and draft for myself two tables which I am supposed to process. Customer table contains one row per customer and transactional table contains one row per transactions, thus several rows per customer. Customer table will need removal of several unneccessary features (maybe I do not need to work with address of customers). Transactional table will need to be aggregated to a form of one row per customer. Afterwards, I know that these two tables will be merged, features will be plotted and extreme values removed. All of these things you will be capable to do after the Contributor level. Important learning is that you will be drafting yourself similar workflow pictures.
+
+It is quite likely that you will not yet be able to do such breakdown of the tasks or that you will be helpless with some tasks, which is perfectly fine - you should just ask for help. If there are more experienced Data Scientists around you, it is best to approach them. If not, there is always possibility to search the web for the answer to your issue. Remember one saying:
 
 > Whatever the issue you are having is, there is always someone who had it before you and discussed it somewhere on the web.
 
-As a last resort, if there is noone around to help you, and if Google cannot find the answer, try posting your problem to forums such as Stackoverflow. People will either point you at past posts which were dealing with your issue, or help you solve it.
+As a last resort, if there is noone around to help you, and if Google cannot find the answer, try posting your problem to forums such as Stackoverflow. People will either point you at past posts which were dealing with your issue, or help you solve it. When approaching your colleagues (or people on Stackoverflow), do not approach them with a problem, approach them with **what is happening and what you would like to happen**. If you are not showing or proposing a solution, you are just complaining, which is not productive. Some examples:
 
-When approaching your colleagues (or people on Stackoverflow), do not approach them with a problem, approach them with what is happening and what you would like to happen. If you are not showing or proposing a solution, you are just complaining, which is not productive.
+* Bad: I got this responsibility, I have no idea what to do.
+* Good: I got this responsibility, I would need to split it to smaller tasks and draft my workflow.
 
-Free up your calendar for *3 hours blocks*, at least one or two of these blocks per day. Judging by the fact that you are reading this book, most likely Data Science is not a bread-winning occupation for you right now, which means that your days are occupied by other things, such as meetings. Unfortuantely, Data Science cannot be done during breaks between meetings. From my experience, it takes 1 hour to get your mind properly to the problem, then 1 hour to do meaningful piece of work, and then 1 hour to properly wrap what you just created. I always try to have at least one such block within a day, when I want to do a lot of development on a project, I squeeze in one in the morning (8-11) and one in the afternoon (13-16).
+* Bad: I have no idea how to remove features from a dataset.
+* Good: I am working in Python, I have pandas dataframe, and would like to remove several features by using their name.
 
-You also want to write down or draw what you intend to create and put it on a table next to you...
+* Bad: I am not managing the deadline for preparation of this dataset.
+* Good: I got stuck on plotting of features of this dataset, I am afraid I will not meet the deadline because of it.
+
+Now that you know how to split larger project into smaller tasks, and how to ask for help, it istime for actually sitting down and doing it. I want to give you advice also on **how to properly sit down** (and no I am not selling ergonomic seating cushions). Free up your calendar for *2-3 hours blocks*, at least one or two of these blocks per day. These blocks represent a meaningful piece of work, and the way how you fill them is by taking a colour pen and looking at your drafted workflow. Each orange circle indicates one piece of work which should be done at once and takes you approximately one block.
+
+```{r draft-tasks-blocks, echo = FALSE, fig.cap='Having small tasks, divide your workflow into meaningful blocks of 2-3 hours.'}
+knitr::include_graphics("resources/03-contributor/draft-tasks-blocks.jpg")
+```
+
+Judging by the fact that you are reading this book, most likely Data Science is not a bread-winning occupation for you right now, which means that your days are occupied by other things, such as meetings. Unfortuantely, Data Science cannot be done during breaks between meetings. From my experience, it takes 1 hour to get your mind properly to the problem, then 1 hour to do meaningful piece of work, and then 1 hour to properly wrap what you just created. I always try to have at least one such block within a day, when I want to do a lot of development on a project, I squeeze in one in the morning (8-11) and one in the afternoon (13-16).
 
 ## Agile & Scrum
 
