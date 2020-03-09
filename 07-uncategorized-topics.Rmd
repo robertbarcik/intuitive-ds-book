@@ -191,3 +191,6 @@ They also describe ROC curve
 Also Precision Recall tradeoff
 
 Linear regression is a copy from Andrew NG
+
+*Personality of Data Scientist*
+Get into flow
