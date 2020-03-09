@@ -56,7 +56,7 @@ Make an example with babies and birds.
 
 I would say that positions mentioning statistics, causal inference, experimentation or A/B testing, incrementality measurement, segmentation, decision science, economics, and "analytics" generally will probably be more of that flavor. Emphasis on communication skills and visualization will be a component to these roles. You probably want to avoid applying to positions with a focus on engineering, architecture, or those specifically calling out deep learning or computer vision applications.
 
-I’d say a solid 50%+ of DS jobs want an insight specialist over a ML specialist regardless of the job posting.
+I'd say a solid 50 percent of DS jobs want an insight specialist over a ML specialist regardless of the job posting.
 
 *Skillset wrong view*
 
@@ -74,14 +74,14 @@ Adversarial Learning (4%)
 
 Machine Learning Techniques:
 Logistic Regression (54%)
-Decision Trees – Random Forests (43%)
+Decision Trees - Random Forests (43%)
 Support Vector Machines (32%)
-Decision Trees – Gradient Boosted Machines (31%)
+Decision Trees - Gradient Boosted Machines (31%)
 Bayesian Techniques (27%)
-Neural Networks – CNNs (26%)
+Neural Networks - CNNs (26%)
 Ensemble Methods (22%)
 Gradient Boosting (17%)
-Neural Networks – RNNs (15%)
+Neural Networks - RNNs (15%)
 Hidden Markov Models HMMs (9%)
 
 
@@ -154,15 +154,15 @@ It's not 100% right, but it's right enough to provide value. And some people int
 
 The only scenario where you will see bad science work with any degree of frequency is when it has been tested over too limited a set of scenarios - in which case it should be relatively easy to point out where it will fail, and then you can focus on outputs - on how it won't work, rather than on it being wrong.
 
-Excellent points! I’ll add that fancy/novel techniques mean almost nothing to business folks. Simple and effective is just as good if not better. You can and will get out played by someone with a simple brute force technique that they implement quickly while you try and perfect yours.
+Excellent points! I'll add that fancy novel techniques mean almost nothing to business folks. Simple and effective is just as good if not better. You can and will get out played by someone with a simple brute force technique that they implement quickly while you try and perfect yours.
 
 *More on citizen data scientist*
-Although the term has existed for a couple of years now, you won’t find job listings for “citizen data scientist” on Glassdoor.com. That’s because it’s not a role that an organization is going to hire for, but more like a requirement, they need to fill. People in the industry are using the term citizen, but those doing the hiring are focused on the tasks not currently getting done but require attention. 
+Although the term has existed for a couple of years now you won't find job listings for citizen data scientist on Glassdoor.com. That's because it's not a role that an organization is going to hire for, but more like a requirement, they need to fill. People in the industry are using the term citizen, but those doing the hiring are focused on the tasks not currently getting done but require attention. 
 
-It’s common knowledge that we have a shortage of data scientists, and businesses realize that not every job function needs to be done by someone with an advanced degree as they reckon with this shortage. Instead, a citizen data scientist can be trained to do work that is needed but not currently getting done. 
+It's common knowledge that we have a shortage of data scientists, and businesses realize that not every job function needs to be done by someone with an advanced degree as they reckon with this shortage. Instead, a citizen data scientist can be trained to do work that is needed but not currently getting done. 
 
 *Develop visualisation skills as a crucial skill*
-Once you’ve got the foundation of big data skills, you need to develop visualization skills. Your employer or organization doesn’t care about a jumble of numbers on his or her desk. Your job is to present the data in a visually compelling way.
+Once you've got the foundation of big data skills, you need to develop visualization skills. Your employer or organization doesn't care about a jumble of numbers on his or her desk. Your job is to present the data in a visually compelling way.
 
 Google Data Studio as a learning alternative to Power BI, Tableau or Clicksense
 
