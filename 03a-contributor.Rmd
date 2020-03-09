@@ -1,45 +1,112 @@
-# Contributor: Part I {#contributor-I}
+# Contributor: Soft Skills {#contributor-I}
 
 ## Soft skills
-*How do I approach a task?*
-What you should be given is clear definition of a task a time frame that you have to fulfill the task. If the task is fairly large, you start by splitting it up to smaller pieces.
 
-Free up your calendar for 3 hours blocks.
+You are now reaching a a Contributor level, at which you should already put your hands on keyboard and do some real Data Science! You are hence going to learn a lot about Data Manipulation, Statistics and Programming in this chapter. Before we get there, it is necessary to learn **how** are you going to do these tasks.  
 
-When approaching your colleagues, do not approach them with a problem, approach them with what is happening and what you would like to happen. If you are not showing or proposing a solution, you are just complaining. 
+In upcoming paragraphs we will answer the following questions:
 
-*What is Agile and Scrum?*
+1. **How** should you as an individual approach given task or small project?
+2. **How** should you fit into Agile setting which your organisation likely has?
+3. **How** should you produce a valuable output from your efforts?
+4. **How** should you recognise importance of data regulations?
+5. **How** should you document your work once you are done?
 
-It is rather likely that once you join a Data Science project, you will be told that it is organized under Agile Methodology, or using Scrum. When I first time joined these methodologies, it felt like quite a mess. Due to that, I would like to dedicate a section to explain you what these are. As you are learning on a Contributor level, and should already be directly contributing to Data Science workflow, these will become inevitable.  
+## Project & tasks
+
+After completing this chapter, you will be able to (for example) import, prepare and preprocess data. What I often times see starting Data Scientists struggle with is that they get overwhelmed by the big picture of what they want to do. If you set yourself (or someone else sets for you) a **project** of "preparing dataset for modelling", you will get lost, trust me. This job shall be splitted by you into **smaller tasks** for you to be managable.  
+
+```{r draft-tasks, echo = FALSE, fig.cap='When you are given your first projects to work on, try to split it into smaller tasks.'}
+knitr::include_graphics("resources/03-contributor/draft-tasks.jpg")
+```
+
+The picture shows what I often do. In this case, I was given a responsibility to prepare customer data and transactional data for modelling. This includes working with two tables - customer specific data and transactional data by these customers. I start on top and draft for myself two tables which I am supposed to process. Customer table contains one row per customer and transactional table contains one row per transactions, thus several rows per customer. Customer table will need removal of several unneccessary features (maybe I do not need to work with address of customers). Transactional table will need to be aggregated to a form of one row per customer. Afterwards, I know that these two tables will be merged, features will be plotted and extreme values removed. All of these things you will be capable to do after the Contributor level. Important learning is that you will be drafting yourself similar workflow pictures.
+
+It is quite likely that you will not yet be able to do such breakdown of the tasks or that you will be helpless with some tasks, which is perfectly fine - you should just ask for help. If there are more experienced Data Scientists around you, it is best to approach them. If not, there is always possibility to search the web for the answer to your issue. Remember one saying:
+
+> Whatever the issue you are having is, there is always someone who had it before you and discussed it somewhere on the web.
+
+As a last resort, if there is noone around to help you, and if Google cannot find the answer, try posting your problem to forums such as Stackoverflow. People will either point you at past posts which were dealing with your issue, or help you solve it. When approaching your colleagues (or people on Stackoverflow), do not approach them with a problem, approach them with **what is happening and what you would like to happen**. If you are not showing or proposing a solution, you are just complaining, which is not productive. Some examples:
+
+* Bad: I got this responsibility, I have no idea what to do.
+* Good: I got this responsibility, I would need to split it to smaller tasks and draft my workflow.
+
+* Bad: I have no idea how to remove features from a dataset.
+* Good: I am working in Python, I have pandas dataframe, and would like to remove several features by using their name.
+
+* Bad: I am not managing the deadline for preparation of this dataset.
+* Good: I got stuck on plotting of features of this dataset, I am afraid I will not meet the deadline because of it.
+
+Now that you know how to split larger project into smaller tasks, and how to ask for help, it istime for actually sitting down and doing it. I want to give you advice also on **how to properly sit down** (and no I am not selling ergonomic seating cushions). Free up your calendar for *2-3 hours blocks*, at least one or two of these blocks per day. These blocks represent a meaningful piece of work, and the way how you fill them is by taking a colour pen and looking at your drafted workflow. Each orange circle indicates one piece of work which should be done at once and takes you approximately one block.
+
+```{r draft-tasks-blocks, echo = FALSE, fig.cap='Having small tasks, divide your workflow into meaningful blocks of 2-3 hours.'}
+knitr::include_graphics("resources/03-contributor/draft-tasks-blocks.jpg")
+```
+
+Judging by the fact that you are reading this book, most likely Data Science is not a bread-winning occupation for you right now, which means that your days are occupied by other things, such as meetings. Unfortuantely, Data Science cannot be done during breaks between meetings. From my experience, it takes 1 hour to get your mind properly to the problem, then 1 hour to do meaningful piece of work, and then 1 hour to properly wrap what you just created. I always try to have at least one such block within a day, when I want to do a lot of development on a project, I squeeze in one in the morning (8-11) and one in the afternoon (13-16).
+
+## Fitting into a team
+
+You have now learned how to approach a task as an individual, now it is time to learn a bit about what happens when several people are working on the same Data Science project - you need to oragnize yourself together. Even though you will be supposed to deal with the project from Data Science perspective by yourself, other people, such as business stakeholders will be collaborating with you. It is rather likely that once you join a Data Science project, you will be told that it is organized under Agile Methodology, or using Scrum. When I first time joined these methodologies, it felt like **quite a mess**. Due to that, I would like to dedicate a section to explain you what these are and how **you will not find them as a mess**. As you are learning on a Contributor level, and should already be directly contributing to Data Science workflow, these will become inevitable.  
 
 > Agile, Scrum or any other similar buzzword is simply a way of organizing you and your colelagues so that you are as efficient as possible.
 
-As you will grow your career, you will learn to realize that organizing people is a rather challenging task. There are multiple reasons for this among which; everyone has different motivations, different attitude, different personality and different skillset. This *difference* effect is even more multiplied in a field such as Data Science where for a successful project, you even **need a mixture of roles**. In basic project, you will at least need a Citizen Data Scientist, Data Scientist and Context Representative. In a more complex project, new roles will be needed such as Machine Learning Engineer, Cloud Specialist and Coach.  
+As you will grow your career, you will learn to realize that organizing people is a rather challenging task. There are multiple reasons for this among which; everyone has different motivations, different attitude, different personality and different skillset. This *difference effect* is even more multiplied in a field such as Data Science where for a successful project, you even **need a mixture of roles**. In basic project, you will at least need a Citizen Data Scientist, Data Scientist and Context Representative. In a more complex project, new roles will be needed such as Machine Learning Engineer, Cloud Specialist and Coach. That is why departments, divisions or even entire companies are turning to methodologies such as Agile or Scrum with hope, that these will solve the **difference effect** so prevalent among Data Science projects.
 
-The earliest in human history where I was able to track clear signs of what we today call Agile methoology is as early as 1960s. Clearest historical tracks led me to Japan and Toyota, with methodologies like Kaizen. Moreover, when USA wanted to land on the moon, they also used an approach posessing similar traits to what we consider modern today. I am purposely starting by a small class in history, so that you will have the core principles in your mind when you join all the buzzwording of today's applications, such as Scrum. Let's look at the **definition of Kaizen** by Oxford dictionary:  
+### Kaizen
+
+The earliest in human history where I was able to track clear signs of what we today call Agile methodology is as early as 1960s. Clearest historical tracks led me to Japan and Toyota, with methodologies like Kaizen. Surprisingly, when USA wanted to land on the moon, they also used an approach posessing similar traits like Kaizen; and similar to what we consider modern today. I am purposely starting by a small class in history, so that you will have the *core principles in your mind* when you join all the buzzwording of today's applications, such as Scrum. Let's look at the **definition of Kaizen** by Oxford dictionary:  
 
 > a Japanese business philosophy of continuous improvement of working practices, personal efficiency, etc.
 
 Even though this definition is more or less decades old, it is what companies strive to achieve even these days. When you join a Data Science initiative, expect that **continuous improvement** will be expected, both from you as a person, as well as from the product which you are working on.  
 
-One of the companies which have decades ago successfully adopted this methodology was Toyota, with their approach called **The Toyota Way**. They have developed a set of 14 principles. These range from principles such as respect for people up to use of pull systems to avoid overproduction. I would have to write an entire chapter to describe these properly. We will get to more details in later chapters, when as Project Responsible you will need to be aware of more practices in order to successfully lead a project. On a contributor level, this is not required though and I want to consider only on one of these principles - **nemawashi**.
+One of the companies which have decades ago successfully adopted this methodology was Toyota, with their approach called **The Toyota Way**. They have developed a set of 14 principles. These range from principles such as respect for people up to use of pull systems to avoid overproduction. I would have to write an entire chapter to describe these properly. We will get to more details in later chapters, when as Project Responsible you will need to be aware of more practices in order to successfully lead a project. On a contributor level, this is not required though and I want to consider only on *one of these principles* - **nemawashi**.
 
 > Make decisions slowly by consensus, thoroughly considering all options; implement decisions rapidly.
 
-As it turns out, is is beneficial to have proper planning of what we plan to create. This planning should be done by multiple people (consensus), we should evaluate multiple options and then we should implement these decisions rapidly. Starts to sound like exactly what we need for Data Science project right? Let's go through the elements one-by-one.  
+### Nemawashi
 
-We will want decisions done by *consensus*. This of course does not mean that the entire organization should agree on what we are thinking to do - only the *right people*. In our case of Data Science project this could be:  
+This principle is in my perspective a solid building block for involvement of Citizen Data Scientist (you). As it turns out, it is beneficial to have proper planning of what we plan to create. This planning should be done by multiple people (consensus), we should evaluate multiple options and then we should implement these decisions rapidly. Starts to sound like exactly what we need for Data Science project right? Let's go through the elements one-by-one.  
 
-- Citizen Data Scientist (You), who has overview of necessary Data Science priciples as well as context so that the the created project really creates benefit.
-- Data Scientist, who consults and overviews some decisions made by Citizen Data Scientist whenever needed.
-- Context Expert, who might be additionally working on the implementation of the project in the context. 
-- Additional Experts, such as specialists for Data Regulation or Data Logistics, as needed.
+Firstly, we will want decisions done by *consensus*. This of course does not mean that the entire organization should agree on what we are thinking to do - only the *right people*. In our case of Data Science project this could be:  
 
-As you can see, based on Kaizen, all of these people should be in an agreement of what will be developed as a Data Science project. Often times in nowadays companies, under Agile/Scrum, this **will be referred to as squad**. It is simply the smallest team, which is able to make *all* required decisions that are necessary and has all the capabilities to develop and implement the project.  
+* Citizen Data Scientist (You), who has overview of necessary Data Science priciples as well as context so that the the created project really creates benefit.
+* Data Scientist, who consults and overviews some technical decisions made by Citizen Data Scientist whenever needed.
+* Context Expert, who might be additionally working on the implementation of the project in the context. 
+* Additional Experts, such as specialists for Data Regulation or Data Logistics, as needed.
 
-We will want to *thoroughly consider all options*. We already discussed in previous chapters that this is really important for a Data Science project as this is an art of creating valuable information out of data. There will always be multiple ways how to solve this requirement. Some will be simple and their created benefit will be questionable. Others will be expensive, they will have a potential to create great benefit but their development will be risky as they are expensive. We will therefore, within our *squad* need a very **proper planning**. When the project is about to begin, you should be sitting together often and through various techniques be coming up with ideas, evaluating them and critisizing them. As you will see in a while, we will not only be planning at the beginning of the project, but also **during the project**, in some two weeks cycles. I am hoping though for this to stick to your mind, planning of a Data Science project is absolutely crucial.  
+As you can see, based on Kaizen, all of these people should be in an agreement of what will be developed as a Data Science project. Often times in nowadays companies, under Agile/Scrum, this **will be referred to as squad** or cross-functional team. It is simply the smallest team, which is able to make *all decisions* that are necessary and has *all capabilities* to develop and implement the project.  
+
+*Good team bad team examples*
+
+If you will be asked to join a Data Science project, make yourself a mindmap of all the persons involved in a team close to you. If you conclude that your team can be classified as **bad** as shown above, try to communicate it and adress it. It is very likely that you will either not be able to implement the Data Science solution or that you will have unnecessary overhead (meetings, allignments, etc.).  
+
+Secondly, we will want to *thoroughly consider all options*. We already discussed in previous chapters that this is really important for a Data Science project as this is an art of creating valuable information out of data. There will always be multiple ways how to solve this requirement. Some will be simple and their created benefit will be questionable. Others will be expensive, they will have a potential to create great benefit but their development will be risky as they are expensive. We will therefore, within our *squad* need a very **proper planning**. When the project is about to begin, you should be sitting together often and through various techniques be coming up with ideas, evaluating them and critisizing them.  
+
+I was once starting a project which was considering optimization of company canteen. The canteen was every day preparing hundreds of meals for all the employees at the campus. Employee could pick from several options, which varied from classic national dishes, through fish, up until vegan dishes. What was always a challenge was to cook just enough dishes, so that the residual waste is as minimal as possible.  
+
+If we **did not remember our nemawashi** principle, what we would do could be something like follows. We would request access to all the past meal consumptions and we would fit a regression model. The model would based on some features predict the numbers of each meals consumed. Most likely it would not be to accurate, but it would work somehow.  
+
+If we **did remember our nemawashi** principle, we could find more options; and in fact we should. I did ask the chefs at the canteen about how they are dealing with the issue of waste. They say that for all the fresh meals they try to have accurate number, while there is one reserve meal, which is not cooked from perfectly fresh ingredients - such as spaghetti carbonara. All of the ingredients can be stored for at least a few days and most likely reused in other recipes. Even if there was a sudden spike in demand and all the fresh meals would run out, the spaghetti carbonara is of seemingly limitless supply.  
+
+Good start on our Data Science journey! We know that we do not need to care about a demand of the reserve meal. As a next step I went to visit our canteen fr a few hours and I just observed, what is going on. I realized that almost everyone is an employee and there are almost no visitors. I had another **option** in front of me. Maybe I do not need to predict how many meals will be consumed, but only how many employees will come on a given day to campus. Note: The reason why I could not just collect data from entry cards about how many employees entered, is that canteen is purchasing ingredients the day before.  
+
+This however gave me a completely new view on my options. Previously I would be limited to meal charateristics as my predictive features, now I could expand those into **company calendar** features. If a person has reported sick leave, vacation or home office, I can just go ahead and reduce one planned meal.  
+
+The last set of options opened for me when I thought about **meal preferences**. I was at that time having vegan months, and though that some diets will remain quite stable - vegans, gluten free, lactose free, etc. I now knew that if a person displays a pattern of following some of these diets, I know exactly which meal they will take in the future!  
+
+Once I did all of these considerations, I was able to lay all options on the table and make an informed decision of how to move forward. And no, you do not need to be fully developed Data Scientist to be able to outline all options for the project of Data Science, as often times, these come from domain knowledge.
 
 Finally, we will want to *implement decisions rapidly*. The question is, *how* rapidly? Simple answer is *very*. You may have noticed that many things in Data Science do not take too much time to try. We are learning concepts such as Baseline Model, which are techniques that are aimed at this principle. When you will have a clean dataset, it might take you as little as one day to test the assumption whether Machine Learning makes sense to be used. For larger decisions, such as cleaning of the dataset, these might take a week, which is still rather short time.  
+
+This final piece of nemawashi principle shows nicely why we need a **squad**, which is able to do all decisions on the project and is able to implement them. Every dependency which you would have to other teams, or every regular management meeting that you would have to wait for a decision to be made, would terribly halt you from rapid implementation.  
+
+### PDCA Cycle
+
+As you will see in a while, we will not only be planning at the beginning of the project, but also **during the project**, usually in two weeks cycles. Long time ago, many companies worked in a way of thorough planning for months ahead. Once the timeline and budgets have been approved, execution for months was ofset. This is not a case within Data Science, and it is entirely possible that plans will change in matter of two weeks. This was from practice of many companies concluded as shortest possible period for evaluation of our work. Even if some team members take a week long vacation, they will still contribute within the two weeks.  
+
+I am hoping though for this to stick to your mind, planning of a Data Science project is absolutely crucial. 
 
 Kaizen even developed a specific model to help us with the rapid implementation of ideas, called **PDCA cycle**. This is simply an abbreviation of:  
 
@@ -54,12 +121,13 @@ Such cycle might take as little as one or two weeks to be executed.
 knitr::include_graphics("resources/03-contributor/toyota.jpg")
 ```
 
-
 As you can see, this single principle of Kaizen is already enough for you as a Contributor to realize how can you work *efficiently*. Let's recap:  
 
 1. You will work in a small team (usually 4-8 people). This team will be able to develop and implement entire project and will be making all the required decisions. Most likely, this will be usually called a *squad* or *cross-functional team*.
-2. You will do thorough planning and evaluation of your options. This will happen not only at the outset of a project but also while you are developing it. This will be referred to as *planning phase* when the project starts and as *sprint planning* or *grooming* during the process of making the project.
+2. You will do thorough planning and evaluation of all your options. This will happen not only at the outset of a project but also while you are developing it. This will be referred to as *planning phase* when the project starts and as *sprint planning* or *grooming* during the process of making the project.
 3. You will be rapidly implementing various ideas and testing assumptions. This is going to be happening on weekly or biweekly basis and will be usually referred to as *sprint*.
+
+### Agile & Scrum
 
 *Can we finally get to Agile and Scrum?*  
 
@@ -67,9 +135,11 @@ Indeed! Now when you understand core principles that Citizen Data Scientist shou
 
 > whatever working approach you are faced with, such as Agile, remember the core principles described above.
 
-Let's then dig deeper into Agile. In 2001 a group of authors wrote what we call *Agile Manifesto*. There has been numerous discussions around why this was written, but from my perspective it relates to the overall field of IT. You might have heard about the *dot-com bubble*. Before the breakthrough of milleania, the development of Internet caused that there were numerous companies basing their business on the technology of the Internet. Unfortunately, many of them did not do too good of a job and were overvalued. This *bubble* bursted around the breakthrough of milleania and meant a lot of negative implications for IT industry as a whole. It is a bit tricky to backtrace who was to blame for this, whether IT developers, business representatives or venture capitalists. As you are now reading this book to become a member of IT community, I will though bring a short story from this period for your learning. There were cases within this era, when IT developers were charging their companies heavy invoices for adjusting their calendar system. Supposedly, *millenia change* from 1900s to 2000s was a huge issue for company calendar systems and this needed to be worked on seriously. Of course there was nothing to work on and these greedy developers just wanted to earn on opportunity. As you can see, if there were multiple instances of such behaviour within a company, it is a clear indication of why the *bubble* develoepd and bursted. Learning for you, never bulls_it your customers.  
+Let's then dig deeper into Agile. In 2001 a group of authors wrote what we call *Agile Manifesto*. There has been numerous discussions around why this was written, but from my perspective it relates to the overall field of IT. You might have heard about the *dot-com bubble*. Before the breakthrough of milleania, the development of Internet caused that there were numerous companies basing their business on the technology of the Internet. Unfortunately, many of them did not do too good of a job and were overvalued. This *bubble* bursted around the breakthrough of millenia and meant a lot of negative implications for IT industry as a whole. It is a bit tricky to backtrace who was to blame for this, whether IT developers, business representatives or venture capitalists. As you are now reading this book to become a member of IT community, I will though bring a short story from this period for your learning. There were cases within this era, when IT developers were charging their companies heavy invoices for adjusting their calendar system. Supposedly, *millenia change* from 1900s to 2000s was a huge issue for company calendar systems and this needed to be worked on seriously. Of course there was nothing to work on and these greedy developers just wanted to earn on opportunity. As you can see, if there were multiple instances of such behaviour within a company, it is a clear indication of why the *bubble* developed and bursted. Learning for you; 
 
-So, why was Agile Manifesto written just after the *dot-com bubble* bursted? In my view, it has something to do with *trust*. The IT sector as a whole needed to regain trust from investors, such as venture capitalists after they blew a lot of money once the bubble bursted and companies lost billions in valuations. One attempt of how to regain trust was to develop a new business model called Software-as-a-Service (SaaS), where software would no longer be bought, but rented by customers on monthly basis. You have a subscription on Google Drive or Dropbox? Welcome to tis model. If you are interested in this, one of the early representatives of this field was Salesforce, which is successful until this day. Coming up with a new business model was not enough though. IT representatives needed to show that they learned, *how software should not be developed* and then proposed how it should be. And there you have it, Agile Manifesto.  
+> never bulls_it your customers.  
+
+So, why was Agile Manifesto written just after the *dot-com bubble* bursted? In my view, it has something to do with *trust*. The IT sector as a whole needed to regain trust from investors, such as venture capitalists after they blew a lot of money once the bubble bursted and companies lost billions in valuations. One attempt of how to regain trust was to develop a new business model called Software-as-a-Service (SaaS), where software would no longer be bought, but rented by customers on monthly basis. You have a subscription on Google Drive or Dropbox? Welcome to this model. If you are interested in this, one of the early representatives of this field was Salesforce, which is successful until this day. Coming up with a new business model was not enough though. IT representatives needed to show that they learned, *how software should not be developed* and then proposed how it should be. And there you have it, Agile Manifesto.  
 
 If you will decide to read Agile Manifesto, you will notice a lot more principles than the ones which I described above. Just to show you some:
 
@@ -80,6 +150,21 @@ If you will decide to read Agile Manifesto, you will notice a lot more principle
 
 One thing will strike you though - Data Science is not a software development, or is it? Certainly, Data Science as a field was not around when Agile Manifesto was written, so even if Agile Manifesto is great, it certainly was not developed for Data Science purposes.
 
+
+## Legal regulations
+
+As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations. As I presume the readers of this book are located within Europe, I will talk about General Data Protection Regulation (GDPR) (if you are from outside, hoooray, the book made it really far!).
+
+## Producing valuable output
+
+You will start working on your new project (possibly job), doing your tasks and even collaborating well with the others, in iterative manner. Now the important thing will be to make sure that you are producing output which is valuable for your employer. I would advice you to focus on two words, while you can pick one which seems more reasonable for you.  
+
+Firstly, focus on **change**. After you did your tasks, did something change? Now this change could be anything. The most obvious change comes in a matter of code, you created a script which does a job that was not in place before. Change however can be also in other areas - you discussed with business stakeholders within a project, and what changed is the level of information which you have about desired output.
+
+Secondly, you might rather focus on **creation**. There might be a lot of mess and noise around you. However as long as you make sure that your work is creating something, you are doing just fine. 
+
+Focus on creation. Creation can be anything.
+
 *Is Data Science software development?*
 
 Yes and no. In my perspective there is a lot of things which we can learn from software development as Data Scientist (that is under *yes* answer). Drawing inspiritons from coding styles, documentation and comunication styles of successful software developer can really benefit Data Scientist. On the other hand, to my feeling Data Science needs to be significantly closer to context, as compared to software development (that is under *no* answer). If you are a backend developer of mobile application, you do not need to spend so much time with a customer or a user as a Data Scientist needs. Keep this in mind.
@@ -88,16 +173,10 @@ Yes and no. In my perspective there is a lot of things which we can learn from s
 
 Actually, that is one of the reasons why Gartner in 2016 defined a Citizen Data Scientist, and also why I am now writing this book to help you become one.
 
+Though, Data Scientists need to find their own path.
 
-*What are legal regulations such as GDPR?*
-As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations.
 
-*How do I produce a valuable output for my employer?*
+## Documenting your work
 
-Make 3 hours long blocks, maybe one or two per day. 
-
-*How should I document my work?*
-
-*Looking for a job/project*
-
+JIRA
 

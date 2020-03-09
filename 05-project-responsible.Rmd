@@ -52,6 +52,9 @@ First thing that you need to do is to realise that you have **user and customer*
 
 
 How to organize a team?
+
+Give two examples of how we were organized. One possibility was to have close involvement of Data Engineers, another was a possibility to have closely business representatives.
+
 How to lead a project?
 How to estimate timeline and budget for your project?
 When to apply which tools?
