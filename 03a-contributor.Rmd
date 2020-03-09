@@ -1,9 +1,19 @@
 # Contributor: Soft Skills {#contributor-I}
 
 ## Soft skills
-You are now reaching a a Contributor level, at which you should already put your hands on keyboard and do some real Data Science! You are hence going to learn a lot about Data Manipulation, Statistics and Programming in this chapter. Before we get there, it is necessary to learn **how** are you going to do these tasks. 
 
-*How do I approach a task?*
+You are now reaching a a Contributor level, at which you should already put your hands on keyboard and do some real Data Science! You are hence going to learn a lot about Data Manipulation, Statistics and Programming in this chapter. Before we get there, it is necessary to learn **how** are you going to do these tasks.  
+
+In upcoming paragraphs we will answer the following questions:
+
+1. **How** should you as an individual approach given task or small project?
+2. **How** should you fit into Agile setting which your organisation likely has?
+3. **How** should you produce a valuable output from your efforts?
+4. **How** should you recognise importance of data regulations?
+5. **How** should you document your work once you are done?
+
+## Project & tasks
+
 After completing this chapter, you will be able to (for example) import, prepare and preprocess data. What I often times see starting Data Scientists struggle with is that they get overwhelmed by the big picture of what they want to do. If you set yourself (or someone else) a task of "preparing data for modelling", you will get lost, trust me. This job shall be splitted into smaller tasks for you to be managable.  
 
 What you should be given is clear definition of a task a time frame that you have to fulfill the task. If the task is fairly large, you start by *splitting it up to smaller pieces*.
@@ -18,7 +28,9 @@ When approaching your colleagues (or people on Stackoverflow), do not approach t
 
 Free up your calendar for *3 hours blocks*, at least one or two of these blocks per day. Judging by the fact that you are reading this book, most likely Data Science is not a bread-winning occupation for you right now, which means that your days are occupied by other things, such as meetings. Unfortuantely, Data Science cannot be done during breaks between meetings. From my experience, it takes 1 hour to get your mind properly to the problem, then 1 hour to do meaningful piece of work, and then 1 hour to properly wrap what you just created. I always try to have at least one such block within a day, when I want to do a lot of development on a project, I squeeze in one in the morning (8-11) and one in the afternoon (13-16).
 
-*What is Agile and Scrum?*
+You also want to write down or draw what you intend to create and put it on a table next to you...
+
+## Agile & Scrum
 
 You have now learned how to approach a task as an individual, now it is time to learn a bit about what happens when several people are working on the same Data Science project - you need to oragnize yourself together.
 
@@ -94,19 +106,12 @@ If you will decide to read Agile Manifesto, you will notice a lot more principle
 
 One thing will strike you though - Data Science is not a software development, or is it? Certainly, Data Science as a field was not around when Agile Manifesto was written, so even if Agile Manifesto is great, it certainly was not developed for Data Science purposes.
 
-*Is Data Science software development?*
 
-Yes and no. In my perspective there is a lot of things which we can learn from software development as Data Scientist (that is under *yes* answer). Drawing inspiritons from coding styles, documentation and comunication styles of successful software developer can really benefit Data Scientist. On the other hand, to my feeling Data Science needs to be significantly closer to context, as compared to software development (that is under *no* answer). If you are a backend developer of mobile application, you do not need to spend so much time with a customer or a user as a Data Scientist needs. Keep this in mind.
+## Legal regulations
 
-> Even though Data Science has a lot to learn from Software Development, it is a different field, which requires closer connection to context, customer or user.
-
-Actually, that is one of the reasons why Gartner in 2016 defined a Citizen Data Scientist, and also why I am now writing this book to help you become one.
-
-
-*What are legal regulations such as GDPR?*
 As you will on this level it will already be expected that you work with a data, it is necessary that you learn a bit about regulations. As I presume the readers of this book are located within Europe, I will talk about General Data Protection Regulation (GDPR) (if you are from outside, hoooray, the book made it really far!).
 
-*How do I produce a valuable output for my employer?*
+## Producing valuable output
 
 You will start working on your new project (possibly job), doing your tasks and even collaborating well with the others, in iterative manner. Now the important thing will be to make sure that you are producing output which is valuable for your employer. I would advice you to focus on two words, while you can pick one which seems more reasonable for you.  
 
@@ -116,9 +121,18 @@ Secondly, you might rather focus on **creation**. There might be a lot of mess a
 
 Focus on creation. Creation can be anything.
 
-*How should I document my work?*
+*Is Data Science software development?*
 
-*Looking for a job/project*
+Yes and no. In my perspective there is a lot of things which we can learn from software development as Data Scientist (that is under *yes* answer). Drawing inspiritons from coding styles, documentation and comunication styles of successful software developer can really benefit Data Scientist. On the other hand, to my feeling Data Science needs to be significantly closer to context, as compared to software development (that is under *no* answer). If you are a backend developer of mobile application, you do not need to spend so much time with a customer or a user as a Data Scientist needs. Keep this in mind.
 
-*Conclusion*
-We will revisit all of these ideas at the end of chapter.
+> Even though Data Science has a lot to learn from Software Development, it is a different field, which requires closer connection to context, customer or user.
+
+Actually, that is one of the reasons why Gartner in 2016 defined a Citizen Data Scientist, and also why I am now writing this book to help you become one.
+
+Though, Data Scientists need to find their own path.
+
+
+## Documenting your work
+
+JIRA
+
