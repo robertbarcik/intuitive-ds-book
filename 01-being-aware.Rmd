@@ -124,7 +124,7 @@ The reason why I decided to write this way (not covering concepts through techni
 
 ## Real World Experience
 
-What is the biggest struggle of anyone who would like to become a (Citizen) Data Scientist? To get real world experience and practice. Whatever people claim within their online courses and trainings, the trainer will **never** be able to offer you what is awaiting for you in the real world of Data Science. Even I don't claim it about my trainings. The only truthful way is hence to go to a real project, that is why I created the levels, so that at each you have it as easy as possible to get to real world problems. Let me show you an example of why I decided to write and teach in this way.
+What is the biggest struggle of anyone who would like to become a (Citizen) Data Scientist? To get real world experience and practice. Whatever people claim within their online courses and trainings, the trainer will **never** be able to offer you what is awaiting for you in the real world of Data Science. Even I don't claim it about my trainings. The only truthful way is hence to go to a real project. Use the *6 levels of Citizen Data Scientist* exactly for this purpose! Let me show you an example of why I decided to write and teach in this way.  
 
 You come to a job interview (external or internal one) and say that you have been learning and would like to become part of this Data Science project. The conversation might go as follows:  
 
@@ -136,7 +136,7 @@ Let me stop here for a second and explain to you what is happening behind this s
 Now let's do a similar conversation and we will reuse one of the levels from above as your answer:
 
 *Interviewer*: Great to see your interest. So how can you contribute to our projects and help out?  
-*You*: I am able to act as an "Observer" to your Data Science projects. This means that I cannot directly contribute to it's productive code pipeline, but I am able to help out with inputs and outputs. Due to my extensive background in Retail Banking, I know what features might be interesting to collect about customers and used in models and also how to apply outputs of your project in Marketing Campaigns.
+*You*: I am able to act as an "Observer" to your Data Science projects. This means that I cannot directly contribute to it's productive code pipeline, but I am able to help out with inputs and outputs. Due to my extensive background in Retail Banking, I know what features might be interesting to collect about customers and used in models and also how to apply outputs of your project in Marketing Campaigns. When a Data Scientist will put together a Machine Learning model, I will be able to do basic evalution of its qualities.
 
 Do you *feel* the difference between the two conversations? Instead of talking about skills, you started to talk about a possible contribution which you can do. You also very clearly drew a line of what you cannot do and the Interviewer will have it easier evaluating you. Moreover, you had a space to relate to your previous field - we all have something where we are coming from. This is what really matters for Citizen Data Scientist - show possible contribution that will be impacting the project and benefit out of it directly.
 
