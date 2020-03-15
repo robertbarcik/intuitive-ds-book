@@ -75,7 +75,7 @@ She had something that I could never have - expertise in her CRM department and 
 - Focus on applying in your project your domain knowledge. Only you know it, I don't.
 - Here is a (short) list of things you should try in your R-script (most of which you already have). You do not need to push for more complex methods and crazy good programming, what you have is already enough. If something more complex is required later on, I will do it for you.
 
-Ehm, exact opposite of what I originally did, right? **Citizen Data Scientist therefore stays in his/her original deparment and context, and only to a required (limited) extend enhances her knowledge on Data Science, so that he/she can create the value**. He/she posesses edge over (first generation) of Data Scientist in the context knowledge and can hence create more valuable products.
+Ehm, exact opposite of what I originally did, right? **Citizen Data Scientist therefore stays in his/her original deparment and context, and only to a required (limited) extend enhances her knowledge on Data Science, so that he/she can create the value**. He/she posesses edge over (first generation) of Data Scientist in the context knowledge and can hence create more valuable products.  
 
 ## Value of Citizen Data Scientist
 
@@ -256,9 +256,10 @@ As you see, neither of the three measures of central tendency is a silver bullet
 
 The three measures - mode, median and mean; are actually not the most important piece of learning now. The fact, that we know our did our very **first application of Data Science** is! We started the chapter by saying that the aim of Data Science is to create valuable information out of the data, whereas this information has value for someone (our employer). Maybe we are working for a bread producer and our tasks is to find our how can the produces differentiate in the market - now we know that it should not be 500 grams bread. Maybe our employer is a sunscreen manufacturer and wants to figure out for which temperatures the sunscreen should be optimized - now we know that fo 28 degrees. Or maybe, our employer is the government trying to figure out which income groups should pay lower taxes - could be somewhere below of 856 Euro.
 
-## Level 1 Reached
+## Level 1: Being Aware - Reached
 Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what is isn't, what it struggles with and what is the role of Citizen Data Scientist. Here are some key takeaways which you should have from this chapter:
 
 1. Remember the five cornerstones upon which this book is built. If you plan on continue reading it, these will be helpful to keep in mind.
 2. Data Science is an art of creating valuable information out of data.
 3. No training or online course can really prepare you for real world. Hopefully this book will help you to go to field as soon as possible and apply yourself, based on a level which you reached.
+4. Data Science attempts to often times describe a population. This can be done by measures of central tendency, such as mode, median or mean.
