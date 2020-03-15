@@ -94,29 +94,31 @@ I honestly believe that whomever you are, **you can become a Citizen Data Scient
 
 ## The 6 Levels of Citizen Data Scientist
 
-You can have a great content, great exercises, but unless I am able to keep you motivated during your jurney and you feel like you are growing with every module finished, my course/book is not good. That is why this book sets 6 levels through which you will be growing. With each new level, your power within Data Science will inherently grow and so will your value for employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in real world! As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
+There are many great courses, programs or coding platforms available online - why should you then read this book in particular? It is because I plan to help you **grow through capabilities, not through skills**. It is actually one of the reasons why I decided to write this book. I see often times learning content structured through skills - Importing Data, Cleaning Data, Preprocessing Data, Basics of Machine Learning; being the most common path out there, sometimes being up to 80 hours long. The issue is that you will most likely be only able to apply yourself once you learned all the skills. That is not good, as Data Science is a lot about practice and connecting to context where you want to apply yourself as Citizen Data Scientist.  
 
-**Being Aware**  
-You know what the field is about, what it can and cannot achieve. Learning: 1 hour
+That is why this book sets 6 levels through which you will be growing. With each new level, your capabilities and powers within Data Science will inherently grow and so will your value for projects and employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in real world! As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
 
-**Observer**  
-You are able to observe a data science project running, without being able to contribute to it. You are though able to make use of the outputs of a Data Science project as well as help with inputs for such project. Learning: 5 hours
+**Level 1: Being Aware**  
+You know what Data Science is about, what it can and cannot achieve. You also know what path lies ahead of you as a Citizen Data Scientist. Learning length: 1 hour
 
-**Contributor**  
-You are able to assume a (simple) task(s) within Data Science project, and create a benefit to the project productively. Learning: 30 hours
+**Level 2: Observer**  
+You are able to observe a Data Science project running, without being able to contribute to it. You are though able to make use of the outputs of a Data Science project as well as help with inputs for such project. If someone presents you a Data Science project, you are able to question its qualities. Learning length: 5 hours
 
-**Statistician**  
-You are able to assume any basic task within a Data Science project and hold responsibility for statistical parts. Learning: 80 hours
+**Level 3: Contributor**  
+You are able to assume simple task(s) within Data Science project, and create a benefit to the project productively - Data Preprocessing, Data Visualisation and Baseline Machine Learning. Learning: 30 hours
 
-**Project Responsible**  
-You are able to define Data Science project and execute it. Learning: 40 hours
+**Level 4: Statistician**  
+You are able to assume any basic task within a Data Science project and hold responsibility for statistical parts. Learning: 40 hours
 
-**Butter Knife**  
+**Level 5: Project Responsible**  
+You are able to define Data Science project from scratch and execute it. To do this, you are also able to organize a team around a Data Science project and work with peripherral fields such as Data Engineering. Learning: 40 hours
+
+**Level 6: Leader**  
 You are able to grow Data Science initiative in your organization both effectively (hiring) as well as conceptually (specializations). Learning: 40 hours
 
 Each of these levels is very different both from the content perspective, as well as from desirable approach by you. For example, on a Statistician level, you are going to be focused solely on statistical formulas and their intuition. Be prepared for sitting longer hours, stretching your analytical mind. All of a sudden, this stops and in order to become a Project Responsible, we are going to sharpen your soft skills, such as how to organize a team effectively. It will be needed to free your mind and think about people instead of code.  
 
-> This book unfortunately cannot cover *all* that you should now on each of these levels. What the book intends is to give you *all intuition* and *awareness of concepts* which is required on each level.
+> This book unfortunately cannot cover *all* that you should know on each of these levels. What the book intends is to give you *all intuition* and *awareness of concepts* which is required on each level.
 
 The reason why I decided to write this way (not covering concepts through technical details and coding), is that I believe from my experience that once the intuition in the concept is achieved, then it will become rather simple for you to apply it.
 
