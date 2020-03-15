@@ -2,7 +2,7 @@
 
 ## Five Cornerstones
 
-You will quickly notice that this book is structured quite differently compared to other offerings on the market. Let me reason about that, even before I introduce you to the structure and the transformation that the book offers. I have been a lecturer/trainer for a few years and I always notice that content does not matter as much as the *path through the content* as well as the *assumptions upon which the content is built*. Only if both of these are fine, the book/course/training can offer you (the reader/student) a **transformation** - taking you from where you are, to where you want to be. In this case I am hoping you would like to make a living within Data Science or create some amazing project within it!
+You will quickly notice that this book is structured quite differently compared to other offerings on the market. Let me reason about that, even before I introduce you to the structure and the transformation that this book offers. I have been a lecturer/trainer for a few years and I always notice that content does not matter as much as the *path through the content* as well as the *assumptions upon which the content is built*. Only if both of these are fine, the book/course/training can offer you (the reader/student) a **transformation** - taking you from where you are, to where you want to be. In this case I am hoping you would like to make a living within Data Science or create some amazing project within it!
 
 This book is hence built on five cornerstones:  
 
@@ -12,23 +12,29 @@ This book is hence built on five cornerstones:
 * There are 6 levels of Citizen Data Scientist and these should act as a learning curve.  
 * Math is not required as a teaching tool in order to train a Citizen Data Scientist and can be replaced by visualisation and intuition.  
 
-Did I go crazy claiming that anyone can become a Data Scientist? And what about the Math which is appraised by everyone as the crucial tool within data science?!? Maybe I have, but these cornerstones (assumptions) worked for me as well as for my students within the past years. Let me first explain **why** I believe that these things might work out for you.
+Did I go crazy claiming that anyone can become a Data Scientist? And what about the Math which is appraised by everyone as the crucial tool within data science?!? Maybe I have, but these cornerstones (assumptions) worked for me as well as for my students within the past years. Let me in this chapter explain **why** I believe that these things might work out for you.
 
 ## Defining Data Science
 
-The very first thing that I would like to do is to answer a simple question: *What is data and what is information?* The difference between the two is in their value. *Data* inherently do not have any value for their owner, simply because he/she cannot do anything beneficial upon them. On the other hand, *information* can be valuable for its owner. These two are however thinnly connected - as *information* is derived from *data*, while this process is called *Data Science*. I will give you an example from my recent past on how I got a value out of Data Science.  
+The very first thing that I would like to do is to answer a simple question: *What is data and what is information?* The difference between the two is in their value. **Data** inherently do not have any value for their owner, simply because he/she cannot do anything beneficial upon them. On the other hand, **information** can be valuable for its owner. These two are however thinnly connected - as *information* is derived from *data*, while this process is called **Data Science**. I will give you an example from my recent past on how I got a value out of Data Science.  
 
 I was always interested in my sleep, as I know that in order to live a happy life, I shall sleep well. The only two things I know really is how long I sleep and how do I feel in the morning. I then found an app on my phone which was promising to analyze my sleep and give me recommendations on how to improve my sleep. The app is using accelerometer in my phone, recording my movements at night. During the first two nights, the app only collected *data* - every morning I was able to see various graphs on how I slept. After a week though, recommendations came such as "when you go to bed late, around 23:00, even if you sleep full 8 hours, your sleep quality suffers.". This is already *information* which had a value for me. The app is Data Science *process* of creating valuable informaton from data.  
 
-If you now turn to search engines and start to search for Data Science terms, you will be overwhelmed by articles and (unfortunately) buzzwords - Machine Learning, Data Preprocessing, Artificiall Intelligence, Tensorflow, R, Python. These are at the end only *methods* and tools of Data Science to achieve a result which we described above. Do not get confused or overwhelmed by these. The book which you are reading is a way how to master these methods, but first I want you to truly and depply understand the cruial things and ideas of Data Science. This might actually be the most important message from this book (that is why it is in the beginning) - always keep in mind that the methods should always serve the purpose which Data Science has.
+If you now turn to search engines and start to search for Data Science terms, you will be overwhelmed by articles and (unfortunately) buzzwords - Machine Learning, Data Preprocessing, Artificiall Intelligence, Tensorflow, R, Python. These are at the end only **methods and tools of Data Science** to achieve a result which we described above. Do not get confused or overwhelmed by these. The book which you are reading is a way how to master these methods, but first I want you to truly and depply understand the cruial things and ideas of Data Science. This might actually be the most important message from this book (that is why it is in the beginning) - always keep in mind that the methods should always serve the purpose which Data Science has.
 
 >Data Science is merely an art of turning data into information, which provides benefit.
 
-As you will inherently meet all of these weird terms, let's go through them as it can be part of defining what a Data Science is.
+As you will inherently meet all of these weird terms, let's go through them as it can be part of defining what a Data Science is. Let's first start with the three major terms, Data Science, Machine Learning and Artificial Intelligence. Here is one think that you need to know about them:
 
-**Data Science != Machine Learning != Artificial Intelligence**
+**Data Science != Data Engineering != Machine Learning != Artificial Intelligence**
 
+This is the first learning which you might take from this book - all four of these terms mean something different, yet they are *connected*.  
 
+As we already know from previous paragraphs what Data Science is, how does **Data Engineering** connect to it? Quite simply, by making the data available and creation of infrastructure where Data Science can happen. Without Data Engineering, it would be then tremendously hard to do Data Science, as you would not have access to the data which you would like to have and you wouldn't have sufficient infrastructure, such as powerful servers, for analyzing this data.
+
+**Machine Learning** is simply a set of practices and tools to build what we call Machine Learning models. Actually, you are going to learn a lot about Machine Learning, as this is a great possibility how one can derive useful information out of data.  
+
+Machine Learning is then what connects Data Science to **Artificial Intelligence**. This last field might be probably the most complex as it not only works with data, information and machine learning models; but also with automation, robotics and creation of intelligent systems. Again though as with Data Science, Machine Learning is an integral part to it; and as such important cornerstone to two fields is getting a lot of well-deserved attention.
 
 ## Defining Data Scientist
 
