@@ -79,7 +79,7 @@ Ehm, exact opposite of what I originally did, right? **Citizen Data Scientist th
 
 ## Value of Citizen Data Scientist
 
-As everyone says it these days - data are everywhere, companies just need to start utilizing them. We can thus take as granted that Data Science will have justification in upcoming years. Though why do companies need Citizen Data Scientists and why they should focus on them instead of the first generation of Data Scientists? Simply because the *growth in created benefit* will be much greater through
+As everyone says it these days - data are everywhere, companies just need to start utilizing them. We can thus take as granted that Data Science will have justification in upcoming years. Though why do companies need Citizen Data Scientists and why they should focus on them instead of the first generation of Data Scientists? Simply because the **growth in created benefit** will be much greater through
 
 - Possibility of having higher counts of Citizen Data Scientists, as compared to Data Scientists due to the fact that extensive formal education is not required.
 - Possibility of having more impactful Data Science projects as these will be integrated better to the business, if created by properly trained Citizen Data Scientists.
@@ -90,13 +90,9 @@ What happens with the original (first generation) Data Scientists? We will still
 
 ## Anyone Can Become Citizen Data Scientist
 
-I honestly believe that whomever you are, you can become a Citizen Data Scientist. Why? Because Data Science methods add up to only about half of the requirements for a success, the other half is context knowledge and application. Thereafter whatever your background is, you can become one and create value to your company. Let me list some examples:
+I honestly believe that whomever you are, **you can become a Citizen Data Scientist**. Why? Because Data Science methods add up to only about half of the requirements for a success, the other half is context knowledge and application. Thereafter whatever your background is, you can become one and create value to your company. Moreover, there is no single-level of Citizen Data Scientist in my mind, but several of them.
 
-- You are a cashier at a grocery store. There are Data Science projects aimed at optimizing customer experience. Data Scientists without your help will never figure out ...*add*
-- You are biomedical researcher *add*
-- You are branch advisor for a bank *add*
-
-## The 6 levels
+## The 6 Levels of Citizen Data Scientist
 
 You can have a great content, great exercises, but unless I am able to keep you motivated during your jurney and you feel like you are growing with every module finished, my course/book is not good. That is why this book sets 6 levels through which you will be growing. With each new level, your power within Data Science will inherently grow and so will your value for employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in real world! As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
 
