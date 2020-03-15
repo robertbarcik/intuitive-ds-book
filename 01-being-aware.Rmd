@@ -150,6 +150,112 @@ That is why *this book will not teach anything through mathematics*. I honestly 
 
 P.S. There will be a few statistical concepts, so don't blame me if they look like math. As I promised though, there will be no formula, just intuition.
 
+## Understand a Population
+
+In order for Data Science to fulfill its purpose of *turning data into information*, it is often times necessary to **understand a population**. In fact, if you are able to only describe a population, you already have tremendous powers for Data Science, called *descriptive statistics*. 
+
+We can start by defining a **population**; which is in essence a synonymn to a *set of individual points*. Population usually refers to living organisms such as people, animals or other living organisms. But as these living organisms are from statistical point of view just *sets of individual points* it can be anything else - fleet of buses, set of marketing campaigns or batch of machineary.  
+
+Now, why would we want to **describe** a population? Simply, because we want to *understand* it and know some *information* about it. Having in front of you an entire list of goals scored in the last hockey season will not help you determine who was the best player of that season by itself. You will need to search for which players scored the most goals, maybe look even deeper. If someone would show you a weather for the past two years, broken down to individual days, it wouldn't be exactly easy to estimate what will be the weather tomorrow. We need to somehow *aggregate, summarize or describe* these populations in order to determine something meaningful.
+
+## Mode, Median and Mean
+
+We can start with the simplest tools of *descriptive statistics* - **measures of central tendency**. Don't get scared, the phrase just stands for describing what lies in the middle of the population which we aim to describe. You most likely already applied these tools, by referring to an average. Maybe, sometime in the past you were asked some of these questions:
+
+- What is usually the weight of loaf of bread sold in shops? (*average weight of bread*)
+- What is usually the temperature in your city in summer months? (*average temperature in summer*)
+- What is usually a salary in your country? (*average salary in a country*)
+
+Most likely you answered these questions by intuition in your mind. If you would however turn to the world of descriptive statistics, there would be three basic tools available for you to answer them - mode, median and mean.
+
+**Mode** is the simplest measure of *average* of the three. In order to calculate mode, you simply need to look at the *most common* occurence in your population. This could be a good measure for answering the bread question. We could walk into the shop and observe the weights of loafs offered there such as follows:
+
+```{r loafs_weights_grams}
+loafs_weights_grams <- c(500, 500, 400, 1000, 500, 250, 500, 250)
+```
+
+Just by looking at the weights, we can easily determine what the mode is - *500 grams* as this is the most common value. We can verify it by using an R function for calculating mode.
+
+```{r getMode, include=FALSE}
+# Create the function.
+getMode <- function(v) {
+   uniqv <- unique(v)
+   uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+```
+
+```{r use_getMode}
+getMode(loafs_weights_grams)
+```
+
+If you think about the question intuitively, does *mode* provide us with a satisfactory answer? Most likely yes - usually the loafs weight 500 grams. Unfortunately, mode is not always the best representation of *average*. We can see it's incapabilities if we try to answer our second question regarding average temperature in the summer.  
+
+The data which we have about summer temperatures are as follows:
+
+```{r summer_temperatures_celsius}
+summer_temperatures_celsius <- c(35, 35, 32, 28, 31, 25, 26, 27, 24)
+```
+
+If we used mode, and picked temperature which is occuring the most times, or in other words is the *most common*, this would be temperature 35. If we think about it intuitively, is it the best answer? Certainly not! The average temperature by our intuition and looking at the numbers is somewhere below of 30. Luckily we have another tool from descriptive statistics at our disposal - median.
+
+**Median** is also a rather simple tool, as it simply finds the *middle observation*. The way how we do that is rather straighforward; we sort the observations from smallest to largest and take the one in the middle. Let's use R function to sort the temperatures and visually find the middle value.
+
+```{r sort_summer_temperatures_celsius}
+sort(summer_temperatures_celsius)
+```
+
+As we have 9 values, the median will be fifth value, in this case 28 degrees. Let's verify it by using R function which calculates the median automatically.
+
+```{r median_summer_temperatures_celsius}
+median(summer_temperatures_celsius)
+```
+
+Our visual calcululation was correct. If we think about it intuitively, does the calculated result make sense as an average summer temperature? Indeed it does, the *median* in this case did better job than *mode*. As you see, it depends on our population which of the two does better job. Will median help us with our third question of providing *average salary* though?  
+
+Here is our data regarding salaries in the country. They are already sorted from smallest to largest for simplicity.
+
+```{r salaries_country}
+salaries_country <- c(350, 400, 450, 470, 500, 520, 1200, 1270, 1300, 1460, 1500)
+```
+
+If we now calculate the median:
+
+```{r median_salaries_country}
+median(salaries_country)
+```
+
+The answer does not seem perfectly representative from our intuition. Yes, indeed the middle value calculated by median is 520, but it does not quite grasp the salaries which are above 1000. Luckily, we have our final tool among measures of central tendency - mean.
+
+**Mean** is a bit more tricky measure to calculate. By calculating mean, we find a *point in the exact middle of our points* regardless of how our salaries look like. The calculation is straighforwad:
+
+> To calculate *mean*, sum all the points and then divide the result by their count.
+
+That is not so bad, we could do it with calculator or even on the back of an envelope. Firstly, let's get the sum of all observations:
+
+```{r sum_salaries_country}
+350 + 400 + 450 + 470 + 500 + 520 + 1200 + 1270 + 1300 + 1460 + 1500
+```
+
+We can count the points (salaries) just visually and know that there are 11 salaries provided. We can then do a final calculation:
+
+```{r mean_manual_salaries_country}
+9420 / 11
+```
+
+And finally we can verify this result by calling an R function which calculates the mean.
+
+```{r mean_salaries_country}
+mean(salaries_country)
+```
+
+The mean of approximately 856 seems a more reasonable result compared to a median of 520, to represent an *average salary* in this case.
+
+# Measures of Central Tendency
+
+As you see, neither of the three measures of central tendency is a silver bullet. Their success depends largely on a population which we are trying to describe. That is why it might be a good idea to look at all three of these and then face the provided answers with our intuition.  
+
+The three measures - mode, median and mean; are actually not the most important piece of learning now. The fact, that we know our did our very **first application of Data Science** is! We started the chapter by saying that the aim of Data Science is to create valuable information out of the data, whereas this information has value for someone (our employer). Maybe we are working for a bread producer and our tasks is to find our how can the produces differentiate in the market - now we know that it should not be 500 grams bread. Maybe our employer is a sunscreen manufacturer and wants to figure out for which temperatures the sunscreen should be optimized - now we know that fo 28 degrees. Or maybe, our employer is the government trying to figure out which income groups should pay lower taxes - could be somewhere below of 856 Euro.
+
 ## Level 1 Reached
 Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what is isn't, what it struggles with and what is the role of Citizen Data Scientist. Here are some key takeaways which you should have from this chapter:
 
