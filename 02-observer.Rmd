@@ -303,7 +303,7 @@ It's a bit ugly though, as we did not use any pretty IDE. We can write the same 
 Data Scientists of course like this as you can visually distinguish between various elements. The IDE will have much greater functionalities compared to only working in programming language, but we will get to that later.
 
 *What is Python?*
-
+you can download it with.
 
 *What is Knime?*  
 
@@ -323,7 +323,31 @@ As you are on the level of Observer, you should not choose any. At this point, y
 
 In the last chapter we discussed that one of the simplest ways for creating valuable information with Data Science is by describing some population. It is now time to revisit this idea and expand on it.
 
-## Distributions
+### Distributions
+
+Learn about a picture of distribution.
+
+### Percentiles
+
+Where in population you lie, to compare yourself.
+
+Quantiles 
+
+Boxplot is another way, how to show distribution of population.
+
+### Mean vs. Median
+
+End with that it is outliers and extreme values which are influencing. Let's learn what to do with them.
+
+### Extreme Values and Outliers
+
+How do we find them in boxplot.
+
+### Measures of Spread
+
+Range
+
+IQR
 
 ### Percentages
 - the danger of working with them (CRM campaigns doubling conversion rate)
