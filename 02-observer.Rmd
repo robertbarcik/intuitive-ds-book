@@ -2,7 +2,7 @@
 
 ## About this level
 
-Welcome to Level 2 - wObserver. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in marketing department, you will know what to ask Data Scientists for and how can you use it. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Gargage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
+Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in marketing department, you will know what to ask Data Scientists for and how can you use it. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Gargage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
 
 Soft understanding of Data Science
 
@@ -17,6 +17,7 @@ Programming
 
 Statistics
 
+- Descriptive Statistics
 - Machine Learning
 - Supervised Learning
 
@@ -317,6 +318,20 @@ As you can see we are again doing the same steps, just this time they are repres
 *Should I use R, Python or Knime?*  
 
 As you are on the level of Observer, you should not choose any. At this point, you should only be able to observe a Data Science project, thereafter when your colleagues say that they work in certain language (most likely one of these three), you know what they talk about and you can see ona very basic level what they are doing.
+
+## Descriptive Statistics
+
+In the last chapter we discussed that one of the simplest ways for creating valuable information with Data Science is by describing some population. It is now time to revisit this idea and expand on it.
+
+## Distributions
+
+### Percentages
+- the danger of working with them (CRM campaigns doubling conversion rate)
+- they are relative to some amount (which can be small)
+
+## Predicting The Future?
+
+Predicting without Machine Learning - importance of non-ML baseline
 
 ## Basics of Machine Learning
 
