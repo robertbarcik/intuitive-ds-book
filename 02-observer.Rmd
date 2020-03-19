@@ -2,7 +2,7 @@
 
 ## About this level
 
-Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in marketing department, you will know what to ask Data Scientists for and how can you use it. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Gargage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
+Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in the marketing department, you will know what to ask Data Scientists for and how you can use it. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Garbage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
 
 Soft understanding of Data Science
 
@@ -12,7 +12,7 @@ Soft understanding of Data Science
 
 Programming 
 
-- Data and Compuing
+- Data and Computing
 - Using Data
 
 Statistics
@@ -23,33 +23,36 @@ Statistics
 
 ## Be Skeptical About Data
 
-*Are data really powerful?*
+*Is data really powerful?*
 
-Being skeptical about the power and bias in your data is the most **crucial** skill, or **mindset** which you will aquire on this level. Even experienced Data Scientists sometimes forget this point. Firstly, let's think about the power of your data. It might be necessary to ask, whether the data even *can* answer the questions we intend to ask.  
+Being skeptical about the power and bias in your data is the most **crucial** skill, or **mindset** which you will acquire on this level. Even experienced Data Scientists sometimes forget this point. Firstly, let's think about the power of your data. It might be necessary to ask, whether the data even *can* answer the questions we intend to ask.  
 
-Let's say that you got a task of optimizing bus transportation in your city, fairly large city let's say. The optimization should bring a benefit that the number of busses on each route should be adjusted to the demand, making passangers happier, thereafter using the busses more, earning you money and helping the environment. The dataset which you have available are:
+Let's say that you got a task of optimizing bus transportation in your city, a fairly large city. The optimization should bring a benefit that the number of busses on each route should be adjusted to the demand, making passengers happier, thereafter using the busses more, earning you money and helping the environment. The dataset which you have available are:
 
 - Every bus route and number of busses operating it.
 - Every bus stop and a delay that every bus had on that particular stop.
-- Every ticket bougth - at a bus, at a stop or online.
+- Every ticket bought - at a bus, at a stop or online.
 
 Do you think that this dataset will be sufficient to fulfill the task?
+
 
 ```{r bus, echo = FALSE, fig.cap='Is our data powerful enough to optimize the bus routes?'}
 knitr::include_graphics("resources/02-observer/bus.jpg")
 ```
 
+
+
 You do a perfect Data Science project, utilizing the dataset to its maximum. Some of the things you will do based on a dataset:
 
-- Bus routes, where people buy most tickets on their stops will increase in number of buses operating them. You are hoping that this way, the busses which might be crowded will be more comfortable for the large number of people using this route.  
+- Bus routes, where people buy most tickets on their stops will increase in the number of buses operating them. You are hoping that this way, the busses which might be crowded will be more comfortable for the large number of people using this route.  
 - Bus routes, where buses tend to be late are rerouted. You found some alternative paths, alternative places for a bus stop and are hoping that this will decrease the delay which buses have, making people more happy.  
 
-Seems reasonable right? There is though a catch and let's see what might actually happen as a result of your Data Science project.  
+Seems reasonable right? There is a catch and let's see what might actually happen as a result of your Data Science project.  
 
-- What will most likely happen is that you might optimize for the opposite. You have increased the buses for people who only occassionally travel with a bus, such as pensioners when they go for a walk in city centre. You have not optimized for heavy users of bus transportation - commuters who daily commute to and from work.
-- Similarly, your change in routes meets opposite of success. The reason why the buses are late on these routes is that these are the major paths for people in the city to use.  
+- What will most likely happen is that you might optimize for the opposite. You have increased the buses for people who only occasionally travel with a bus, such as pensioners when they go for a walk in the city centre. You have not optimized for heavy users of bus transportation - commuters who daily commute to and from work.
+- Similarly, your change in routes meets the opposite of success. The reason why the buses are late on these routes is that these are the major paths for people in the city to use.  
 
-Why have we failed when we did a perfect Data Science and our assumptions about the bus routes seemed to be very reasonable? The answer is that our **data did not have the power to correctly solve the problem**. What we mainly lacked was the online purchases of tickets as well as yearly subscriptions to public transportation services. Both of these ticket purchases are untracable. As a matter of fact, people who buy yearly subscriptions are the heaviest users of public transportation and we really have no data about their movement. Thus, our dataset simply did not have the required data. One way to solve this would be to change the system in itself. For instance, even if you have a yearly subscription or a ticket bought online, you have to *tag* it once you enter a bus. It won't wihtdraw any money from your account, though your yearly ticket will be invalid, unless tagged.  
+Why have we failed when we did a perfect Data Science and our assumptions about the bus routes seemed to be very reasonable? The answer is that our **data did not have the power to correctly solve the problem**. What we mainly lacked was the online purchases of tickets as well as yearly subscriptions to public transportation services. Both of these ticket purchases are untraceable. As a matter of fact, people who buy yearly subscriptions are the heaviest users of public transportation and we really have no data about their movement. Thus, our dataset simply did not have the required data. One way to solve this would be to change the system in itself. For instance, even if you have a yearly subscription or a ticket bought online, you have to *tag* it once you enter a bus. It won't withdraw any money from your account, though your yearly ticket will be invalid, unless tagged.  
 
 The message which I wanted to translate with this short example was not how to optimize public transportation, but so that..
 
@@ -61,10 +64,10 @@ To demonstrate this on my experience, I was once working with digital banking ap
 
 When it comes to data, there are two areas which I tend to distinguish:
 
-- **Machine-related Data** that relate solely to machinery or natural processes, often times collected through sensors. You are a chemical engineer running trials and observing time for a certain reaction to happen. You could be a mechanical engineer watching whether an error won't occur in your machinery. Assuming that your *sensor* is reliable and well setup, your data should be unbiased as both machine and nature (in this sense) are stable in *behavior*.
-- **Human-related Data** that display human behavior. *Self-reported data*, such as surveys. Imagine anything from voting polls, through asking whether someone wants to buy our product, up to even reporting an adress of residence. *Collected data*, such as logs from mobile application which are tracking human activity.
+- **Machine-related Data** that relate solely to machinery or natural processes, oftentimes collected through sensors. You are a chemical engineer running trials and observing time for a certain reaction to happen. You could be a mechanical engineer watching whether an error won't occur in your machinery. Assuming that your *sensor* is reliable and well setup, your data should be unbiased as both machine and nature (in this sense) are stable in *behavior*.
+- **Human-related Data** that display human behavior. *Self-reported data*, such as surveys. Imagine anything from voting polls, through asking whether someone wants to buy our product, up to even reporting an address of residence. *Collected data*, such as logs from mobile applications which are tracking human activity.
 
-To answer our question whether some data are specifically biased, simple answer is YES. There is a lot of data from my perspective which are just wrong to be used and you as a Citizen Data Scientist should not use. I do now wish to talk now about *data quality* issues, but about the nature of data, which is connected with how the data came into existence.  
+To answer our question whether some data are specifically biased, the simple answer is YES. There is a lot of data from my perspective which is just wrong to be used and you as a Citizen Data Scientist should not use. I do now wish to talk now about *data quality* issues, but about the nature of data, which is connected with how the data came into existence.  
 
 There are a lot of datasets which came to existence by **asking people** regarding their state or opinion. Take elections for instance. If you look at US elections in 2016, for a very long time it was seemingly impossible that Trump will win the elections. Yet, he won, even though the data from polls told us otherwise. What happened is that this (poll) dataset was created by asking people, while unfortunately it is in human nature that:
 
@@ -74,20 +77,20 @@ There are a lot of datasets which came to existence by **asking people** regardi
 - people want to appear different than they are
 - people do not know themselves
 
-I might seem to negativistic again, but this is what my past has taught me. Points which I am mentioning above are in our human nature and now it depends upon whether context will push us into one of these biases. I will bring several examples, but for now let's stick with these. Due to these biases that affect *self-reporting*, when your Data Science project is working with people, 
+I might seem to be negative again, but this is what my past has taught me. Points which I am mentioning above are in our human nature and now it depends upon whether context will push us into one of these biases. I will bring several examples, but for now let's stick with these. Due to these biases that affect *self-reporting*, when your Data Science project is working with people,
 
 > you should not rely on data which were created through *asking* and *self-reporting*. 
 
-I will be honest, from my perspective all survey data are just wrong and in nowadays world, I would simply skip this practice as we have better means of data collection.  
+I will be honest, from my perspective all survey data are just wrong and in today's world, I would simply skip this practice as we have better means of data collection.  
 
-Just last week I headed to my bank as a client with the intention of closing my account. I arrived at the branch (which was completely empty due to early hours) and took a place at the advisor. Upon my announcement, the branch advisor said - "You have a different bank?", to which I replied positively. When my churning papers were printed and ready for signature, I noticed that there is an explicit field stating a reason for churning, where of course was "Client has different bank". There was actually a list of reasons why I was churning - unprofessional staff, bad mortgage offer, bad credit card offerings and expesive services. As a client, I did not argue and let that reason be there. As a Data Scientist though, flames of justice were burning inside of me! Imagine the poor Data Scientist who receives a task to analyze data and determine what causes churn. Oh dear...
+Just last week I headed to my bank as a client with the intention of closing my account. I arrived at the branch (which was completely empty due to early hours) and took a place at the advisor. Upon my announcement, the branch advisor said - "You have a different bank?", to which I replied positively. When my churning papers were printed and ready for signature, I noticed that there is an explicit field stating a reason for churning, where of course was "Client has a different bank". There was actually a list of reasons why I was churning - unprofessional staff, bad mortgage offer, bad credit card offerings and expensive services. As a client, I did not argue and let that reason be there. As a Data Scientist though, flames of justice were burning inside of me! Imagine the poor Data Scientist who receives a task to analyze data and determine what causes churn. Oh dear...
 
 Do you think that the bank is not aware of an issue with human biases, such as this one? Of course it is; and so cross-checks are present, when a second advisor needs to arrive to confirm the actions of their colleague. Do you think that the second advisor cares more than the first one about the quality of their data? Of course not. 
 
-Which of the points above occured in this situation?  
+Which of the points above occurred in this situation?  
 
-- I was **lazy** and I **did not know myself**. I could tell the bank clerk that having another bank is not the real reason, but I just did't feel like it. Also, I don't *really* know why am I leaving this bank. One morning I woke up and I felt like I do not want to be their client anymore.
-- My branch advisor was I think **cheating**. He was happy that I agreed to the reason that I have different bank. I could have used one of the reasons that I am unhappy with the service I am receiving at this branch. This would of course cause his colleagues troubles.  
+- I was **lazy** and I **did not know myself**. I could tell the bank clerk that having another bank is not the real reason, but I just didn't feel like it. Also, I don't *really* know why am I leaving this bank. One morning I woke up and I felt like I do not want to be their client anymore.
+- My branch advisor was I think **cheating**. He was happy that I agreed to the reason that I have a different bank. I could have used one of the reasons that I am unhappy with the service I am receiving at this branch. This would of course cause his colleagues troubles.  
 
 ```{r people-bias, echo = FALSE, fig.cap='Remember that people have a lot of internal biases and will appear diferently than what they really are. Photo by Juan Pablo Serrano Arenas from Pexels'}
 knitr::include_graphics("resources/02-observer/people-bias.jpg")
@@ -98,35 +101,35 @@ Thus if you end up as the poor Data Scientist in this case,
 
 > you should seek ways how to *overcome* the biased self-reported data.
 
-Let's assume you work in a bank and your task is to develop a Data Science model which will **automatically be granting loans**. As you are working within loans department, you very well know that the primary factor for whether your bank will grant a loan is the income of a customer. You also know that there is a field in your database that says *"income"* to each one of your customers. Problem solved right? You just collect a few more fields and create a model as you were asked. Well, I recommend something different.  
+Let's assume you work in a bank and your task is to develop a Data Science model which will **automatically be granting loans**. As you are working within the loans department, you very well know that the primary factor for whether your bank will grant a loan is the income of a customer. You also know that there is a field in your database that says *"income"* to each one of your customers. Problem solved right? You just collect a few more fields and create a model as you were asked. Well, I recommend something different.  
 
-If you will ask around you will find out that this *"income"* field was created through self-reporting of your customers. When they are setting up their account, the advisor in a branch will ask them what is their income and they report figure X. Trust me when I say, that due to one of the reasons listed above, the customer will report a wrong number. Ok, then - you tell yourself that you are smarter than that and decide to observe customer's incoming salary transactions which you have tagged in your system. You have overcome the problem of self-reported information, right? You deploy your model into production and run your automatic loaning system. 
+If you will ask around you will find out that this *"income"* the field was created through self-reporting of your customers. When they are setting up their account, the advisor in a branch will ask them what is their income and they report figure X. Trust me when I say that due to one of the reasons listed above, the customer will report a wrong number. Ok, then - you tell yourself that you are smarter than that and decide to observe customer's incoming salary transactions which you have tagged in your system. You have overcome the problem of self-reported information, right? You deploy your model into production and run your automatic loaning system. 
 
-What will happen is that in some time frauds will arise and there will be a lot of customers who took huge loans and do not pay them back. How could this happen? Well, people learned how to cheat your model for their own benefit. Fraudsters are now once a month sending each other transactions which are tagged by your system as salaries and thereafter your *"income"* field for this customer is huge. They are then automatically granted significant loans. So, how can we solve this? 
+What will happen is that in some time frauds will arise and there will be a lot of customers who took huge loans and do not pay them back. How could this happen? Well, people learned how to cheat your model for their own benefit. Fraudsters are now once a month sending each other transactions which are tagged by your system as salaries and thereafter your *"income"* the field for this customer is huge. They are then automatically granted significant loans. So, how can we solve this? 
 
->The key is to obtain information which is desired through data which were created by human, while he was doing something completely natural and at best, unrelated.
+>The key is to obtain information which is desired through data which was created by humans, while he was doing something completely natural and at best, unrelated.
 
-You need to think about an action, or a process of a customer though which he/she unknowingly **displays his/her truthful income**. What about groceries? We all do grocery shopping, thereafter this might be a reliable source of information. What if you look at how much this customer is spending for groceries monthly and relate it to his/hers assumed income. If you have reported 1500 Euro income, how comes that you only spend 100 Euro for groceries? I would rather presume that your income is somewhere around 500 Euro. This is of course not a perfect solution, but what I am trying to translate is the **skeptical thinking** about how to solve the problem with bias about human-related data.
+You need to think about an action, or a process of a customer though which he/she unknowingly **displays his/her truthful income**. What about groceries? We all do grocery shopping, thereafter this might be a reliable source of information. What if you look at how much this customer is spending for groceries monthly and relate it to his/hers assumed income. If you have reported 1500 Euro income, how come that you only spend 100 Euro for groceries? I would rather presume that your income is somewhere around 500 Euro. This is of course not a perfect solution, but what I am trying to translate is the **skeptical thinking** about how to solve the problem with bias about human-related data.
 
 ## Data Science Project
 
-*How does Data Science project create benefit?*
+*How does a Data Science project create benefit?*
 
-Let's start from the very end, what should a project generate. It should be new information, in various form, that creates benefit for a person or company that financed this project. Let me emphasize the point of that the project creates **new information, not new data**. This is because data by themselves, have no benefit, and thereafter there would be no point in running a project that creates data and not information. This information can be in various forms, so let's take a look at some examples:
+Let's start from the very end, what should a project generate. It should be new information, in various forms, that creates benefit for a person or company that financed this project. Let me emphasize the point of that the project creates **new information, not new data**. This is because data by themselves has no benefit, and thereafter there would be no point in running a project that creates data and not information. This information can be in various forms, so let's take a look at some examples:
 
-- When I was at university I was tasked with creation of project, which would take **recordings of people walking** and it should create an information of whether people on the recordings are suffering from **Parkinson's disease** or not. Having this information created various benefits, for instance (if working properly), expensive time of doctor is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
+- When I was at university I was tasked with creation of project, which would take **recordings of people walking** and it should create an information of whether people on the recordings are suffering from **Parkinson's disease** or not. Having this information creates various benefits, for instance (if working properly), expensive time of doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
 
-- Once I ran a project which was supposed to **determine a location of newly opened retail stores** in a country. The input for my project was the network of roads and cities in the country with their respective counts of inhabitants. The information which my project was creating was a potential position of retail stores that would be optimized for a distribution of roads and where people live. This information created a clear benefit - competitive advantage for particular retailer.
+- Once I ran a project which was supposed to **determine a location of newly opened retail stores** in a country. The input for my project was the network of roads and cities in the country with their respective counts of inhabitants. The information which my project was creating was a potential position of retail stores that would be optimized for a distribution of roads and where people live. This information created a clear benefit - competitive advantage for particular retailers.
 
-- Numerous times in the past I was asked to determine customer's **probability to purchase an item**. My project always took as an input various customer data such as their demographics while it predicted a probability to purchase particular item (information). This information has a benefit that a business representative can then decide whether he/she will invest into marketing for particular customer.
+- Numerous times in the past I was asked to determine customer's **probability to purchase an item**. My project always took as an input various customer data such as their demographics while it predicted a probability to purchase a particular item (information). This information has a benefit that a business representative can then decide whether he/she will invest into marketing for a particular customer.
 
 ```{r parkinson, echo = FALSE, fig.cap='My showcasing how Data Science can diagnose Parkinson disease, through recording of gait on four points on the body.'}
 knitr::include_graphics("resources/02-observer/parkinson.jpg")
 ```
 
-I could go on, but I guess you already have the picture of what is the single requirement of any Data Science project - **creating an information from which we benefit**. The beneficial information can now really vary in forms. It can be anything as you already saw, but I would like to broaden your horizon even more. The output of a Data cience project can be a single diagram, or even a sentence (thereafter it does not have to be predictive modelling or optimization only). 
+I could go on, but I guess you already have the picture of what is the single requirement of any Data Science project - **creating an information from which we benefit**. The beneficial information can now really vary in forms. It can be anything as you already saw, but I would like to broaden your horizon even more. The output of a Data Science project can be a single diagram, or even a sentence (thereafter it does not have to be predictive modelling or optimization only). 
 
-*How does Data Science project look like?*
+*What does a Data Science project look like?*
 
 Essentially, all Data Science is about are **hypothesis**. This is how hypothesis is defined by Oxford dictionary:
 
@@ -134,31 +137,31 @@ Essentially, all Data Science is about are **hypothesis**. This is how hypothesi
 
 You would be surprised by how many Data Scientists are forgetting some parts of this definition so I would like to focus on it. At the beginning of a project you **suppose** something can be done - "We are able to find ideal locations for our retail stores.". Then you examine whether you already do not have enough evidence which would answer your supposition - "There is no other retailer similar to us in a given country and as we are new to the country we also have no knowledge." Finally, as we already discussed, there is a clear benefit if our assumption is fulfilled - "Once ideal locations are found, our stores will be easily accessible by customers and this will be profitable".  
 
-Once you work out your hypothesis, your Data Science project can outset. You will seek for available data that you can use to assess your supposition. In later chapters, you will learn about concepts such as *Minimum-Viable-Product* or *experimentation* that will help you to set up as simple way as possible to assess your supposition. But, let's leave it hear from now - remember to always set up a project based on your hypothesis.
+Once you work out your hypothesis, your Data Science project can outset. You will seek for available data that you can use to assess your supposition. In later chapters, you will learn about concepts such as *Minimum-Viable-Product* or *experimentation* that will help you to set up a simple way as possible to assess your supposition. But, let's leave it here from now - remember to always set up a project based on your hypothesis.
 
 ## Your Contribution
 
-*How can I contribute to Data Science project?*
+*How can I contribute to the Data Science project?*
 
-I have to make a small assumption here about who you are. You are someone who works in certain domain - for example banking, paper industry, insurance, car sales, anything. You either have formal education in this domain, or working experience. This means that you have something that no Data Scientist has - specific knowledge of the domain. Thereafter, as we already mentioned, you can contribute to the Data Science project in two ways already on this level: 
+I have to make a small assumption here about who you are. You are someone who works in a certain domain - for example banking, paper industry, insurance, car sales, anything. You either have formal education in this domain, or working experience. This means that you have something that no Data Scientist has - specific knowledge of the domain. Thereafter, as we already mentioned, you can contribute to the Data Science project in two ways already on this level: 
 
-> As Observer, contributes through inputs and through outputs of Data Science project, not into the central process.
+> As Observer, contributes through inputs and through outputs of Data Science projects, not into the central process.
 
-As you already know, the basis of every Data Science project are *data* (input). As you have domain knowledge, you might now about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past.  
+As you already know, the basis of every Data Science project are *data* (input). As you have domain knowledge, you might know about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past.  
 
-My project was using log data from a mobile application, whereas users had to go through several screens in order to complete purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping of from the sales process at various point. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from call centre, which moves the project a light year ahead!
+My project was using log data from a mobile application, whereas users had to go through several screens in order to complete the purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping off from the sales process at various points. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from the call centre, which moves the project a light year ahead!
 
 ```{r baby-crying, echo = FALSE, fig.cap='Crying babies were a patterns that data would never reveal to me. Photo by Ba Phi from Pexels.'}
 knitr::include_graphics("resources/02-observer/baby-crying.jpg")
 ```
 
-Secondly, every data science project should produce an *information* (output) that will be used to create benefit. This component of the Data Science project is often times underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the *information* was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this *information* could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the *information* they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the *information* which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit our of Data Science project.
+Secondly, every data science project should produce an *information* (output) that will be used to create benefit. This component of the Data Science project is oftentimes underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that a customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the *information* was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this *information* could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the *information* they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the *information* which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit out of a Data Science project.
 
 ## Data and Computing
 
 *How is data represented?*  
 
-If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often times think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers were presented data through punchcards.
+If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers were presented data through punch cards.
 
 ```{r punch-cards, echo = FALSE, fig.cap='Example of how one of the earliest versions of computer from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter'}
 
@@ -166,15 +169,15 @@ knitr::include_graphics("resources/02-observer/punch-cards.jpg")
 
 ```
 
-How is it possible that two values are enough to represent anything to the computer? Through converting of numbers into binary form. I do not want to bother you with the details of this method, I just want to tell you that **any number is easily represented in a binary form**.
+How is it possible that two values are enough to represent anything to the computer? Through converting numbers into binary form. I do not want to bother you with the details of this method, I just want to tell you that **any number is easily represented in a binary form**.
 
 ```{r text-to-binary, echo = FALSE, fig.cap='Example of how texts and numbers can be encoded into binary.'}
 knitr::include_graphics("resources/02-observer/text-to_binary.jpg")
 ```
 
-Now what we often times make mistake with is that we **overestimate powers of computers** and we think that they understand anything - texts, colours, pictures. Well, they don't. They only really well understand numbers as these can be easily converted into binary form. Thereafter a lot of tasks of Data Scientists revolves around representing data well for the computer. If a Data Sciene project intends to work with images or texts, one of the most crucial tasks is, how do we convert these to numbers, so that they can be represented well for computer in binary forms?
+Now what we often times make mistake with is that we **overestimate powers of computers** and we think that they understand anything - texts, colours, pictures. Well, they don't. They only really well understand numbers as these can be easily converted into binary form. Thereafter a lot of tasks of Data Scientists revolve around representing data well for the computer. If a Data Science project intends to work with images or texts, one of the most crucial tasks is, how do we convert these to numbers, so that they can be represented well for computers in binary forms?
 
-I was on a conference where a Scandinavian bank was representing their project of revealing fraud transaction by the means of Data Science. Transaction usually looks as something like following:
+I was at a conference where a Scandinavian bank was representing their project of revealing fraud transactions by the means of Data Science. Transaction usually looks as something like following:
 
 ```{r transaction, echo = FALSE, fig.cap='Example of how we view a transaction.'}
 knitr::include_graphics("resources/02-observer/transaction.JPG")
@@ -190,15 +193,15 @@ One of the keys of their project is how the transactions were represented to the
 
 >**data representation** is one of the key components of successful Data Science.
 
-Usually it will be rather simple to represent data to an algorithm. In the next chapter we are going to learn about data types and in most of the cases this will be sufficient. Though as you will be meeting some more complex projects, such as Natural Language Processing, the topic of data represetation will become more prevalent.
+Usually it will be rather simple to represent data to an algorithm. In the next chapter we are going to learn about data types and in most of the cases this will be sufficient. Though as you will be meeting some more complex projects, such as Natural Language Processing, the topic of data representation will become more prevalent.
 
 *How does my PC handle data?*
 
-As soon as you start a Data Science project, you will be facing hardware limitations. Simple reason for this is that hardware costs. Sure, you can purchase a hardware and have no variable costs, but this hardware will be getting outdated or you might incur opportunity costs. Thereafter, every Data Science project will be optimizing for as little hardware requirements as needed to fulfill particular task. These requirements will be coming from four crucial componenets that a computer has and I think it is hence crucial for you to learn about them now.
+As soon as you start a Data Science project, you will be facing hardware limitations. Simple reason for this is that hardware costs. Sure, you can purchase a hardware and have no variable costs, but this hardware will be getting outdated or you might incur opportunity costs. Thereafter, every Data Science project will be optimizing for as little hardware requirements as needed to fulfill particular tasks. These requirements will be coming from four crucial components that a computer has and I think it is hence crucial for you to learn about them now.
 
 In order to process data, and run Data Science project, following four components will be needed and this is how I think about them:
 
-- **CPU** (central processing unit). This is a place where all the calculations take place. When you will work with algorithms which are *computation heavy* and are dependent on CPU, you will run into limitations. 
+- **CPU** (central processing unit). This is a place where all the calculations take place. When you will work with algorithms which are *computation heavy* and are dependent on the CPU, you will run into limitations. 
 - **RAM** (random access memory). This is memory which is instantly accessible to all the programs, thereafter it is super useful to our work when we need to work on some data. When you will work with larger datasets, RAM requirements can become problematic.
 - Harddisk. This is your "bookshelf" of data. Once you are done working with your data, you store them here until next time you need them. Usually, harddisk space does not pose limitations to your project, as it is fairly cheap.
 - GPU (graphical processing unit, or graphics card). This is an alternative to your CPU, which is considerably more powerful and will come in handy in late chapters of this book.
@@ -209,22 +212,22 @@ knitr::include_graphics("resources/02-observer/computer-components.jpg")
 
 *What is a csv?*  
 
-Now that we know what data is, we also know what we aim to do with it and how will we manage with our computer, it is time to get our hands on some data. The simplest representation of a dataset is through so called "csv" or **"comma-separated-values"**. In plain form, these might look something like this.
+Now that we know what data is, we also know what we aim to do with it and how will we manage it with our computer, it is time to get our hands on some data. The simplest representation of a dataset is through so called "csv" or **"comma-separated-values"**. In plain form, these might look something like this.
 
 ```{r csv-example-1, echo = FALSE, fig.cap='One customer representation in csv form.'}
 knitr::include_graphics("resources/02-observer/csv-example-1.JPG")
 ```
 
-It is quite ugly right? The reason is that data in this form are **not meant for a human eye**, but for programs to read which can in turn display the data in nicer way for us. Later on when you will be importing such data, you only need to specify two things so that our program knows how to read it in well:
+It is quite ugly right? The reason is that data in this form are **not meant for a human eye**, but for programs to read which can in turn display the data in a nicer way for us. Later on when you will be importing such data, you only need to specify two things so that our program knows how to read it in well:
 
 - Separator (what separates columns), in our case `,`.
-- Whether first line is a header (names of columns), in our case `yes`.
+- Whether the first line is a header (names of columns), in our case `yes`.
 
-If you ever worked in Excel, when you are saving document, you can decide to save it as ".csv". This is by the way a good practice as the environments you will later on learn to work with can read it easily.
+If you ever worked in Excel, when you are saving a document, you can decide to save it as ".csv". This is by the way a good practice as the environments you will later on learn to work with can read it easily.
 
 *What is an observation and a feature?*  
 
-Data Science project will be aimed at certain phenomena which is of our *interest*. This can be our customer base, weather, how certain machine operates, how our colleagues work - anything. In order to apply Data Science to this phenomena, we will need to **describe it through observations and features**. *Observation* is some small unit from our phemena such as a day, one customer, one colleague, one moment of machine's operation. Secondly, *feature* is characteristic of an observation, such as temperature in a given day, age of one customer, arrival of our colleague to work or speed of machine's operation. Here is a small table to summarize it:
+Data Science project will be aimed at certain phenomena which is of our *interest*. This can be our customer base, weather, how certain machines operate, how our colleagues work - anything. In order to apply Data Science to this phenomena, we will need to **describe it through observations and features**. *Observation* is some small unit from our phenomena such as a day, one customer, one colleague, one moment of machine's operation. Secondly, *feature* is characteristic of an observation, such as temperature in a given day, age of one customer, arrival of our colleague to work or speed of machine's operation. Here is a small table to summarize it:
 
 | Phenomena | Observation | Feature |
 | --------: | ----------: |  -----: | 
@@ -239,7 +242,7 @@ knitr::include_graphics("resources/02-observer/one-customer.JPG")
 
 *What is a "flat table"?*  
 
-We now leared how to store data about one customer, but we have many customers right? To store data about all of them in reasonable form, we will use a flat table. It is common to store *observations* in **rows**. Thereafter, we can just add several rows, representing several customers.
+We now learned how to store data about one customer, but we have many customers right? To store data about all of them in reasonable form, we will use a flat table. It is common to store *observations* in **rows**. Thereafter, we can just add several rows, representing several customers.
 
 ```{r flat-table, echo = FALSE, fig.cap='Multiple customers representation in csv form - flat table.'}
 knitr::include_graphics("resources/02-observer/flat-table.JPG")
