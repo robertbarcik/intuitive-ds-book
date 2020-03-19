@@ -1,5 +1,12 @@
 # Observer {#observer}
 
+
+```{r packages_observer, echo=FALSE, include=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+
 ## About this level
 
 Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in the marketing department, you will know what to ask Data Scientists for and how you can use it. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Garbage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
@@ -290,7 +297,7 @@ There are two very popular engines, which are actually competing with each other
 
 Finally there are libraries. The engines as well as IDEs are many times licensed under open-source. This makes a lot of sense, because people have a motivation to contribute to these. How will they contribute though? It would be very tricky to integrate work of thousands of people though single software - may it be R or Python. For that, we have *libraries*. These are way smaller sets of functions, which usually serve a specific purpose. For example, even though R serves Data Scientists, you might decide to write a specific library which will be for Data Scientists which are trying to predict zombie apocalypse. You will include a set of specific functions in your library and you may decide to publish it so that other people can use it.
 
-*What is R?*  
+### R
 
 R is an engine (or programming language) in which a lot of Data Scientists today work, because of its simplicity and statistical powers. We are able to solve our task with it with several *lines of code* while we make use of functions which someone else predefined for us. Here is how a solution looks.
 
@@ -305,10 +312,11 @@ It's a bit ugly though, as we did not use any pretty IDE. We can write the same 
 
 Data Scientists of course like this as you can visually distinguish between various elements. The IDE will have much greater functionalities compared to only working in programming language, but we will get to that later.
 
-*What is Python?*
+### Python
+
 you can download it with.
 
-*What is Knime?*  
+### Knime
 
 Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which do not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.  
 
@@ -324,13 +332,44 @@ As you are on the level of Observer, you should not choose any. At this point, y
 
 ## Descriptive Statistics
 
-In the last chapter we discussed that one of the simplest ways for creating valuable information with Data Science is by describing some population. It is now time to revisit this idea and expand on it.
+In the last chapter we discussed that one of the simplest ways for creating valuable information with Data Science is by describing a population which is of our interest. Our toolset is quite limited though so far - we can only use *measures of central tendency*. It is now time to revisit this idea and expand on it with distributions, visualisations and *measures of spread*.
 
 ### Distributions
 
-Learn about a picture of distribution.
+*A picture is worth a thousand words*, is an old proverb which is true also for us. Within Data Science, this topic is called Data Visualisation and is very broad. We only tip our toes into its waters now by learning how can we **visualise a distribution**. 
+
+Let's revisit an example from a previous chapter, where we had salaries distributed such as this:
+
+```{r salaries_country_revisited}
+salaries_country <- c(350, 400, 450, 470, 500, 520, 1200, 1270, 1300, 1460, 1500)
+```
+
+In this case, it was easy for us to intuitively grasp an idea of what is going on in the population. What is our population looked though like this:
+
+```{r large_salaries_population, include=FALSE}
+large_salaries_population <- c(round(rnorm(700, mean = 600, sd = 80)), round(rnorm(300, mean = 1000, sd = 150)))
+```
+
+```{r}
+head(large_salaries_population, 100)
+```
+
+It gets messy right? We can try to order the numbers, but still **our intuitive thinking is failing** when population gets larger. That is why we turn into distributions plot. It is one of the simplest plot within Data Visualisation techniques:
+
+- It has two axis: x-axis (horizontal) and y-axis (vertical)
+- X-axis displays our values or units of measurement (in our case salaries in Euro). This axis is splitted into small **bins**, each bin holds a range of our values - for example range of 50 Euro, ranging from 900 Euro to 950 Euro.
+- Y-axis displays *count* of observations which fall into given bin. If our bin holds a salary range of 900-950 Euro, several observations may fall into it (906, 934, 949). The displayed value on y-axis will then be 3, as 3 observations fell into a bin.
+
+```{r}
+large_salaries_population_df <- data.frame(salaries = large_salaries_population)
+ggplot(large_salaries_population_df, aes(x = salaries)) + geom_histogram(bins = 100)
+```
+
+Our intution works again doesn't it? By looking at the plot of salary distribution, we can imagine what is happening in the population. We can clearly see part of population whose salaries are distributed around 600 Euro, whereas this is majority of population. Second hump occurs around 1000 Euro, where is a wealthier group of people distributed. If we now worked for tax office and our task would be to determine a boundary for different tax levels, based on this distribution plot, we would be able to complete the task - we would probably put this cut somewhere around 800 Euro to clearly separate these two populations.
 
 ### Percentiles
+
+We hav ein the last chapter learned about mode, median and mean. Out of these, median and mean will be very useful for you when you will be thinking essentally about any population. We expand our knowledge now on *median* with a knowledge that this is so called **50th per
 
 Where in the population you lie, to compare yourself.
 
@@ -355,6 +394,29 @@ IQR
 ### Percentages
 - the danger of working with them (CRM campaigns doubling conversion rate)
 - they are relative to some amount (which can be small)
+
+### Comparing Distributions
+
+Learn about comparing populations with distributions.
+
+```{r comparing_distributions}
+df.example <- data.frame(model = rep(c("a", "b"), length.out = 500), 
+                      type = rep(c("t1", "t2", "t2", "t1"), 
+                      length.outh = 250), value = rnorm(1000))
+
+d2 <- df.example %>%
+  group_by(model, type) %>%
+  summarize(lower = quantile(value, probs = .025),
+            upper = quantile(value, probs = .975))
+
+ggplot(df.example, aes(x = value)) +
+  facet_grid(type ~ model) +
+  geom_histogram(aes(fill = model, colour = model)) +
+  geom_vline(data = d2, aes(xintercept = lower)) +
+  geom_vline(data = d2, aes(xintercept = upper))
+
+```
+
 
 ## Predicting The Future?
 
