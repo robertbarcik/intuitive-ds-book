@@ -50,8 +50,9 @@ Let's tak an example from applying Data Science in Marketing. Propensity models 
 
 First thing that you need to do is to realise that you have **user and customer**. The user is a person responsible for campaigns within a marketing department. This person will *use* your product and launch campaigns on it. Customers, are your actual customers of a company. Your question is becoming hence even more complex - what does your customer need and what does your user need?
 
+## Assembling a team
 
-How to organize a team?
+**How to organize a team?**
 
 Give two examples of how we were organized. One possibility was to have close involvement of Data Engineers, another was a possibility to have closely business representatives.
 
@@ -71,16 +72,21 @@ Maybe something from marketing by Seth?
 Maybe soemthing from Sinek regarding Why?
 The project is really trying to reveal why something is happening often times?
 
+**Personalities of Data Scientists and Business Counterparts**
+
 ## Statistics
-Feature importance in detail
+
+**Feature importance in detail**
 
 *What are Local Interpretations?*
 
 
 AutoML Pipeline
-Timeseries
+
+**Timeseries**
 Non-stationary variables
-Support Vector Machines
-Feature scaling
+
+**Support Vector Machines**
+
 
 ## Data Engineering

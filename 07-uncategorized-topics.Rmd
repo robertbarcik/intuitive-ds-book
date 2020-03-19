@@ -2,33 +2,43 @@
 
 This chapter contains a list of topics which I consider interesting but I am unable to currently categorize them anywhere.
 
-Spark
-Bayesian methods
-Text processing
-Topic modelling
-Shell and Bash?
+**Spark**
+Why would we even want to use it and what are our possibilities?
 
-Be Curious
+**Bayesian methods**
+
+**Text processing**
+Maybe a piece on lower level (Contributor) and then on the last levels the high level.
+
+**Shell and Bash?**
+
+**Be Curious**
 You are already at the level where curiosity will be what keeps you growing. With this chapter we are starting with a new practice that I will be leaving recommendations for additional sources that you can read 
 
-Is Machine Learning Unethical or Racist?
+*What is so exciting about this profession?*
+The endlessness of the game is my favourite part. I like always having new things to learn. Hard to imagine ever becoming bored.
 
-Are data scientists evil? Is there a reason why to be scared of these stalkers?
+**Is Machine Learning Unethical or Racist?**
+There appear to be new planned regulations imposed by EU on for instance that gender cannot be used within feature set.
 
-Propensity models
+**Are data scientists evil?**
+Is there a reason why to be scared of these stalkers?
+
+**ropensity models**
 Can two models and their respective probabilities be really compared?
 
-Customer and user
-You need to distinguish between the two
+**Customer and user**
+You need to distinguish between the two if you are in larger organizations.
 
-The falacy of absolute numbers
+**The fallacy of absolute numbers**
 For many years what matters a lot is a conversion rate or a success rate. I recommend though to be careful with it.
 
-Should I focus on how my code looks?
+**Should I focus on how my code looks?**
 I have a saying: "People have feelings. They feel when you code like sh_t."
 
-Long and wide format of data
+**Long and wide format of data**
 
+**Commenting your code**
 A journalist asks a programmer: What makes a code bad?
 Programmer: No comment
 
@@ -36,29 +46,28 @@ Parallel programming
 
 Self-organizing maps
 
-*How does my PC view features?*
+**What are two main kinds of features?**
 Numerical and categorical features. This needs to come before Supervised Learning as I am explaning classification and regression. No it doesn't, it is explained only conceptually.
 
 ```{r machine learning, echo = FALSE, fig.cap='Posted by u/victor_stefan to r/ProgrammerHumor, Reddit.'}
 knitr::include_graphics("resources/02-observer/machine-learning.png")
 ```
 
-*What is information leakage?*
+**What is information leakage?**
 One of the steps we need to ensure is to prevent *information leakage*. This happens in cases, where our independent features contain some *leaked* (or spoiler) information about our target feature. Let me give you an example. 
 
 
-*What is correlation and causality?*
-
+**What is correlation and causality?**
 Make an example with babies and birds.
 
 
-*Jobs which might talk about you*
+**Jobs which might talk about you**
 
 I would say that positions mentioning statistics, causal inference, experimentation or A/B testing, incrementality measurement, segmentation, decision science, economics, and "analytics" generally will probably be more of that flavor. Emphasis on communication skills and visualization will be a component to these roles. You probably want to avoid applying to positions with a focus on engineering, architecture, or those specifically calling out deep learning or computer vision applications.
 
 I'd say a solid 50 percent of DS jobs want an insight specialist over a ML specialist regardless of the job posting.
 
-*Skillset wrong view*
+**Skillset wrong view**
 
 Machine Learning Areas:
 Supervised Machine Learning (49%)
@@ -84,29 +93,13 @@ Gradient Boosting (17%)
 Neural Networks - RNNs (15%)
 Hidden Markov Models HMMs (9%)
 
+**Current hiring**
+I saw an article somewhere the other day that suggested that even really good Machine Learning candidates were failing to get good jobs. Apparently the universities are now churning out many ML graduates ... but the jobs are surprisingly not there. The article suggested that the top users of AI have decided to build very small teams of stellar AI gurus : geniuses with multiple PhDs. The firms do NOT want hoards of simply 'very good' ML candidates. Is this likely to be true? If so, is it just the top firms which are this fussy? In which case, are there other firms who are happy to hire the 'good' ML candidates?
 
-*Current hiring*
-I saw an article somewhere the other day that suggested that even really good Machine Learning candidates were failing to get good jobs.
-
-Apparently the universities are now churning out many ML graduates ... but the jobs are surprisingly not there.
-
-The article suggested that the top users of AI have decided to build very small teams of stellar AI gurus : geniuses with multiple PhDs. The firms do NOT want hoards of simply 'very good' ML candidates.
-
-Is this likely to be true?
-
-If so, is it just the top firms which are this fussy? In which case, are there other firms who are happy to hire the 'good' ML candidates?
-
-
-*What is so exciting about this profession?*
-The endlessness of the game is my favourite part.
-
-I like always having new things to learn. Hard to imagine ever becoming bored.
-
-*More on definition of the field*
+**More on definition of the field**
 correct in the fact that analytics has been around a long time. Only recently has it graduated into the realm of BI.
 
 I'll preface everything here with this: EVERY industry/company/department has slightly different needs and scope so YMMV.
-
 
 Within BI there are three main disciplines: Data Engineer, Data Analyst, Data Scientist.
 
@@ -130,15 +123,11 @@ Because academia is primarily an environment in which you're measured by how rig
 
 That is fundamentally not going to work. And that is because people in the workplace are measured almost exclusively on how productive they are - they are measured on results.
 
-Corollary 1: if it's wrong but it works, then it's not wrong.
-
-Corollary 2: if you're right but it doesn't change the outcome, then it doesn't matter.
-
-Corollary 3: if you're right, but it doesn't work, then you're wrong.
-
-Corollary 4: if you prove someone else wrong, but their answer works and yours doesn't, then they're right and you're wrong.
-
-Corollary 5: if you prove someone's solution to be wrong even though it does provide value, then you have not yet provided any value until you propose something better.
+- Corollary 1: if it's wrong but it works, then it's not wrong.
+- Corollary 2: if you're right but it doesn't change the outcome, then it doesn't matter.
+- Corollary 3: if you're right, but it doesn't work, then you're wrong.
+- Corollary 4: if you prove someone else wrong, but their answer works and yours doesn't, then they're right and you're wrong.
+- Corollary 5: if you prove someone's solution to be wrong even though it does provide value, then you have not yet provided any value until you propose something better.
 
 I cannot emphasize how much you can limit your career by focusing on right vs. wrong. Right vs. wrong is irrelevant; productivity always rules.
 
@@ -156,25 +145,25 @@ The only scenario where you will see bad science work with any degree of frequen
 
 Excellent points! I'll add that fancy novel techniques mean almost nothing to business folks. Simple and effective is just as good if not better. You can and will get out played by someone with a simple brute force technique that they implement quickly while you try and perfect yours.
 
-*More on citizen data scientist*
+**More on citizen data scientist**
 Although the term has existed for a couple of years now you won't find job listings for citizen data scientist on Glassdoor.com. That's because it's not a role that an organization is going to hire for, but more like a requirement, they need to fill. People in the industry are using the term citizen, but those doing the hiring are focused on the tasks not currently getting done but require attention. 
 
 It's common knowledge that we have a shortage of data scientists, and businesses realize that not every job function needs to be done by someone with an advanced degree as they reckon with this shortage. Instead, a citizen data scientist can be trained to do work that is needed but not currently getting done. 
 
-*Develop visualisation skills as a crucial skill*
+**Develop visualisation skills as a crucial skill**
 Once you've got the foundation of big data skills, you need to develop visualization skills. Your employer or organization doesn't care about a jumble of numbers on his or her desk. Your job is to present the data in a visually compelling way.
 
 Google Data Studio as a learning alternative to Power BI, Tableau or Clicksense
 
-*Negative opinion*
+**Negative opinion**
 What will not work is creating a partly automated software and expect people with little training or understanding of data to be able to use it in new situations. Imagine a combination of untrained pilot and an auto-pilot that works 90% of the time. The plane will fly fine for a while until an unpredictable situation will arise, and the autopilot will signal a problem and revert control to the untrained pilot. Bad things will happen. Similar logic is behind Google decision to remove a steering wheel from its self-driving cars - a driver who is relying on a car almost all the time is unlikely to react quickly and adequately in an emergency when the car cannot cope.
 
 I should state this at the beginning of the book that I do not intend readers to become partly trained. 
 
-*Should I rename the term?*
+**Should I rename the term?**
 I run a small team of data analysts and I'm offended by the term "citizen data scientist" to describe us. We grew from the business developing data skills as we went along. So, we don't have much formal training, but we can run circles around other analysts with all the proper credentials. Calling us citizen data scientists sounds very condescending. Like we're still sitting at the kid's table. Keep the terms separate. I acknowledge that we're not "data scientists" by any formal definition, but we are skilled data analysts. Someday we may earn the coveted title of, "Data Scientist, " but until then don't put me at the kid's table.
 
-*Steps in ML project*
+**Steps in ML project**
 https://www.lpsm.paris/pageperso/has/source/Hand-on-ML.pdf
 This is what Oreilly says, which I tend to disagree with.
 1. Look at the big picture.
@@ -192,5 +181,3 @@ Also Precision Recall tradeoff
 
 Linear regression is a copy from Andrew NG
 
-*Personality of Data Scientist*
-Get into flow

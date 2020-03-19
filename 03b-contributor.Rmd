@@ -26,12 +26,14 @@ How do I perform numeric operations in my IDE?
 
 ## Data Preprocessing
 
-*What are feature types?*
-Numbr of unique values, compared to feature type.
+**Feature scaling**
+
+**What are feature types?**
+Number of unique values, compared to feature type.
 
 Think about which feature contains more information - numeric does. Ordered categorical does not contain distances.
 
-*How do I describe data?*
+**How do I describe data?**
 For both types of features, describe what we observe such as mean or median.
 
 Percentiles.
