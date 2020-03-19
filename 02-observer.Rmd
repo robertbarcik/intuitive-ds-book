@@ -58,7 +58,7 @@ The message which I wanted to translate with this short example was not how to o
 
 > you shall be **skeptical** about the power of your data.
 
-To demonstrate this on my experience, I was once working with digital banking application and we intended to create budgets to many customers. These budgets would be helping you save money and have overview of how much you are spending on various categories such as groceries, going out or vacations. Even though I was trying various methods it was not working out well. The budgets were absolutely unstable and customers every month spent different amount on things. How is it possible? Of course **my data did not have the power** to answer the question I was given. Even though we every month consume similar amounts of things, we do not necessarily buy the same amount due to simple reason - we share with someone. Usually customers have families, wifes, husbands, friends, flatmates and they share expenses among each other. To solve the task properly I would need to link together the people who share their expenses and only then I would be able to answer the question. 
+To demonstrate this in my experience, I was once working with a digital banking application and we intended to create budgets to many customers. These budgets would be helping you save money and have an overview of how much you are spending on various categories such as groceries, going out or vacations. Even though I was trying various methods it was not working out well. The budgets were absolutely unstable and customers every month spent different amounts on things. How is it possible? Of course **my data did not have the power** to answer the question I was given. Even though we consume similar amounts of things every month, we do not necessarily buy the same amount due to simple reasons - we share with someone. Usually customers have families, wifes, husbands, friends, flatmates and they share expenses among each other. To solve the task properly I would need to link together the people who share their expenses and only then I would be able to answer the question. 
 
 *Are some data specifically biased?*  
 
@@ -92,7 +92,7 @@ Which of the points above occurred in this situation?
 - I was **lazy** and I **did not know myself**. I could tell the bank clerk that having another bank is not the real reason, but I just didn't feel like it. Also, I don't *really* know why am I leaving this bank. One morning I woke up and I felt like I do not want to be their client anymore.
 - My branch advisor was I think **cheating**. He was happy that I agreed to the reason that I have a different bank. I could have used one of the reasons that I am unhappy with the service I am receiving at this branch. This would of course cause his colleagues troubles.  
 
-```{r people-bias, echo = FALSE, fig.cap='Remember that people have a lot of internal biases and will appear diferently than what they really are. Photo by Juan Pablo Serrano Arenas from Pexels'}
+```{r people-bias, echo = FALSE, fig.cap='Remember that people have a lot of internal biases and will appear differently than what they really are. Photo by Juan Pablo Serrano Arenas from Pexels'}
 knitr::include_graphics("resources/02-observer/people-bias.jpg")
 ```
 
@@ -117,7 +117,7 @@ You need to think about an action, or a process of a customer though which he/sh
 
 Let's start from the very end, what should a project generate. It should be new information, in various forms, that creates benefit for a person or company that financed this project. Let me emphasize the point of that the project creates **new information, not new data**. This is because data by themselves has no benefit, and thereafter there would be no point in running a project that creates data and not information. This information can be in various forms, so let's take a look at some examples:
 
-- When I was at university I was tasked with creation of project, which would take **recordings of people walking** and it should create an information of whether people on the recordings are suffering from **Parkinson's disease** or not. Having this information creates various benefits, for instance (if working properly), expensive time of doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
+- When I was at university I was tasked with creation of project, which would take **recordings of people walking** and it should create an information of whether people on the recordings are suffering from **Parkinson's disease** or not. Having this information creates various benefits, for instance (if working properly), expensive time for doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
 
 - Once I ran a project which was supposed to **determine a location of newly opened retail stores** in a country. The input for my project was the network of roads and cities in the country with their respective counts of inhabitants. The information which my project was creating was a potential position of retail stores that would be optimized for a distribution of roads and where people live. This information created a clear benefit - competitive advantage for particular retailers.
 
@@ -151,7 +151,7 @@ As you already know, the basis of every Data Science project are *data* (input).
 
 My project was using log data from a mobile application, whereas users had to go through several screens in order to complete the purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping off from the sales process at various points. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from the call centre, which moves the project a light year ahead!
 
-```{r baby-crying, echo = FALSE, fig.cap='Crying babies were a patterns that data would never reveal to me. Photo by Ba Phi from Pexels.'}
+```{r baby-crying, echo = FALSE, fig.cap='Crying babies were patterns that data would never reveal to me. Photo by Ba Phi from Pexels.'}
 knitr::include_graphics("resources/02-observer/baby-crying.jpg")
 ```
 
@@ -163,7 +163,7 @@ Secondly, every data science project should produce an *information* (output) th
 
 If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers were presented data through punch cards.
 
-```{r punch-cards, echo = FALSE, fig.cap='Example of how one of the earliest versions of computer from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter'}
+```{r punch-cards, echo = FALSE, fig.cap='Example of how one of the earliest versions of computers from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter'}
 
 knitr::include_graphics("resources/02-observer/punch-cards.jpg")
 
@@ -268,13 +268,13 @@ We create two tables, with different granularities separately. The only extra po
 knitr::include_graphics("resources/02-observer/relational-database.JPG")
 ```
 
-When you will be contributing to a Data Science project, keep the data granularity in mind. If the data of different granularities enter the project, it is neccessary to harmonize their granularities. This can be done for instance through data aggregation which you will learn on next level.
+When you will be contributing to a Data Science project, keep the data granularity in mind. If the data of different granularities enter the project, it is necessary to harmonize their granularities. This can be done for instance through data aggregation which you will learn on the next level.
 
 ## Using Data
 
 *Can we already do Data Science?*  
 
-Now that we constructed ourselves a small relational database with everything that we know about our customer base, are we ready to do Data Science? Yes, so let's give it a try. We are a coffee seller and we are interested which age group drinks most of the coffee, so that we can better target our marketing efforts. 
+Now that we constructed ourselves a small relational database with everything that we know about our customer base, are we ready to do Data Science? Yes, so let's give it a try. We are a coffee seller and we are interested in which age group drinks most of the coffee, so that we can better target our marketing efforts. 
 
 **calculate the example by hand**
 
@@ -284,15 +284,15 @@ Luckily, software can of course help us. Now it is time to turn into learning *w
 
 *What is an IDE, engine and package/library?*  
 
-Even though you are right now at the level of Observer, you might already come in touch with programs or libraries which make Data Science projects. Thereafter, it is important to understand a terminology here. The most obvious are so called IDEs - Integrated Development Environments. These are pretty and easy to work in. Currently, some of the most popular ones among Data Scientists are R-Studio and Jupyter Notebooks. This will be a program which runs on a computer (either a physical one or somewhere on the server), that allows you to utilize some computing *engine*.
+Even though you are right now at the level of Observer, you might already come in touch with programs or libraries which make Data Science projects. Thereafter, it is important to understand the terminology here. The most obvious are so called IDEs - Integrated Development Environments. These are pretty and easy to work in. Currently, some of the most popular ones among Data Scientists are R-Studio and Jupyter Notebooks. This will be a program which runs on a computer (either a physical one or somewhere on the server), that allows you to utilize some computing *engine*.
 
 There are two very popular engines, which are actually competing with each other - R and Python. Imagine these as a set of functions which are very robust and people like to use them because they are well developed and once a Data Scientist works with them, he can be sure that his work will run.  
 
-Finally there are libraries. The engines as weel as IDEs are many times licensed under open-source. This makes a lot of sense, because people have a motivation to contribute to these. How will they contribute though? It would be very tricky to integrate work of thousands of people though single software - may it be R or Python. For that, we have *libraries*. These are way smaller sets of functions, which usually serve a specific purpose. For example, even though R serves Data Scientists, you might decide to write specific library which will be for Data Scientists which are trying to predict zombie apocalypse. You will include a set of specific functions in your library and you may decide to publish it so that other people can use it.
+Finally there are libraries. The engines as well as IDEs are many times licensed under open-source. This makes a lot of sense, because people have a motivation to contribute to these. How will they contribute though? It would be very tricky to integrate work of thousands of people though single software - may it be R or Python. For that, we have *libraries*. These are way smaller sets of functions, which usually serve a specific purpose. For example, even though R serves Data Scientists, you might decide to write a specific library which will be for Data Scientists which are trying to predict zombie apocalypse. You will include a set of specific functions in your library and you may decide to publish it so that other people can use it.
 
 *What is R?*  
 
-R is engine (or programming language) in which a lot of Data Scientists today work, because of its simplicity and statistical powers. We are able to solve our task with it with several *lines of code* while we make use of functions which someone else predefined for us. Here is how a solution looks.
+R is an engine (or programming language) in which a lot of Data Scientists today work, because of its simplicity and statistical powers. We are able to solve our task with it with several *lines of code* while we make use of functions which someone else predefined for us. Here is how a solution looks.
 
 **insert R solution to the problem**
 
@@ -310,7 +310,7 @@ you can download it with.
 
 *What is Knime?*  
 
-Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which does not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.  
+Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which do not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.  
 
 When thinking about Knime, we can forget our distinction between engine and IDE, here we get both things in one. One important difference to R and Python is that here we are not expected to explicitly write code in order to fulfill our data science task. Let's give it a try.
 
@@ -320,7 +320,7 @@ As you can see we are again doing the same steps, just this time they are repres
 
 *Should I use R, Python or Knime?*  
 
-As you are on the level of Observer, you should not choose any. At this point, you should only be able to observe a Data Science project, thereafter when your colleagues say that they work in certain language (most likely one of these three), you know what they talk about and you can see ona very basic level what they are doing.
+As you are on the level of Observer, you should not choose any. At this point, you should only be able to observe a Data Science project, thereafter when your colleagues say that they work in a certain language (most likely one of these three), you know what they talk about and you can see on a very basic level what they are doing.
 
 ## Descriptive Statistics
 
@@ -332,7 +332,7 @@ Learn about a picture of distribution.
 
 ### Percentiles
 
-Where in population you lie, to compare yourself.
+Where in the population you lie, to compare yourself.
 
 Quantiles 
 
@@ -344,7 +344,7 @@ End with that it is outliers and extreme values which are influencing. Let's lea
 
 ### Extreme Values and Outliers
 
-How do we find them in boxplot.
+How do we find them in boxplot?
 
 ### Measures of Spread
 
@@ -364,15 +364,15 @@ Predicting without Machine Learning - importance of non-ML baseline
 
 *What is Machine Learning?*  
 
-Machine Learning is crucial part of Data Science. Often times when I see courses or training materials, this area is postponed until the student learns a lot of basics, such as data preprocessing. Only then, it is believed, you should be exposed to Machine Learning. I believe the opposite - **you should meet it already now** (as an Observer), due to two reasons. Firstly, as already mentioned, Machine Learning is something like a hearth of Data Science. Secondly, it will keep your motivation higher - you need to know some cool things that you will be able to do once you finish this book.  
+Machine Learning is a crucial part of Data Science. Oftentimes when I see courses or training materials, this area is postponed until the student learns a lot of basics, such as data preprocessing. Only then, it is believed, you should be exposed to Machine Learning. I believe the opposite - **you should meet it already now** (as an Observer), due to two reasons. Firstly, as already mentioned, Machine Learning is something like a hearth of Data Science. Secondly, it will keep your motivation higher - you need to know some cool things that you will be able to do once you finish this book.  
 
-To explain you properly what Machine Learning is, I need to go into history of computing. Why did computers arise? They arose to simplify or automate tasks done by humans. One such task was to summarize consensus data (the survey done every 10 years which observes a population of a certain country). The problem in 1880s was that it took over 8 years to summarize and process the data from a consensus, thereafter making it quite worthless due to the length of the process. One of the clerks, Herman Hollerith proposed a solution through a counting machine that successfully sped up the process.
+To explain to you properly what Machine Learning is, I need to go into the history of computing. Why did computers arise? They arose to simplify or automate tasks done by humans. One such task was to summarize consensus data (the survey done every 10 years which observes a population of a certain country). The problem in the 1880s was that it took over 8 years to summarize and process the data from a consensus, thereafter making it quite worthless due to the length of the process. One of the clerks, Herman Hollerith proposed a solution through a counting machine that successfully sped up the process.
 
 ```{r hollerith-machine, echo = FALSE, fig.cap='Data processing as a use of computers. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/'}
 knitr::include_graphics("resources/02-observer/hollerith-machine.jpg")
 ```
 
-This was a primary solution for over half a century until commercial electronic computers arrived. Having computers with certain rules which were doing what otherwise humans could do, was really helping humanity. This automation was done by telling computers explicitly what to do through *rules*. Rules have problems though - they have hard and strict boundaries. If you want to design a great rule based system, you need to be really careful so that you encode all the *patterns* which are in the data. With the arrival of commercial electronic computers the rule based systems were becoming more and more complex. Firstly, it is very hard to encode all the patters into our model. Secondly, our population and data change over time. Due to that, even if you manage to encode all of the rules, very quickly will these become outdated simply due to changing nature of our world.  
+This was a primary solution for over half a century until commercial electronic computers arrived. Having computers with certain rules which were doing what otherwise humans could do, was really helping humanity. This automation was done by telling computers explicitly what to do through *rules*. Rules have problems though - they have hard and strict boundaries. If you want to design a great rule based system, you need to be really careful so that you encode all the *patterns* which are in the data. With the arrival of commercial electronic computers the rule based systems were becoming more and more complex. Firstly, it is very hard to encode all the matters into our model. Secondly, our population and data change over time. Due to that, even if you manage to encode all of the rules, very quickly will these become outdated simply due to the changing nature of our world.  
 
 The story of Machine Learning continues at IBM, as here in **1952 Arthur Samuel** came up with the first phrase of Machine Learning. He was interested in designing a computer program to play checkers, while the electrical computer had only a very limited memory available. He was thereafter motivated to write *functions* which will analyse the game on the go and decide on the next move. You see, this machine no longer had explicit instructions on how to work. If you open the Wikipedia page about Machine Learning, most likely it will be defined through the definition of Arthur Samuel from 1959:
 
@@ -386,15 +386,15 @@ Here we see the difference - instead of explicit instructions, we are going to s
 
 Are we already at the definition of Machine Learning how we know it today? Not quite. You see that even though we are able to let the program decide through identified patterns, instead of explicit instructions, we are not *generalized* yet. The computer of Arthur Samuel was designed to be good at specific task and we cannot take it and generalize it to playing cards for example, or optimize bus transportation. The next leap forward came from Frank Rosenblatt in 1957 who developed the idea of **perceptron**. Even though it took many years after Rosenblatt introduced the concept, the idea which he proposed was crucial. The Perceptron is a *function* which could be used for many tasks and not only for one specific. 
 
-```{r perceptron, echo = FALSE, fig.cap='The Perceptron was the first version of Machine Learning model as we know it today. It could theoretically be applied to any task at hand.'}
+```{r perceptron, echo = FALSE, fig.cap='The Perceptron was the first version of the Machine Learning model as we know it today. It could theoretically be applied to any task at hand.'}
 knitr::include_graphics("resources/02-observer/perceptron.png")
 ```
 
-Let's say that you are running a canteen where a few hundred people arrive every day for a lunch. You are supposed to optimize which meals are being served, and also how many portions will be cooked. This should yield a benefit of lowering waste created in your canteen. How will you go about it?  
+Let's say that you are running a canteen where a few hundred people arrive every day for lunch. You are supposed to optimize which meals are being served, and also how many portions will be cooked. This should yield a benefit of lowering waste created in your canteen. How will you go about it?  
 
-Your Option 1 is **creation of certain rules**. You look into your past and notice that your canteen never sold more than 400 meals in a day. On the other hand, you never sold less than 100 meals. This will be your first rule, to always cook between 100 and 400 meals. Whenever you serve a national dish - Wiener Schnitzel, you are always over 300 servings, people love it. However, if you serve Wiener Schnitzel 2 times in a week, the second time only very few people come, even though people love the meal, they want it only once a weak. There is your second rule. If you serve rice as a side dish, some 30 people less always come as compared to potatoes, people tend to like rice less. There is your third rule. Now you can be working through a rule creation for a very long time and construct a list of explicit rules according to which you will operate the canteen.  
+Your Option 1 is **creation of certain rules**. You look into your past and notice that your canteen never sold more than 400 meals in a day. On the other hand, you never sold less than 100 meals. This will be your first rule, to always cook between 100 and 400 meals. Whenever you serve a national dish - Wiener Schnitzel, you are always over 300 servings, people love it. However, if you serve Wiener Schnitzel 2 times in a week, the second time only very few people come, even though people love the meal, they want it only once a week. There is your second rule. If you serve rice as a side dish, some 30 people less always come as compared to potatoes, people tend to like rice less. There is your third rule. Now you can be working through a rule creation for a very long time and construct a list of explicit rules according to which you will operate the canteen.  
 
-Your Option 2 is **use of Machine Learning**. You will collect as much data about the past consumption in your canteen. Often times people make a mistake of thinking that I only *throw* data into Machine Learning algorithm (such as The Perceptron) and it will save you a lot of time. No, you still need to invest your time, but into *preparing the data* for the algorithm, instead of creating the rules yourself. Thus you will not only collect the meals, their consumption, but also things like public holidays, alergens in the meals. All of this will be nicely prepared, fitted into Machine Learning model, which will discover various patterns. Now whenever you will be planning to cook a meal, you will push it into your model, and it will *predict* what will be the consumption.
+Your Option 2 is **use of Machine Learning**. You will collect as much data about the past consumption in your canteen. Often times people make a mistake of thinking that I only *throw* data into Machine Learning algorithms (such as The Perceptron) and it will save you a lot of time. No, you still need to invest your time, but into *preparing the data* for the algorithm, instead of creating the rules yourself. Thus you will not only collect the meals, their consumption, but also things like public holidays, allergens in the meals. All of this will be nicely prepared, fitted into the Machine Learning model, which will discover various patterns. Now whenever you will be planning to cook a meal, you will push it into your model, and it will *predict* what will be the consumption.
 
 ```{r canteen, echo = FALSE, fig.cap='Should we use rule creation or Machine Learning to optimize our servings at canteen?'}
 knitr::include_graphics("resources/02-observer/canteen.jpg")
@@ -417,19 +417,19 @@ If we go back to our example with canteen:
 
 *Do I need Machine Learning?*  
 
-Now that we know what Machine Learning is, I would like to stop for a second and thing about whether we need it at all. These are questions that even experienced Data Scientists often times forget to ask and they end up with what I call *"overkill"*. If you are considering application of Machine Learning, the first thing you should ask yourself is **whether simpler methods cannot answer your issue**.  The simple reason for this consideration is that Machine Learning could get expensive (we will get to the details in later chapters of the book). 
+Now that we know what Machine Learning is, I would like to stop for a second and think about whether we need it at all. These are questions that even experienced Data Scientists often times forget to ask and they end up with what I call *"overkill"*. If you are considering application of Machine Learning, the first thing you should ask yourself is **whether simpler methods cannot answer your issue**.  The simple reason for this consideration is that Machine Learning could get expensive (we will get to the details in later chapters of the book). 
 
-I will recall one Kaggle competition to give you and example (we will get to those later as well). The competition was regarding a mobile game for kids. This game includes various activities such as videos, games and assesments (tests). The task for a Data Scientist was to predict how many attempts will it take the kid to pass an assessment. Our *training data* were all the assesments played in the past by hundreds of kids. There was also *unlabelled data*, the most recent assesment of kids.
+I will recall one Kaggle competition to give you an example (we will get to those later as well). The competition was regarding a mobile game for kids. This game includes various activities such as videos, games and assessments (tests). The task for a Data Scientist was to predict how many attempts it will take the kid to pass an assessment. Our *training data* were all the assessments played in the past by hundreds of kids. There was also *unlabelled data*, the most recent assessment of kids.
 
-There were many people who instantly jumped to Machine Learning and spent hours trying to apply it to the problem at hand, while thinking that their solution is pretty decent. All of a sudden a solution came which contained only 10 lines of code. All that the author of this submission did was that he looked at the  average number of attempts that kids needed to solve a particular assessment. As there were only four unique assessments, he really only quickly calculated a mean out of *training data*. His calculation was hence only four numbers and he assigned to unlabelled data the one, which respective assessment a kid was about the solve.  
+There were many people who instantly jumped to Machine Learning and spent hours trying to apply it to the problem at hand, while thinking that their solution is pretty decent. All of a sudden a solution came which contained only 10 lines of code. All that the author of this submission did was that he looked at the  average number of attempts that kids needed to solve a particular assessment. As there were only four unique assessments, he really only quickly calculated a mean out of *training data*. His calculation was hence only four numbers and he assigned to unlabelled data the one, which respective assessment a kid was about to solve.  
 
-By making such simple predictions, the author beaten everyone's Machine Learning solution until that day. He set a new baseline of what people need to beat in order to **justify the use of Machine Learning**. Keep this in mind and in the future always consider whether a simpler solution might not answer your task. IF this Kaggle competition was real world, maybe this solution would be sufficient enough, and by being extremely cheap, we would satisfy the requirement.
+By making such simple predictions, the author beat everyone's Machine Learning solution until that day. He set a new baseline of what people need to beat in order to **justify the use of Machine Learning**. Keep this in mind and in the future always consider whether a simpler solution might not answer your task. IF this Kaggle competition was real world, maybe this solution would be sufficient enough, and by being extremely cheap, we would satisfy the requirement.
 
 ## Supervised Learning
 
 *What is supervised learning?*  
 
-Machine Learning has several subfields to it, on this level (Observer) you are only going to learn the most applicable one - Supervised Learning. Supervised learning deals with issues where we have so called **target feature**. Do you remember how we discussed *observation* and its *characteristics*? Target feature is going to be one *characteritic*, which is for certain reason of our interest. We are interested in *training* the Machine Learning model to be accurately *predicting* our target feature. The rest of the *characteristics* will be called **independent features** and will be used to predict *target feature*.  
+Machine Learning has several subfields to it, on this level (Observer) you are only going to learn the most applicable one - Supervised Learning. Supervised learning deals with issues where we have so called **target feature**. Do you remember how we discussed *observation* and its *characteristics*? Target feature is going to be one *characteristic*, which is for certain reasons of our interest. We are interested in *training* the Machine Learning model to be accurately *predicting* our target feature. The rest of the *characteristics* will be called **independent features** and will be used to predict *target feature*.  
 
 The naming conventions are quite important to learn. The name *independent features* is coming from our assumption that these features are independent from each other and from the environment. That is why we can use them to predict *target feature*. This can be also called *dependent feature* as we are making an assumption that this feature is *dependent* on independent features. 
 
@@ -450,7 +450,7 @@ Target feature:
 
 - number of meals consumed
 
-We can proceed to the training of Supervised Machine Learning model. As we said, we will pick one general algorithm available to us and feed it with our training data. This way, the model will become **trained** and we are hoping that it can make correct predictions for the future. As a canteen manager, I will plan the meal for next day in the afternoon of a previous day. I will decide that I want to cook a certain meal. This is what I will know about my meal tomorrow:
+We can proceed to the training of Supervised Machine Learning models. As we said, we will pick one general algorithm available to us and feed it with our training data. This way, the model will become **trained** and we are hoping that it can make correct predictions for the future. As a canteen manager, I will plan the meal for the next day in the afternoon of the previous day. I will decide that I want to cook a certain meal. This is what I will know about my meal tomorrow:
 
 Independent features:
 
@@ -463,9 +463,9 @@ Notice, that I am **missing target feature**, as this is my **unlabelled data**.
 
 *Is target feature always straightforward?*  
 
-As you see, target feature is a crucial component in Supervised Learning. Is it always easy and straightforward to find a correct target feature? No. Often times, finding and clarifying a target feature is going to be among the hardest parts of Supervised Learning. If you remember how I was in previous chapter claiming that any lecturer or training who promises to prepare you with exercises for real world - target feature definition is actually one of the reasons.  
+As you see, target feature is a crucial component in Supervised Learning. Is it always easy and straightforward to find a correct target feature? No. Oftentimes, finding and clarifying a target feature is going to be among the hardest parts of Supervised Learning. If you remember how I was in the previous chapter claiming that any lecturer or training who promises to prepare you with exercises for the real world - target feature definition is actually one of the reasons.  
 
->There will be numerous projects where you will really need to think hard to create a target feature, which will allow you to construct Supervised model.  
+>There will be numerous projects where you will really need to think hard to create a target feature, which will allow you to construct a Supervised model.  
 
 I was once working on a project within environmental studies. The project was focused on how human activity influences deer populations in certain Swedish forest. Even though the forest was large enough for a population of deers, the worry was that building small roads, electrical lines and similar man-made objects will influence the deers negatively. 
 
@@ -473,17 +473,17 @@ I was once working on a project within environmental studies. The project was fo
 knitr::include_graphics("resources/02-observer/deer.jpg")
 ```
 
-Data were collected over the span of several years. Researchers did a specific method of pellet observation to determine in which areas of the forest the deer spend their time. During these years, few new roads were built and one electrical line. My task was to build a Supervised model which could be used in other Swedish forests, when there will be a plan to build roads or electrical lines. By having such model, environmentalists could stop constructions which would negatively influence the deer population. The question which now bothered me was **what is the right target feature which I should use**?  
+Data were collected over the span of several years. Researchers did a specific method of pellet observation to determine in which areas of the forest the deer spend their time. During these years, few new roads were built and one electrical line. My task was to build a Supervised model which could be used in other Swedish forests, when there will be a plan to build roads or electrical lines. By having such a model, environmentalists could stop constructions which would negatively influence the deer population. The question which now bothered me was **what is the right target feature which I should use**?  
 
 One option would be to only look at whether the deer is or is not in this area of the forest. This is not quite right though. Deers move a lot around the forest and most likely, within one year they will visit at least once most of the areas in the forest. My model could then be too optimistic, saying that nothing influences deers and they happily run around the forest.  
 
-Another option would be to predict how many times the deer pellet was found in particular area. 
+Another option would be to predict how many times the deer pellet was found in a particular area. 
 
-Now I still needed to incorporate in my model, the *change* itself. The data were being collected over a span of time and I needed to see how my target feature changes over time. As you see the definition of target variable for Supervised Learning might be a really tedious process. With this chapter, I do not intend to give you guidelines on how to construct target variable correctly but to give you a mindset to... 
+Now I still needed to incorporate in my model, the *change* itself. The data were being collected over a span of time and I needed to see how my target feature changes over time. As you see the definition of target variable for Supervised Learning might be a really tedious process. With this chapter, I do not intend to give you guidelines on how to construct target variables correctly but to give you a mindset to... 
 
 >always consider and question whether your target feature is correct and appropriate
 
-We will get more into detailes and nuances regarding target feature on next level of Contributor.
+We will get more into details and nuances regarding target features on the next level of Contributor.
 
 ## Pitfalls of Machine Learning
 
@@ -497,7 +497,7 @@ As there is a lot of discussion in literature about this famous quote, I guess w
 
 >However well we fit a model, it will never be perfect at predicting unseen data.
 
-We have a new term here - **unseen data**. This is simply a data that were not used during training of our model. That is why our trained Machine Learning model cannot be adjusted for this dataset. And, as it ususally is, unseen data is always at least slightly different to the original training data. Whichever process in the real world that you will be working with, the unseen data will posess some new nuances that your model cannot foresee. Let's look at the following picture.
+We have a new term here - **unseen data**. This is simply data that was not used during training of our model. That is why our trained Machine Learning model cannot be adjusted for this dataset. And, as it usually is, unseen data is always at least slightly different to the original training data. Whichever process in the real world that you will be working with, the unseen data will possess some new nuances that your model cannot foresee. Let's look at the following picture.
 
 ```{r raw-data, echo = FALSE, fig.cap='Training data will always be different from unseen, unlabelled data for which our model should predict.'}
 knitr::include_graphics("resources/02-observer/raw-data.jpg")
@@ -506,15 +506,15 @@ knitr::include_graphics("resources/02-observer/raw-data.jpg")
 Let's relate to some examples that we already went through and observe whether unseen data will be different to training data:
 
 - My model which was supposed to predict whether a person has Parkinson disease, based on characteristics of gait, has this issue. When a new person is observed, this person will have different height and weight. The walking style and clothing will also be different - no two persons walk or dress exactly the same.
-- Our model of bus transportation optimization, will certainly have this issue. If we would fit a Machine Learning model, every day in a large city transportation system is different. Some buses will have mechanical issues and there will be also new traffic incidents on the road.
+- Our model of bus transportation optimization, will certainly have this issue. If we would fit a Machine Learning model, every day in a large city transportation system is different. Some buses will have mechanical issues and there will also be new traffic incidents on the road.
 
 You might be now slightly confused between the two terms - **unseen** data and **unlabelled** data, which we introduced earlier. Unlabelled data is part of unseen data. As this data does not have labels, we certainly could not use it for training of our model. I will clarify this further in the next section, though for upcoming lines I would like to ask you to clear your mind and think only about two terms - **training** data and **unseen** data.
 
-On the picture above, which compares training and unseen data, we can see the exact case. The data on the left, which will be used for training of the model are different from the unseen data. We are running into a danger of **overfitting of the model** if we don't take this into account.  
+In the picture above, which compares training and unseen data, we can see the exact case. The data on the left, which will be used for training of the model are different from the unseen data. We are running into a danger of **overfitting of the model** if we don't take this into account.  
 
-> Overfitted model is one, which is too adjusted to describe training data well, at the cost of loosing predictive power on unseen data.
+> Overfitted model is one, which is too adjusted to describe training data well, at the cost of losing predictive power on unseen data.
 
-Let's fit such a model so that we see what is happening. We fit a model which describes our training data perfectly. We then observe how good it is at describing of unseen data on the right.
+Let's fit such a model so that we see what is happening. We fit a model which describes our training data perfectly. We then observe how good it is at describing unseen data on the right.
 
 ```{r overfit, echo = FALSE, fig.cap='Overfitted model is great at describing our training data, but poor when it comes to unseen data.'}
 knitr::include_graphics("resources/02-observer/overfit.jpg")
@@ -526,21 +526,21 @@ It is not great, right? The reason why is what I described earlier, your trainin
 
 We can try to fit such model, we will draw the line in a bit more *ignorant* way towards our training data.
 
-```{r balanced-fit, echo = FALSE, fig.cap='Balanced model describes our trianing data well and also generalizes well for unseen data.'}
+```{r balanced-fit, echo = FALSE, fig.cap='Balanced model describes our training data well and also generalizes well for unseen data.'}
 knitr::include_graphics("resources/02-observer/balanced-fit.jpg")
 ```
 
-This looks more reasonable right? We call this a *balanced fit* as this model generalizes well. Being a little *ignorant* toward our training data allowed us to fit a model which has better predictive power on unseen data. We have to be careful to not be *too ignorant* toward the training data. If we were, what would happen is that we would fit **underfitted model**. Such model as bad at describing both - training and unseen data.
+This looks more reasonable right? We call this a *balanced fit* as this model generalizes well. Being a little *ignorant* toward our training data allowed us to fit a model which has better predictive power on unseen data. We have to be careful to not be *too ignorant* toward the training data. If we were, what would happen is that we would fit **underfitted model**. Such a model as bad at describing both - training and unseen data.
 
 ```{r underfit, echo = FALSE, fig.cap='Underfitted model is bad at describing both training as well as unseen data.'}
 knitr::include_graphics("resources/02-observer/underfit.jpg")
 ```
 
-The concept through which we just went is in literature often times called *Bias-variance tradeoff*. I do not want to teach you the idea through this terminology as I find it a little confusing and tricky to remember. Keep in ming the terms of **overfitting, underfitting and balanced fit**.  
+The concept through which we just went is in literature often times called *Bias-variance tradeoff*. I do not want to teach you the idea through this terminology as I find it a little confusing and tricky to remember. Keep in mind the terms of **overfitting, underfitting and balanced fit**.  
 
-*What is validation set?*
+*What is a validation set?*
 
-We now now that we should avoid overfitting or underfitting of our model. How do we prevent it though? What we have in our toolkit now is only two sets of data - training data and unlabelled data. In the previous section we have used the term unseen data. We  saw that in order to evaluate whether our model achieves *balanced fit* we need to have two sets, for which we know the label. That is why we need to introduce a new concept called **validation data** which will clear all of these terms in your mind. Let's look at the following picture.
+We now know that we should avoid overfitting or underfitting of our model. How do we prevent it though? What we have in our toolkit now is only two sets of data - training data and unlabelled data. In the previous section we have used the term unseen data. We  saw that in order to evaluate whether our model achieves *balanced fit* we need to have two sets, for which we know the label. That is why we need to introduce a new concept called **validation data** which will clear all of these terms in your mind. Let's look at the following picture.
 
 ```{r all-datasets, echo = FALSE, fig.cap='An overview in terminology and use of datasets for training and validation of Machine Learning model.'}
 knitr::include_graphics("resources/02-observer/all-datasets.jpg")
@@ -550,18 +550,18 @@ We start our process of thinking on the top - some data are **labelled** and som
 
 Now we focus on labelled data, which we split into two parts - **training** data and **validation** data. A common practice is to use 20% of labelled data for validation data. In case of our canteen, we have data from the past 5 months labelled. We know how much of each meal has been consumed every day in the past 5 months. We cut away for instance the most recent month for validation data, so we will be left with the first four months as training data.  
 
-Finally, we can focus on **unseen** data. We have learned in previous section that some data will be unseen to the model. This will be two sets - unlabelled and validation data. Unlabelled data are unseen to our model, simply because they do not have label and we cannot use them for training of our model. Validation data will be unseen to our model, so that we will be able to address the issue which we discussed in previous section - whether our model does not overfit or undeerfit. In case of our canteen, this would mean that we train the model on the first 4 months of the labelled data. We then use the most recent month to evaluate and judge whether our model does not underfit or overfit. If our conclusion is that it doesn't, we can use it to make predictions for our unlabelled data (tomorrow) and be sure that the predictions made by model will be accurate.  
+Finally, we can focus on **unseen** data. We have learned in the previous section that some data will be unseen to the model. This will be two sets - unlabelled and validation data. Unlabelled data are unseen to our model, simply because they do not have labels and we cannot use them for training of our model. Validation data will be unseen to our model, so that we will be able to address the issue which we discussed in the previous section - whether our model does not overfit or undeerfit. In case of our canteen, this would mean that we train the model on the first 4 months of the labelled data. We then use the most recent month to evaluate and judge whether our model does not underfit or overfit. If our conclusion is that it doesn't, we can use it to make predictions for our unlabelled data (tomorrow) and be sure that the predictions made by model will be accurate.  
 
 What would it mean if our canteen model is underfitted or overfitted? How would we know? In upcoming sections you are going to learn numerical and exact techniques of how to do this, but for now we need to stick to logic and intuition.  
 
-We said that if model is **overfitted**, it is great at describing training data, but poor at describing unseen data. When we fitted the model, we see that it is making great predictions about the first four months of our meal consumption. In most of the days, it can really pinpoint the exact amount of meals which were consumed. For instance, when we made Spaghetti Carbonara, the model correctly predicted that 187 portions are going to be consumed. That sounds amazing!  We use the model to make predictions for the most recent month, during which we one day cooked Spaghetti Bolognese, which are just different alternation of Spaghetti. We hence presume that our model will be again great. To our surprise, it predicts that 190 meals will be consumed, while in reality we sell only 110 meals. Our model is overfitted and failed to generalize to unseen (validation) data. We hence know that we cannot use it to predict our unlabelled data (tomorrow).  
+We said that if model is **overfitted**, it is great at describing training data, but poor at describing unseen data. When we fitted the model, we saw that it is making great predictions about the first four months of our meal consumption. In most of the days, it can really pinpoint the exact amount of meals which were consumed. For instance, when we made Spaghetti Carbonara, the model correctly predicted that 187 portions are going to be consumed. That sounds amazing!  We use the model to make predictions for the most recent month, during which we one day cooked Spaghetti Bolognese, which are just different alternations of Spaghetti. We hence presume that our model will be again great. To our surprise, it predicts that 190 meals will be consumed, while in reality we sell only 110 meals. Our model is overfitted and failed to generalize to unseen (validation) data. We hence know that we cannot use it to predict our unlabelled data (tomorrow).  
 
 We defined **underfitted** model as one which is poor at describing *both* training and unseen data. This one will be hence even easier to spot. When we cooked Spaghetti Carbonara, it predicted 130 meals, while really 187 meals were consumed. In the last month, which the model did not see, when we cooked Spaghetti Bolognese, the prediction by the model was 143 meals, while we really sold 110 meals. We can see that the model was poor at describing both of these meals.
 
 ## Regression
 
 *What is regression?*
-It is now time that we expand our Machine Learning mind map. Supervised learning has several subfields, which are influenced by the form of our target feature. In this level, we are going to learn about regression and binary classification. Let's start with **regression**.
+It is now time that we expand our Machine Learning mind map. Supervised learning has several subfields, which are influenced by the form of our target feature. At this level, we are going to learn about regression and binary classification. Let's start with **regression**.
 
 ```{r machine-learning-areas-2, echo = FALSE, fig.cap='First area of Supervised Learning that we will focus on is Regression.'}
 knitr::include_graphics("resources/02-observer/machine-learning-areas-2.png")
@@ -570,10 +570,10 @@ knitr::include_graphics("resources/02-observer/machine-learning-areas-2.png")
 In *regression supervised learning* our target variable is of numerical form. Here are some examples of numerical target features:
 
 * Predicting **income** of a person. Values can be any numeric larger than 0 Euro, such as 580 Euro, 1561.6 Euro.
-* Predicting **cooling time** of iron during forging process. Values can be any numeric larger than 0 minutes, such as 6 minutes or 257 minutes.
+* Predicting **cooling time** of iron during the forging process. Values can be any numeric larger than 0 minutes, such as 6 minutes or 257 minutes.
 * Predicting **weight change** of adults over a period of one year of weight loss process. Values can be any numeric in range -30 Kilograms (Wau) to +30 Kilograms (Uhh).
 
-The way Machine Learning model which should be of *supervissed regression type* is going to be build is exactly as we discussed. We have a set of independent features, and our target feature. Let's now build some really simple regression model.  
+The way Machine Learning model which should be of *supervised regression type* is going to be built exactly as we discussed. We have a set of independent features, and our target feature. Let's now build some really simple regression model.  
 
 We are a real estate agent, selling houses in the suburbs of Stockholm. One of the really difficult things in our job is to evaluate what the property is worth and how much a potential buyer will be willing to pay for the property. We currently have only *gut feeling* and some rules which we developed over the past years of this job. Here is how we could evaluate price now:
 
@@ -581,7 +581,7 @@ We are a real estate agent, selling houses in the suburbs of Stockholm. One of t
 - If the house is nearby a lake or coast, the price increases.
 - If the house is renovated in the past 10 years, or built within the past 10 years, its price will be higher.
 
-We can start building a **regression model** with single independent feature only (to make it simple), which will be the living area of a house. As we discussed we start with **training data**. To obtain these, we look at the historical sales of houses in the area. We make a simple plot, which shows how the area of a house and the houses final sale price worked in the past.
+We can start building a **regression model** with a single independent feature only (to make it simple), which will be the living area of a house. As we discussed we start with **training data**. To obtain these, we look at the historical sales of houses in the area. We make a simple plot, which shows how the area of a house and the house's final sale price worked in the past.
 
 ```{r create-training-regression, include=FALSE}
 
@@ -619,7 +619,7 @@ ggplot(train, aes(x = living_area, y = price_sold)) +
   geom_smooth(method='lm', se = FALSE)
 ```
 
-We can now use this model to predict for us a price of a house, based on provided living area. The living are of our house of interest has a living area of 80 square metres. We look at our horizontal axis and find a a value of our independent feature - 80. We now draw a vertical line up and wait until it intercects with our regression line. That is the **prediction of our model**. The only thing we have to do now is that we draw a horizontal line to the left and read out the predicted price for this house. In this case, 67500 Euro.
+We can now use this model to predict for us a price of a house, based on the provided living area. The living area of our house of interest has a living area of 80 square metres. We look at our horizontal axis and find a value of our independent feature - 80. We now draw a vertical line up and wait until it intersects with our regression line. That is the **prediction of our model**. The only thing we have to do now is that we draw a horizontal line to the left and read out the predicted price for this house. In this case, 67500 Euro.
 
 ```{r mapping-regression, echo = FALSE, fig.cap='By inputting a value of our independent feature into regression model, we obtain its prediction.'}
 knitr::include_graphics("resources/02-observer/mapping-regression.jpg")
@@ -638,7 +638,7 @@ ggplot(train, aes(x = living_area, y = price_sold)) +
 
 We have now managed to fit a **regression**. In case you are headed to the more advanced levels, such as Contributor, you are going to learn exact techniques of how this is done, but as I said, on this level it is sufficient if you are aware of the conceptual steps when fitting a regression model.  As we mentioned, the price of a house is of course determined by many more factors. In the upcoming chapters, we will also construct a detailed elaboration on this example of predicting house prices.
 
-*How do I know if regression model is good?*
+*How do I know if a regression model is good?*
 
 As an Observer, you need to be able to do a basic evaluation of a regression model, when you see one. You are not supposed to calculate it yourself, just observe it. The most basic evaluation of a regression model is through **average error**. How is this error calculated?
 
@@ -652,41 +652,41 @@ This definition contains a few new things, so let's take it step by step. We hav
 knitr::include_graphics("resources/02-observer/single-error.jpg")
 ```
 
-The very same procedure we now do for all houses which we are making prediction for. 
+The very same procedure we now do for all houses which we are making predictions for. 
 
 ```{r all-errors, echo = FALSE, fig.cap='We repeat the same procedure and obtain a single error from all observations.'}
 knitr::include_graphics("resources/02-observer/all-errors.jpg")
 ```
 
-All that we now need to do is to calculate average out of these errors. To calculate an average error, we only need to sum all of the errors made by the model and divide by number of observations. There is a small trick though. Some of the errors have negative and some have positive sign, as they were obtained using same calculation **actual value - predicted value**. 
+All that we now need to do is to calculate the average out of these errors. To calculate an average error, we only need to sum all of the errors made by the model and divide by number of observations. There is a small trick though. Some of the errors have negative and some have positive sign, as they were obtained using same calculation **actual value - predicted value**. 
 
 - If actual value is higher (80 000 Euro) than predicted value (67 500 Euro), the resulting single error will be positive (13 500 Euro).
 - If actual value is lower (50 000 Euro) than predicted value (57 500 Euro), the resulting single error will be negative (-7 500 Euro).
 
-If we would now sum them all up, it would be a terrible mistake as negative errors would be cancelling out with positive errors such as: 13 500 + (-7500) = 6000 Euro. What Data Scientist usually does is that he/she uses squaring to the power of two and then using square root. This removes all the negative signs and we can happily sum up together all the errors to calculate average error. That is why when you will see a Machine Learning regression model reporting its accuracy often times say something like root-mean-squared-error (rmse). All that is happening here is that we are calculating mean-error, we just need to get rid of the negative signs.
+If we would now sum them all up, it would be a terrible mistake as negative errors would be cancelling out with positive errors such as: 13 500 + (-7500) = 6000 Euro. What Data Scientist usually does is that he/she uses squaring to the power of two and then using square root. This removes all the negative signs and we can happily sum up together all the errors to calculate the average error. That is why when you will see a Machine Learning regression model reporting its accuracy oftentimes say something like root-mean-squared-error (rmse). All that is happening here is that we are calculating mean-error, we just need to get rid of the negative signs.
 
 ```{r mean-squared-error}
 # Let's sum together all single errors which we did (gotten rid of negative signs).
 sum_of_errors = 13500 + 7500 + 5000 + 850 + 12000 + 3500
-#Now we calculate mean (average) error by simply dividing by total number of houses which we are evaluating.
+#Now we calculate the mean (average) error by simply dividing by the total number of houses which we are evaluating.
 mean_error = sum_of_errors / 6
 
 print(mean_error)
 ```
 
-As you can see, from numerical perspective, it is rather simple to evaluate how successful regression is. We can simply calculate the *root-mean-squared-error* which will already give us a solid estimate. In our case, this was 7058 Euro, which seems fine. Our model is far from perfect, but it can quickly give us an estimation of what the house is worth. Unfotnately we need to be a bit more careful, let's again look at our predictions and actual values. 
+As you can see, from a numerical perspective, it is rather simple to evaluate how successful regression is. We can simply calculate the *root-mean-squared-error* which will already give us a solid estimate. In our case, this was 7058 Euro, which seems fine. Our model is far from perfect, but it can quickly give us an estimation of what the house is worth. Unfortunately we need to be a bit more careful, let's again look at our predictions and actual values. 
 
 ```{r lucrative-houses, echo = FALSE, fig.cap='We repeat the same procedure and obtain a single error from all observations.'}
 knitr::include_graphics("resources/02-observer/lucrative-houses.jpg")
 ```
 
-Sometimes, the overall view on the error, such as absolute error or average error can be rather misleading. If you noticed, three of the most expensive houses have been heavily **underpriced by the model**. This is caused simply by the fact that our regression model is not equally good at all levels of house prices. Now from context perspective, this can be a big issue as we are underpricing the most lucrative houses! Our lucrative clients can get pretty unhappy about that. 
+Sometimes, the overall view on the error, such as absolute error or average error can be rather misleading. If you noticed, three of the most expensive houses have been heavily **underpriced by the model**. This is caused simply by the fact that our regression model is not equally good at all levels of house prices. Now from a context perspective, this can be a big issue as we are underpricing the most lucrative houses! Our lucrative clients can get pretty unhappy about that. 
 
 ## Classification
 
 *What is binary classification?*  
 
-We can now move to *binary classification*, which is a supervised model, where target feature can have only two values. These two values can have various forms:
+We can now move to *binary classification*, which is a supervised model, where the target feature can have only two values. These two values can have various forms:
 
 *True, False
 *Buy, No-Buy
@@ -699,26 +699,26 @@ knitr::include_graphics("resources/02-observer/machine-learning-areas-3.png")
 
 
 
-*How do I evaluate if classification model is good?*  
+*How do I evaluate if the classification model is good?*  
 
-Discuss imbalaned classification issue.
+Discuss imbalanced classification issue.
 
-Discuss confusion matrix and predicting of what actually matters for us.
+Discuss confusion matrix and predicting what actually matters for us.
 
 
 ## Level 2 Reached
 
-Congratulations! You have just reached level 2 - Observer. You are now able to join a Data Science initiative around you - it can be some public project, pro-bono project, or a project which is being developed inside your company. Moreover, if you are applying for a position related to a Data Science, you can claim that you are on Observer Level. This means that you know what is going on within the project, and you should be able to help with inputs, outputs, and do some basic evaluations of the project.  
+Congratulations! You have just reached level 2 - Observer. You are now able to join a Data Science initiative around you - it can be some public project, pro-bono project, or a project which is being developed inside your company. Moreover, if you are applying for a position related to Data Science, you can claim that you are on the Observer Level. This means that you know what is going on within the project, and you should be able to help with inputs, outputs, and do some basic evaluations of the project.  
 
 Here are some key takeaways from this chapter:
 
 - Always remain skeptical about whether your data can even answer the problem which you are trying to solve.
 - Try to avoid using self-reported (human-related data) as these can be a subject to heavy biases.
-- Remember that Data Science project tries to explain the phenomena through observations and their features (characteristics).
+- Remember that the Data Science project tries to explain the phenomena through observations and their features (characteristics).
 - Simplest form of representing data is through a flat table, in a csv format.
-- If we have data of different granularity, we might want to use a concept of relational databse to represent these properly.
-- Data can be loaded into into an environment which can help us with processing of it. These vary from ones which are programming heavy - R and Python, to some which are more visual, but can be less flexible, such as Knime.
+- If we have data of different granularity, we might want to use a concept of relational database to represent these properly.
+- Data can be loaded into an environment which can help us with processing of it. These vary from ones which are programming heavy - R and Python, to some which are more visual, but can be less flexible, such as Knime.
 - Machine Learning might be a hearth of Data Science. We train a model using training data, validate its predictive power on validation data and then use it for predicting unlabelled data.
 - Be aware of not overfitting or underfitting of your model.
-- Regression is a field of Supervised Learning, where our target feature is of numeric kind. We evaluate its success through measures such as root-mean-squared-error, though we are carefully looking at the single errors and their cotextual meaning.
-- Binary Classification is another field of Supervised Learning, where our target feature only has two values. We evaluate its success through measures such as Recall, Precision or Accuracy. We though carefully look at confusion matrix.
+- Regression is a field of Supervised Learning, where our target feature is of numeric kind. We evaluate its success through measures such as root-mean-squared-error, though we are carefully looking at the single errors and their contextual meaning.
+- Binary Classification is another field of Supervised Learning, where our target feature only has two values. We evaluate its success through measures such as Recall, Precision or Accuracy. We thought carefully to look at the confusion matrix.
