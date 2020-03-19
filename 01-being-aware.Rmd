@@ -250,7 +250,7 @@ mean(salaries_country)
 
 The mean of approximately 856 seems a more reasonable result compared to a median of 520, to represent an *average salary* in this case.
 
-# Measures of Central Tendency
+## Measures of Central Tendency
 
 As you see, neither of the three measures of central tendency is a silver bullet. Their success depends largely on a population which we are trying to describe. That is why it might be a good idea to look at all three of these and then face the provided answers with our intuition.  
 
