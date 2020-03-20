@@ -7,10 +7,10 @@ You will quickly notice that this book is structured quite differently compared 
 This book is hence built on five cornerstones:  
 
 * Data Science is a practice of using data to create a direct benefit.  
-* Citizen Data Scientist is becoming a crucial occupation.  
-* Anyone can become a Citizen Data Scientist.  
-* There are 6 levels of Citizen Data Scientist and these should act as a learning curve.  
-* Math is not required as a teaching tool in order to train a Citizen Data Scientist and can be replaced by visualisation and intuition.  
+* Embedded Data Scientist is becoming a crucial occupation.  
+* Anyone can become a Embedded Data Scientist.  
+* There are 6 levels of Embedded Data Scientist and these should act as a learning curve.  
+* Math is not required as a teaching tool in order to train a Embedded Data Scientist and can be replaced by visualisation and intuition.  
 
 Did I go crazy claiming that anyone can become a Data Scientist? And what about the Math which is appraised by everyone as the crucial tool within data science?!? Maybe I have, but these cornerstones (assumptions) worked for me as well as for my students within the past years. Let me in this chapter explain **why** I believe that these things might work out for you.
 
@@ -46,7 +46,7 @@ He/she should be able to join any of the mentioned domains, and many more, apply
 
 ## The Struggle of Data Science
 
-Now that you heard about Data Scientists, who are Citizen Data Scientists? I think they are the most crucial occupations in the future of the field of Data Science. You heard me right, not the original Data Scientists, but the new generation of Citizen Data Scientists. Let me show you why.  
+Now that you heard about Data Scientists, who are Embedded Data Scientists? I think they are the most crucial occupations in the future of the field of Data Science. You heard me right, not the original Data Scientists, but the new generation of Embedded Data Scientists. Let me show you why.  
 
 Data Science as a field has been around for decades in one form or another. There have been market analysts, risk modellers, product developers, artificial intelligence developers and so on. If we however relate to the definition of Data Science above in a way that a Data Scientist can essentially come to any company and make use of its data to create benefit, we can go back to the millenia breakthrough. Universities start to offer programs with names like "Data Analysis", "Business Intelligence'' and first candidates are leaving these programs. It feels like the field is growing tremendously - growth in GPU powers, Deep Learning, Automated Machine Learning products. Especially since the 2010s, job advertisements revolving around Data Science are exploding! Though is the field really growing from the perspective of the market? I would say very slowly, simply because the *created benefit for companies (and their customers)* is growing slowly.  
 
@@ -57,17 +57,17 @@ This is caused by the fact that the field is still relying on the slow and linea
 
 You might now disagree with me and say I am too much of a negativist. To justify my thinking in your mind, let me ask you only one question. As employees, we are expected to create larger profits than what we cost our employer. How many data scientists you know, who can prove that they are repeatedly creating profit for their companies? Not so many, right? Thereafter I believe that the above described struggle holds.
 
-## Who is Citizen Data Scientist
+## Who is Embedded Data Scientist
 
-I believe that the answer to this struggle of many companies is recognition of a Citizen Data Scientist (the ones coming in point 2 above) and definition of their relationship to Data Scientists. The market is begging us to do so and we can see it by who comes to job interviews when we make an advertisement for a position of a Data Scientist. These are people who do not have formal education or direct experience. Let me tell you one story from my past.  
+I believe that the answer to this struggle of many companies is recognition of a Embedded Data Scientist (the ones coming in point 2 above) and definition of their relationship to Data Scientists. The market is begging us to do so and we can see it by who comes to job interviews when we make an advertisement for a position of a Data Scientist. These are people who do not have formal education or direct experience. Let me tell you one story from my past.  
 
 I worked in a large organization with thousands of employees as a Data Scientist. Out of nowhere, I received an email from a colleague I never heard of before. She claimed that she is really passionate about the methods of predictive modelling and Data Science and is eager to apply these methods in her CRM department. We met and she showed me R-script in which she tried a bunch of Machine Learning algorithms and preprocessing methods. What I did in turn was that I encouraged her to continue with the passion because the field has a future and I advised her about further methods she can try.  
 
-Only years later, I realized my mistakes in that meeting and that I met one of the first Citizen Data Scientists. I then learned that she left the company as she never managed to get her passion for productive work. I was one of the reasons why she churned because I gave her advice on how to become the first generation Data Scientist, not the second generation of Citizen Data Scientist. Let's look at the definition by Gartner in 2016:  
+Only years later, I realized my mistakes in that meeting and that I met one of the first Embedded Data Scientists. I then learned that she left the company as she never managed to get her passion for productive work. I was one of the reasons why she churned because I gave her advice on how to become the first generation Data Scientist, not the second generation of Embedded Data Scientist. Let's look at the definition by Gartner in 2016 of Citizen Data Scientist:  
 
 >Citizen data science bridges the gap between mainstream self-service data discovery by business users and the advanced analytics techniques of data scientists.
 
-This colleague of mine was originally in the first part of definition (business user), while I was in the second part of it (advanced analytics). She was trying to become a bridge between the two, without even realising it! Unfortunately I am only smarter years later and when the same situation happens these days, I react in a different way. Also, the company which I work for now is smarter and allows for an environment where Citizen Data Scientists are given space.
+This colleague of mine was originally in the first part of definition (business user), while I was in the second part of it (advanced analytics). She was trying to become a bridge between the two, without even realising it! Unfortunately I am only smarter years later and when the same situation happens these days, I react in a different way. Also, the company which I work for now is smarter and allows for an environment where Embedded Data Scientists are given space.
 
 She had something that I could never have - expertise in her CRM department and if I was about to give her advice now it would be:
 
@@ -75,31 +75,31 @@ She had something that I could never have - expertise in her CRM department and 
 - Focus on applying in your project your domain knowledge. Only you know it, I don't.
 - Here is a (short) list of things you should try in your R-script (most of which you already have). You do not need to push for more complex methods and crazy good programming, what you have is already enough. If something more complex is required later on, I will do it for you.
 
-Ehm, exact opposite of what I originally did, right? **Citizen Data Scientist therefore stays in his/her original department and context, and only to a required (limited) extend enhances her knowledge on Data Science, so that he/she can create the value**. He/she possesses edge over (first generation) of Data Scientist in the context knowledge and can hence create more valuable products.  
+Ehm, exact opposite of what I originally did, right? **Embedded Data Scientist therefore stays in his/her original department and context, and only to a required (limited) extend enhances her knowledge on Data Science, so that he/she can create the value**. He/she possesses edge over (first generation) of Data Scientist in the context knowledge and can hence create more valuable products.  
 
-## Value of Citizen Data Scientist
+## Value of Embedded Data Scientist
 
-As everyone says it these days - data are everywhere, companies just need to start utilizing them. We can thus take as granted that Data Science will have justification in upcoming years. Though why do companies need Citizen Data Scientists and why they should focus on them instead of the first generation of Data Scientists? Simply because the **growth in created benefit** will be much greater through
+As everyone says it these days - data are everywhere, companies just need to start utilizing them. We can thus take as granted that Data Science will have justification in upcoming years. Though why do companies need Embedded Data Scientists and why they should focus on them instead of the first generation of Data Scientists? Simply because the **growth in created benefit** will be much greater through
 
-- Possibility of having higher counts of Citizen Data Scientists, as compared to Data Scientists due to the fact that extensive formal education is not required.
-- Possibility of having more impactful Data Science projects as these will be integrated better to the business, if created by properly trained Citizen Data Scientists.
+- Possibility of having higher counts of Embedded Data Scientists, as compared to Data Scientists due to the fact that extensive formal education is not required.
+- Possibility of having more impactful Data Science projects as these will be integrated better to the business, if created by properly trained Embedded Data Scientists.
 
-Citizen Data Scientists do know better what needs to be optimized and in which way, because the context (business area) is their origin. Is it necessary then that every Citizen Data Scientist is on the same level of knowledge? Of course not, that is why I will be basing this book on 6 levels of Citizen Data Scientist, which should only achieve a level suitable for his/her involvement in Data Science. So, do you want to become one of them?  
+Embedded Data Scientists do know better what needs to be optimized and in which way, because the context (business area) is their origin. Is it necessary then that every Embedded Data Scientist is on the same level of knowledge? Of course not, that is why I will be basing this book on 6 levels of Embedded Data Scientist, which should only achieve a level suitable for his/her involvement in Data Science. So, do you want to become one of them?  
 
-What happens with the original (first generation) Data Scientists? We will still need them, just in slightly different roles as until now. They become heavy developers, guarantors and trainers. Whenever a complex problem occurs, which needs a technically challenging solution, it will be them who focus on it. The thing is, that in many organizations, there are only a handful of such problems, that is why this makes sense. Secondly, they act as guarantors of solutions developed by Citizen Data Scientists. This again makes sense, because reading through something and commenting on it takes a fraction of time as compared to developing it. Finally, they should act as trainers as there is a need to train, coach and mentor a *lot* of Citizen Data Scientists. 
+What happens with the original (first generation) Data Scientists? We will still need them, just in slightly different roles as until now. They become heavy developers, guarantors and trainers. Whenever a complex problem occurs, which needs a technically challenging solution, it will be them who focus on it. The thing is, that in many organizations, there are only a handful of such problems, that is why this makes sense. Secondly, they act as guarantors of solutions developed by Embedded Data Scientists. This again makes sense, because reading through something and commenting on it takes a fraction of time as compared to developing it. Finally, they should act as trainers as there is a need to train, coach and mentor a *lot* of Embedded Data Scientists. 
 
-## Anyone Can Become Citizen Data Scientist
+## Anyone Can Become Embedded Data Scientist
 
-I honestly believe that whomever you are, **you can become a Citizen Data Scientist**. Why? Because Data Science methods add up to only about half of the requirements for a success, the other half is context knowledge and application. Thereafter whatever your background is, you can become one and create value to your company. Moreover, there is no single-level of Citizen Data Scientist in my mind, but several of them.
+I honestly believe that whomever you are, **you can become a Embedded Data Scientist**. Why? Because Data Science methods add up to only about half of the requirements for a success, the other half is context knowledge and application. Thereafter whatever your background is, you can become one and create value to your company. Moreover, there is no single-level of Embedded Data Scientist in my mind, but several of them.
 
-## The 6 Levels of Citizen Data Scientist
+## The 6 Levels of Embedded Data Scientist
 
-There are many great courses, programs or coding platforms available online - why should you then read this book in particular? It is because I plan to help you **grow through capabilities, not through skills**. It is actually one of the reasons why I decided to write this book. I see oftentimes learning content structured through skills - Importing Data, Cleaning Data, Preprocessing Data, Basics of Machine Learning; being the most common path out there, sometimes being up to 80 hours long. The issue is that you will most likely be only able to apply yourself once you learned all the skills. That is not good, as Data Science is a lot about practice and connecting to context where you want to apply yourself as a Citizen Data Scientist.  
+There are many great courses, programs or coding platforms available online - why should you then read this book in particular? It is because I plan to help you **grow through capabilities, not through skills**. It is actually one of the reasons why I decided to write this book. I see oftentimes learning content structured through skills - Importing Data, Cleaning Data, Preprocessing Data, Basics of Machine Learning; being the most common path out there, sometimes being up to 80 hours long. The issue is that you will most likely be only able to apply yourself once you learned all the skills. That is not good, as Data Science is a lot about practice and connecting to context where you want to apply yourself as a Embedded Data Scientist.  
 
 That is why this book sets 6 levels through which you will be growing. With each new level, your capabilities and powers within Data Science will inherently grow and so will your value for projects and employers. This gives you the ultimate opportunity to practice your skills - because you will be able to; in the real world! As you will notice, each level holds its definition and a length required (from my perspective) to reach this level from a previous one.
 
 **Level 1: Being Aware**  
-You know what Data Science is about, what it can and cannot achieve. You also know what path lies ahead of you as a Citizen Data Scientist. Learning length: 1 hour
+You know what Data Science is about, what it can and cannot achieve. You also know what path lies ahead of you as a Embedded Data Scientist. Learning length: 1 hour
 
 **Level 2: Observer**  
 You are able to observe a Data Science project running, without being able to contribute to it. You are though able to make use of the outputs of a Data Science project as well as help with inputs for such projects. If someone presents you a Data Science project, you are able to question its qualities. Learning length: 5 hours
@@ -124,7 +124,7 @@ The reason why I decided to write this way (not covering concepts through techni
 
 ## Real World Experience
 
-What is the biggest struggle of anyone who would like to become a (Citizen) Data Scientist? To get real world experience and practice. Whatever people claim within their online courses and trainings, the trainer will **never** be able to offer you what is awaiting for you in the real world of Data Science. I don't even claim it about my training. The only truthful way is hence to go to a real project. Use the *6 levels of Citizen Data Scientist* exactly for this purpose! Let me show you an example of why I decided to write and teach in this way.  
+What is the biggest struggle of anyone who would like to become a (Embedded) Data Scientist? To get real world experience and practice. Whatever people claim within their online courses and trainings, the trainer will **never** be able to offer you what is awaiting for you in the real world of Data Science. I don't even claim it about my training. The only truthful way is hence to go to a real project. Use the *6 levels of Embedded Data Scientist* exactly for this purpose! Let me show you an example of why I decided to write and teach in this way.  
 
 You come to a job interview (external or internal one) and say that you have been learning and would like to become part of this Data Science project. The conversation might go as follows:  
 
@@ -138,7 +138,7 @@ Now let's do a similar conversation and we will reuse one of the levels from abo
 *Interviewer*: Great to see your interest. So how can you contribute to our projects and help out?  
 *You*: I am able to act as an "Observer" to your Data Science projects. This means that I cannot directly contribute to its productive code pipeline, but I am able to help out with inputs and outputs. Due to my extensive background in Retail Banking, I know what features might be interesting to collect about customers and used in models and also how to apply outputs of your project in Marketing Campaigns. When a Data Scientist will put together a Machine Learning model, I will be able to do basic evaluation of its qualities.
 
-Do you *feel* the difference between the two conversations? Instead of talking about skills, you started to talk about a possible contribution which you can do. You also very clearly drew a line of what you cannot do and the Interviewer will have it easier evaluating you. Moreover, you had a space to relate to your previous field - we all have something where we are coming from. This is what really matters for Citizen Data Scientist - show possible contributions that will be impacting the project and benefit out of it directly.
+Do you *feel* the difference between the two conversations? Instead of talking about skills, you started to talk about a possible contribution which you can do. You also very clearly drew a line of what you cannot do and the Interviewer will have it easier evaluating you. Moreover, you had a space to relate to your previous field - we all have something where we are coming from. This is what really matters for Embedded Data Scientist - show possible contributions that will be impacting the project and benefit out of it directly.
 
 ## Learning Without Math
 
@@ -146,7 +146,7 @@ Mathematics is undoubtedly the foundation of many fields, Data Science being one
 
 In my perspective, the first generation of Data Scientists are primarily the ones who are fine with maps and the second generation belongs to the non-likers. Now let me tell you, it's perfectly fine and natural to not like math and not be comfortable with it. Who should adjust? Should it be 95% of the population or teaching methods of Data Science? Let me bet on the latter...  
 
-That is why *this book will not teach anything through mathematics*. I honestly believe that in order to train a Citizen Data Scientist, math is not only un-needed but also un-recommended, based on my argumentation above. 
+That is why *this book will not teach anything through mathematics*. I honestly believe that in order to train a Embedded Data Scientist, math is not only un-needed but also un-recommended, based on my argumentation above. 
 
 P.S. There will be a few statistical concepts, so don't blame me if they look like math. As I promised though, there will be no formula, just intuition.
 
@@ -257,7 +257,7 @@ As you see, neither of the three measures of central tendency is a silver bullet
 The three measures - mode, median and mean; are actually not the most important piece of learning now. The fact, that we know our did our very **first application of Data Science** is! We started the chapter by saying that the aim of Data Science is to create valuable information out of the data, whereas this information has value for someone (our employer). Maybe we are working for a bread producer and our task is to find out how the producers can differentiate in the market - now we know that it should not be 500 grams bread. Maybe our employer is a sunscreen manufacturer and wants to figure out for which temperatures the sunscreen should be optimized - now we know that 28 degrees. Or maybe, our employer is the government trying to figure out which income groups should pay lower taxes - could be somewhere below 856 Euro.
 
 ## Level 1: Being Aware - Reached
-Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what it isn't, what it struggles with and what is the role of Citizen Data Scientist. Here are some key takeaways which you should have from this chapter:
+Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what it isn't, what it struggles with and what is the role of Embedded Data Scientist. Here are some key takeaways which you should have from this chapter:
 
 1. Remember the five cornerstones upon which this book is built. If you plan on continuing reading it, these will be helpful to keep in mind.
 2. Data Science is an art of creating valuable information out of data.

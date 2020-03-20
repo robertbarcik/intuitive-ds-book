@@ -7,7 +7,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a book that allows anyone to become a Citizen Data Scientist in an intuitive way."
+description: "This is a book that allows anyone to become a Embedded Data Scientist in an intuitive way."
 ---
 
 # Foreword to Authentic Data Science

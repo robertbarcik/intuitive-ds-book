@@ -74,7 +74,7 @@ When it comes to data, there are two areas which I tend to distinguish:
 - **Machine-related Data** that relate solely to machinery or natural processes, oftentimes collected through sensors. You are a chemical engineer running trials and observing time for a certain reaction to happen. You could be a mechanical engineer watching whether an error won't occur in your machinery. Assuming that your *sensor* is reliable and well setup, your data should be unbiased as both machine and nature (in this sense) are stable in *behavior*.
 - **Human-related Data** that display human behavior. *Self-reported data*, such as surveys. Imagine anything from voting polls, through asking whether someone wants to buy our product, up to even reporting an address of residence. *Collected data*, such as logs from mobile applications which are tracking human activity.
 
-To answer our question whether some data are specifically biased, the simple answer is YES. There is a lot of data from my perspective which is just wrong to be used and you as a Citizen Data Scientist should not use. I do now wish to talk now about *data quality* issues, but about the nature of data, which is connected with how the data came into existence.  
+To answer our question whether some data are specifically biased, the simple answer is YES. There is a lot of data from my perspective which is just wrong to be used and you as a Embedded Data Scientist should not use. I do now wish to talk now about *data quality* issues, but about the nature of data, which is connected with how the data came into existence.  
 
 There are a lot of datasets which came to existence by **asking people** regarding their state or opinion. Take elections for instance. If you look at US elections in 2016, for a very long time it was seemingly impossible that Trump will win the elections. Yet, he won, even though the data from polls told us otherwise. What happened is that this (poll) dataset was created by asking people, while unfortunately it is in human nature that:
 
@@ -168,7 +168,7 @@ Secondly, every data science project should produce an *information* (output) th
 
 *How is data represented?*  
 
-If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Citizen Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers were presented data through punch cards.
+If you plan on skipping this chapter, because it seems boring, please don't. It would come to haunt you in your glorious future of Embedded Data Scientist. Data Science is done using computers, thereafter I think it is crucial to understand how your computer sees data. We often think that computers are smart, while in fact they are quite basic - they understand only two values - 1's and 0's. In fact some of the earliest computers were presented data through punch cards.
 
 ```{r punch-cards, echo = FALSE, fig.cap='Example of how one of the earliest versions of computers from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter'}
 
@@ -318,7 +318,7 @@ you can download it with.
 
 ### Knime
 
-Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Citizen Data Scientists. These are frameworks which do not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.  
+Usually when people talk about Data Scientists, they mention two languages (or frameworks) - R and Python. I however believe that in the future a different approach will dominate if we would like to grow the numbers and powers of Embedded Data Scientists. These are frameworks which do not necessarily require coding, but can do very similar things (at a tradeoff of being slightly less flexible). One such framework is Knime.  
 
 When thinking about Knime, we can forget our distinction between engine and IDE, here we get both things in one. One important difference to R and Python is that here we are not expected to explicitly write code in order to fulfill our data science task. Let's give it a try.
 
