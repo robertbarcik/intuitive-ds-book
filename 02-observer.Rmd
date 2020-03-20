@@ -503,6 +503,8 @@ By making such simple predictions, the author beat everyone's Machine Learning s
 
 *What is supervised learning?*  
 
+*Need rewrite: In Statistics, regression, if you are attempting to build a model based on empirical data, to predict some response variable based on one or more explanatory variables or more variables--then you are doing regression analysis. It doesn't matter whether the output is a continuous variable or a class label (e.g., logistic regression). So for instance, least-squares regression refers to a model that returns a continuous value; logistic regression on the other hand, returns a probability estimate which is then discretized to a class labels.*
+
 Machine Learning has several subfields to it, on this level (Observer) you are only going to learn the most applicable one - Supervised Learning. Supervised learning deals with issues where we have so called **target feature**. Do you remember how we discussed *observation* and its *characteristics*? Target feature is going to be one *characteristic*, which is for certain reasons of our interest. We are interested in *training* the Machine Learning model to be accurately *predicting* our target feature. The rest of the *characteristics* will be called **independent features** and will be used to predict *target feature*.  
 
 The naming conventions are quite important to learn. The name *independent features* is coming from our assumption that these features are independent from each other and from the environment. That is why we can use them to predict *target feature*. This can be also called *dependent feature* as we are making an assumption that this feature is *dependent* on independent features. 
