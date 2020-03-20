@@ -420,6 +420,18 @@ ggplot(df.example, aes(x = value)) +
 
 ## Predicting The Future?
 
+Describing a population, in order to draw some actionable insights is a first step toward data-driven future and decision making. We were thanks to it able to create a lot of value - find ideal weight of new bread to be launched, sligthly optimize taxing system and help design a sunscreen product for optimal temperature. Often times though, this will not be enough and we will want to know, **what will happen in the future**. In essence, we already did it with our temperature example didn't we? The product which should be optimized for summer temperatures will *be used in the future*, which means that we already did dare predict the future.  
+
+Our capabilities of predicting a future are limited by a lot of factors, which you will slowly learn about throughout the course of this book, though there are two which I would like to touch upon now.
+
+Your prediction is limited by the scope of your past data...
+
+Your prediction is limited by the number of observations...
+
+Do not overestimate your capabilities. From now on, there will be a lot regarding machine learning and you might feel like these methods are really powerful for *future prediction*, but please always keep in mind our temperature prediction with median - in essence that was a similar model and what machine learning does is very similar to that (statistical models).
+
+Before we start with machine learning, keep in mind that is is always a good practice to build a **baseline model** which should be without the use of these techniques and only then turn to statistical methods, and see whether the use of these even makes sense.
+
 Predicting without Machine Learning - importance of non-ML baseline
 
 ## Basics of Machine Learning
