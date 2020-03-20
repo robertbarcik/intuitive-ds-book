@@ -107,7 +107,7 @@ You are able to observe a Data Science project running, without being able to co
 **Level 3: Contributor**  
 You are able to assume simple task(s) within the Data Science project, and create a benefit to the project productively - Data Preprocessing, Data Visualisation and Baseline Machine Learning. Learning: 30 hours
 
-**Level 4: Statistician**  
+**Level 4: Modeller**  
 You are able to assume any basic task within a Data Science project and hold responsibility for statistical parts. Learning: 40 hours
 
 **Level 5: Project Responsible**  
@@ -150,7 +150,17 @@ That is why *this book will not teach anything through mathematics*. I honestly 
 
 P.S. There will be a few statistical concepts, so don't blame me if they look like math. As I promised though, there will be no formula, just intuition.
 
-## Turning Data Into Information
+## Population and Observation
+
+Population is of our interest, not an entire world population (which probably does not interest us).
+
+There are two major possibilities:
+
+**We have data about all observations in population of our interest**. In this case, it is sufficient often times to turn to a simple world of descriptive statistics. If we desribe all observations, our conclusion will be certainly correct (assuming we have don unbiased Data Science). Other tools migh include data visualization or data analysis. The value here comes by being able to act on this population which we are describing.
+
+**We have data only on part of our observations in population of our interest**. In this case, we are turning to the world of inferential statistics often times. We are making assumptions and drawing conclusions about the rest of population based on our sample. Here we can have also a situation that the part of observations that we do not have knowledge of lies in the *future*. This could be an example of new customers coming in the future, or our population simply changing every month or so. The value here comes in ability to act on the unknown part of the population, or to act accordingly with respect to what will happen in the future. 
+
+## Knowing Entire Population
 
 We have already talked about a lot of things, but we have not started with fulfilling of the promise of Data Science, that is turning data into valuable information. There are quite a few ways how this can be done, and these will inevitably be one of the backbones of the book you started to read. We start by the simples, yet often times most efficient way which is **understanding a population**. In fact, if you are able to only describe a population, you already have tremendous powers for Data Science, called *descriptive statistics*. 
 
@@ -250,11 +260,17 @@ mean(salaries_country)
 
 The mean of approximately 856 seems a more reasonable result compared to a median of 520, to represent an *average salary* in this case.
 
-## Measures of Central Tendency
-
 As you see, neither of the three measures of central tendency is a silver bullet. Their success depends largely on a population which we are trying to describe. That is why it might be a good idea to look at all three of these and then face the provided answers with our intuition.  
 
 The three measures - mode, median and mean; are actually not the most important piece of learning now. The fact, that we know our did our very **first application of Data Science** is! We started the chapter by saying that the aim of Data Science is to create valuable information out of the data, whereas this information has value for someone (our employer). Maybe we are working for a bread producer and our task is to find out how the producers can differentiate in the market - now we know that it should not be 500 grams bread. Maybe our employer is a sunscreen manufacturer and wants to figure out for which temperatures the sunscreen should be optimized - now we know that 28 degrees. Or maybe, our employer is the government trying to figure out which income groups should pay lower taxes - could be somewhere below 856 Euro.
+
+## Not Knowing Entire Population
+
+This field has been of interest for hundreds of years.
+
+Breiman wrote a masterpiece of paper.
+
+Nature gives us a box, which is a function by which a thing happens. Will we go to work today? It might depend on these factors. We are trying to estimate this function.
 
 ## Level 1: Being Aware - Reached
 Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what it isn't, what it struggles with and what is the role of Embedded Data Scientist. Here are some key takeaways which you should have from this chapter:
