@@ -1,5 +1,5 @@
 --- 
-title: "Intuitive Data Science"
+title: "Authentic Data Science"
 author: "Robert Barcik"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -10,7 +10,7 @@ link-citations: yes
 description: "This is a book that allows anyone to become a Citizen Data Scientist in an intuitive way."
 ---
 
-# Foreword
+# Foreword to Authentic Data Science
 
 Data Science is undoubtedly one of the fastest growing areas within IT. This growth is not unjustified though. Majority of the firms did undergo a process of digitalization within the past 2-3 decades. Opportunities within digitalization, such as digital offering of products, digital channels for marketing, are reaching new maturity points. If we look around ourselves, majority of products which make sense to be digitalized, indeed are (if we disregard laggard governments).  
 
@@ -51,8 +51,8 @@ Chapters where first draft is done and are ready for editing:
 
 Chapters currently in development:
 
-- Contributor Part II
-- Statistician 
+- Contributor 
+- Modeller 
 
 Chapters where only basic framework has been outlined:
 
@@ -60,8 +60,3 @@ Chapters where only basic framework has been outlined:
 - Contributor Part III
 - Project Responsible
 - Butter Knife
-
-## Development and To-do
-
-- Add examples in "Anyone Can Become Citizen Data Scientist"
-- Reconsider *How does Data Science project look like?*
