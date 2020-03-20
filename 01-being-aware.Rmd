@@ -150,9 +150,9 @@ That is why *this book will not teach anything through mathematics*. I honestly 
 
 P.S. There will be a few statistical concepts, so don't blame me if they look like math. As I promised though, there will be no formula, just intuition.
 
-## Understand a Population
+## Turning Data Into Information
 
-In order for Data Science to fulfill its purpose of *turning data into information*, it is often times necessary to **understand a population**. In fact, if you are able to only describe a population, you already have tremendous powers for Data Science, called *descriptive statistics*. 
+We have already talked about a lot of things, but we have not started with fulfilling of the promise of Data Science, that is turning data into valuable information. There are quite a few ways how this can be done, and these will inevitably be one of the backbones of the book you started to read. We start by the simples, yet often times most efficient way which is **understanding a population**. In fact, if you are able to only describe a population, you already have tremendous powers for Data Science, called *descriptive statistics*. 
 
 We can start by defining a **population**; which is in essence a synonym to a *set of individual points*. Population usually refers to living organisms such as people, animals or other living organisms. But as these living organisms are from statistical point of view just *sets of individual points* it can be anything else - fleet of buses, set of marketing campaigns or batch of machinery.  
 
