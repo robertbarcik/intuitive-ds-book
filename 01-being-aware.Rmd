@@ -54,7 +54,7 @@ knitr::include_graphics("resources/01-being-aware/pepper-robot.jpg")
 
 ## Defining Data Scientist
 
-Now that we know what Data Science is, it is quite easy to define who a Data Scientist is. He/She is a practitioner of this field, who uses its methods to achieve its goal. Usually, a Data Scientist has general education in three areas - Programming, Mathematics and Statistics. Notice that none of these areas deal with *context* or *domain* such as Banking, Medicine or Engineering. Thus Data Scientist - by definition, should be *domain-agnostic*. We can see this also in the definition within Oxford Dictionary:
+Now that we know what Data Science is, it is quite easy to define who a Data Scientist is. He/She is a practitioner of this field, who uses its disciplines(methods to achieve its goal. Usually, a Data Scientist has general education in three areas - Programming, Mathematics and Statistics. Notice that none of these areas deal with *context* or *domain* such as Banking, Medicine or Engineering. Thus Data Scientist - by definition, should be *domain-agnostic*. We can see this also in the definition within Oxford Dictionary:
 
 > a person employed to analyse and interpret complex digital data, such as the usage statistics of a website, especially in order to assist a business in its decision-making
 
