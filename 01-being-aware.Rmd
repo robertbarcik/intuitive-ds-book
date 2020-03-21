@@ -48,7 +48,7 @@ knitr::include_graphics("resources/01-being-aware/data-mining-data-science.jpg")
 
 Machine Learning is then what connects Data Science to **Artificial Intelligence**. This last field might be probably the most complex as it not only works with data and information; but also with automation, robotics and creation of intelligent systems. I think it is the easiest to imagine how these three fields; Data Science, Machine Learning and Artificial Intelligence work together is by looking at humanoid robot Pepper. This cute and handy robot can move around your house and help you with various things. In order to do so, it collects and processes various data from surrounding environment (Data Science), makes sense out of these with learned models (Machine Learning) and puts it together to an intelligent humanoid machine (Artificial Intelligence).
 
-```{r pepper-robot, echo = FALSE, fig.cap='Humanoid robot Pepper as a great example where fields of Data Science, Machine Learning and Artificial Intelligence overlap.'}
+```{r pepper-robot, echo = FALSE, fig.cap='Humanoid robot Pepper as a great example where fields of Data Science, Machine Learning and Artificial Intelligence overlap. Picture by Alex Knight on Pexels.'}
 knitr::include_graphics("resources/01-being-aware/pepper-robot.jpg")
 ```
 
@@ -304,13 +304,20 @@ Representativeness of a sample
 
 ## Predicting Future Values
 
-Here we can have also a situation that the part of observations that we do not have knowledge of lies in the **future**. This could be an example of new customers coming in the future, or our population simply changing every month or so. The value here comes in ability to act on the unknown part of the population, or to act accordingly with respect to what will happen in the future. 
+Are we some sort of fortune tellers with a glass ball claiming that we are able to predict a future? Fortunately not, we are relying on a simple understanding of our nature, depicted on a picture below. Data Scientists believe that many phenomena (such as purchases in our grocery store) are through certain nature's **mapping function** connected to inputs (such as weather). Our outcome which we are interested in predicting will then be determined by the inputs to such a large degree, that we will be able to predict the outcome. Let me slow down a bit.
 
-This field has been of interest for hundreds of years.
+```{r nature-process-1, echo = FALSE, fig.cap='Simplified idea of why Data Scientists believe they are able to predict future values.'}
+knitr::include_graphics("resources/01-being-aware/nature-process-1.jpg")
+```
 
-Breiman wrote a masterpiece of paper.
+Think about yourself and your desire to purchase an ice cream. Is it completely *random* process which is not influenced by anything whether you will go and buy an ice cream? I am pretty sure that is is not. If the weather is warm, if your partner says that he/she would like an ice cream or if you just saw glorious ice cream commercial, you might be more likely to go out and purchase the ice cream. Similarly, there are factors which can negatively influence you and you will be less likely to go, such as you being determined on a diet or you feeling a bit of inflammation in your throat. Inside of your mind, is this *function* designed by nature which takes into account all of these positive and negative factors and then lead to a decision whether you will go and purchase the ice cream or not.  
 
-Nature gives us a box, which is a function by which a thing happens. Will we go to work today? It might depend on these factors. We are trying to estimate this function.
+Data Scientists' job is then to **estimate this function** (or approximate it). They will want to construct the algorithm, base don which they will have as accurate mapping of inputs to the output. How accurate their predictions will be is then dependent on two primary aspects:
+
+1. How complex the mapping function is.
+2. How many of the significant inputs are they able to grasp and collect data about.
+
+The future prediction of Data Science will never be perfectly accurate. There will always be at least a small amount of **error**, which can be cause by one of the two aspects mentioned above. 9 out of 10 people will in the summer in a good weather purchase an ice cream when walking with their dog through the city. The 10th person will not decide to do so, as she is lactose sensitive, and you are offering only lactose based ice cream. In this case, Data Science missed one significant input; but that is perfectly fine isnt't it? We are able to correctly predict 9 out of 10 cases.
 
 ## Level 1: Being Aware - Reached
 Congratulations! Without even realizing it, you have reached the first level which I call "Being Aware". You are now aware of what Data Science is, what it isn't, what it struggles with and what is the role of Embedded Data Scientist. Here are some key takeaways which you should have from this chapter:
