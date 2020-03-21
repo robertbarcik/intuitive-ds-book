@@ -42,12 +42,9 @@ Let's say that you got a task of optimizing bus transportation in your city, a f
 
 Do you think that this dataset will be sufficient to fulfill the task?
 
-
 ```{r bus, echo = FALSE, fig.cap='Is our data powerful enough to optimize the bus routes?'}
 knitr::include_graphics("resources/02-observer/bus.jpg")
 ```
-
-
 
 You do a perfect Data Science project, utilizing the dataset to its maximum. Some of the things you will do based on a dataset:
 
@@ -98,11 +95,6 @@ Which of the points above occurred in this situation?
 
 - I was **lazy** and I **did not know myself**. I could tell the bank clerk that having another bank is not the real reason, but I just didn't feel like it. Also, I don't *really* know why am I leaving this bank. One morning I woke up and I felt like I do not want to be their client anymore.
 - My branch advisor was I think **cheating**. He was happy that I agreed to the reason that I have a different bank. I could have used one of the reasons that I am unhappy with the service I am receiving at this branch. This would of course cause his colleagues troubles.  
-
-```{r people-bias, echo = FALSE, fig.cap='Remember that people have a lot of internal biases and will appear differently than what they really are. Photo by Juan Pablo Serrano Arenas from Pexels'}
-knitr::include_graphics("resources/02-observer/people-bias.jpg")
-```
-
 
 Thus if you end up as the poor Data Scientist in this case,  
 
@@ -157,10 +149,6 @@ I have to make a small assumption here about who you are. You are someone who wo
 As you already know, the basis of every Data Science project are *data* (input). As you have domain knowledge, you might know about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past.  
 
 My project was using log data from a mobile application, whereas users had to go through several screens in order to complete the purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping off from the sales process at various points. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from the call centre, which moves the project a light year ahead!
-
-```{r baby-crying, echo = FALSE, fig.cap='Crying babies were patterns that data would never reveal to me. Photo by Ba Phi from Pexels.'}
-knitr::include_graphics("resources/02-observer/baby-crying.jpg")
-```
 
 Secondly, every data science project should produce an *information* (output) that will be used to create benefit. This component of the Data Science project is oftentimes underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that a customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the *information* was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this *information* could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the *information* they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the *information* which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit out of a Data Science project.
 
@@ -469,10 +457,6 @@ Let's say that you are running a canteen where a few hundred people arrive every
 Your Option 1 is **creation of certain rules**. You look into your past and notice that your canteen never sold more than 400 meals in a day. On the other hand, you never sold less than 100 meals. This will be your first rule, to always cook between 100 and 400 meals. Whenever you serve a national dish - Wiener Schnitzel, you are always over 300 servings, people love it. However, if you serve Wiener Schnitzel 2 times in a week, the second time only very few people come, even though people love the meal, they want it only once a week. There is your second rule. If you serve rice as a side dish, some 30 people less always come as compared to potatoes, people tend to like rice less. There is your third rule. Now you can be working through a rule creation for a very long time and construct a list of explicit rules according to which you will operate the canteen.  
 
 Your Option 2 is **use of Machine Learning**. You will collect as much data about the past consumption in your canteen. Often times people make a mistake of thinking that I only *throw* data into Machine Learning algorithms (such as The Perceptron) and it will save you a lot of time. No, you still need to invest your time, but into *preparing the data* for the algorithm, instead of creating the rules yourself. Thus you will not only collect the meals, their consumption, but also things like public holidays, allergens in the meals. All of this will be nicely prepared, fitted into the Machine Learning model, which will discover various patterns. Now whenever you will be planning to cook a meal, you will push it into your model, and it will *predict* what will be the consumption.
-
-```{r canteen, echo = FALSE, fig.cap='Should we use rule creation or Machine Learning to optimize our servings at canteen?'}
-knitr::include_graphics("resources/02-observer/canteen.jpg")
-```
 
 *How do I use data for Machine Learning?*
 
