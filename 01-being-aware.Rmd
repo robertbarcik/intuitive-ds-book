@@ -168,15 +168,29 @@ P.S. There will be a few statistical concepts, so don't blame me if they look li
 
 ## Population and Observation
 
-Population is of our interest, not an entire world population (which probably does not interest us).
+It is about time we dig into actual learning, not just framing of either this book or Data Science itself. We hop into it by introducing two basic terms: **population and observation**, which I presume do not sound too unfamiliar. 
 
-There are two major possibilities:
+> Popululation is group of all items (or living beings) which are of our interest.
 
-**We have data about all observations in population of our interest**. In this case, it is sufficient often times to turn to a simple world of descriptive statistics. If we desribe all observations, our conclusion will be certainly correct (assuming we have don unbiased Data Science). Other tools migh include data visualization or data analysis. The value here comes by being able to act on this population which we are describing.
+It is easiest of course to imagine human population; of a city, country, area. These can be of our interest because we might be interested in what impact will a certain new law have. We can be more specific and have smaller human population, such as customer base of a company, whereas this population is interesting as it provides us with revenues. Though population does not have to be living, it can also be a set of items; such as all lightbulbs in a building. We might be interested in which light bulbs will be in need of exchange soon. As you see, it is pretty flexible term. I think you already guessed what an observation is and it needs no detailed clarifications.
 
-**We have data only on part of our observations in population of our interest**. In this case, we are turning to the world of inferential statistics often times. We are making assumptions and drawing conclusions about the rest of population based on our sample. Here we can have also a situation that the part of observations that we do not have knowledge of lies in the *future*. This could be an example of new customers coming in the future, or our population simply changing every month or so. The value here comes in ability to act on the unknown part of the population, or to act accordingly with respect to what will happen in the future. 
+> Observation is a single unit (item, living being...) out of the population of our interest.
+
+Now withing the world of Data Science, there are in general three possible scenarios, which you will be meeting on daily basis.
+
+1. We have data about *all observations* in population of our interest.
+2. We have data only on *part of observations* in population of our interest.
+3. We want to predict *future values* about population of our interest.
+
+Each of these represent a challenge of different kind, and will be dealt with using different methods. Moreover, often times we will deal with all three scenarios using the *same data*. Imagine you are a grocery store with a well developed loyalty system. Your customers always show the loyalty card at the cashier to receive a discount, so you have nice and conscise data about essentially all of your customers. Your manager comes to you and says that he would like to optimize the opening hours of the store so that they are more fitting *for our current customers*. The population in this case will be only our customers, which means that the Data Science challenge will be dealing with data about all customers. This is in fact the easiest of the three options, as we are making **no assumptions**. We know that whatever our findings will be, they will for sure be correct, as we have data about the whole population.  
+
+Within a few weeks, the manager comes and says that he would like to know how much people on average spend on groceries in a city where your store is located. The scenario changes, as the population of interest is all of a sudden *entire city population*. Out of the city, only a small part of the inhabitants are your customers, which means that the data which you have are only for part of observations in a population. This will be a more challenging task, as you will need to **make assumptions**. What if the customers of your store are not like the rest of the city? Maybe your store is focused on low-end price range and it will be tricky to assume that the average customer in a city spends the same amounts for groceries. However much we will try with Data Science, our answer will not be perfectly accurate and correct, yet it might suffice.  
+
+After your past two successful projects, manager comes with a big request to you - to predict a future. Based on your managers reasoning, stocking on certain items can be better as your warehouse tends to run out of those. He would like you hence to predict the *future purchases of your customer population*. Is it even possible? Certainly it is and it has been done long before anyone ever heard of Data Science, Statistics or Machine Learning. Even by a rule of thumb and based on your experience you can make educated guesses about the future. Ice cream is sold the most during the summer time and ginger cookies in the winter. Data Science will only make these predictions of future more accurate, sometimes significantly more accurate.
 
 ## Knowing Entire Population
+
+**We have data about all observations in population of our interest**. In this case, it is sufficient often times to turn to a simple world of descriptive statistics. If we desribe all observations, our conclusion will be certainly correct (assuming we have don unbiased Data Science). Other tools migh include data visualization or data analysis. The value here comes by being able to act on this population which we are describing.
 
 We have already talked about a lot of things, but we have not started with fulfilling of the promise of Data Science, that is turning data into valuable information. There are quite a few ways how this can be done, and these will inevitably be one of the backbones of the book you started to read. We start by the simples, yet often times most efficient way which is **understanding a population**. In fact, if you are able to only describe a population, you already have tremendous powers for Data Science, called *descriptive statistics*. 
 
@@ -184,7 +198,7 @@ We can start by defining a **population**; which is in essence a synonym to a *s
 
 Now, why would we want to **describe** a population? Simply, because we want to *understand* it and know some *information* about it. Having in front of you an entire list of goals scored in the last hockey season will not help you determine who was the best player of that season by itself. You will need to search for which players scored the most goals, maybe look even deeper. If someone would show you the weather for the past two years, broken down to individual days, it wouldn't be exactly easy to estimate what the weather will be tomorrow. We need to somehow *aggregate, summarize or describe* these populations in order to determine something meaningful.
 
-## Mode, Median and Mean
+### Mode, Median and Mean
 
 We can start with the simplest tools of *descriptive statistics* - **measures of central tendency**. Don't get scared, the phrase just stands for describing what lies in the middle of the population which we aim to describe. You most likely already applied these tools, by referring to an average. Maybe, sometime in the past you were asked some of these questions:
 
@@ -281,6 +295,16 @@ As you see, neither of the three measures of central tendency is a silver bullet
 The three measures - mode, median and mean; are actually not the most important piece of learning now. The fact, that we know our did our very **first application of Data Science** is! We started the chapter by saying that the aim of Data Science is to create valuable information out of the data, whereas this information has value for someone (our employer). Maybe we are working for a bread producer and our task is to find out how the producers can differentiate in the market - now we know that it should not be 500 grams bread. Maybe our employer is a sunscreen manufacturer and wants to figure out for which temperatures the sunscreen should be optimized - now we know that 28 degrees. Or maybe, our employer is the government trying to figure out which income groups should pay lower taxes - could be somewhere below 856 Euro.
 
 ## Not Knowing Entire Population
+
+**We have data only on part of our observations in population of our interest**. In this case, we are turning to the world of inferential statistics often times. We are making assumptions and drawing conclusions about the rest of population based on our sample. 
+
+Inferential statistics and sampling, confidence intervals.
+
+Representativeness of a sample
+
+## Predicting Future Values
+
+Here we can have also a situation that the part of observations that we do not have knowledge of lies in the **future**. This could be an example of new customers coming in the future, or our population simply changing every month or so. The value here comes in ability to act on the unknown part of the population, or to act accordingly with respect to what will happen in the future. 
 
 This field has been of interest for hundreds of years.
 
