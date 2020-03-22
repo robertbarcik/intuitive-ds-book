@@ -406,16 +406,13 @@ Where in the population you lie, to compare yourself.
 
 ### Extreme Values and Outliers
 
-How do we find them in boxplot?
+You might have noticed in the boxplot above, that a few points are *outside* of the whiskers, which are representing a distance of 1.5 IQR from respective quantile. As we already mentioned, these whiskers usually have length of either 1.5 or 3 times of IQR and there is a sound statistical reason for that. As it seems, points which lie outside, may be regarded as **outliers**. Outlier is a point which is so far from the average of the population (the middle 50% of values), that it should be looked at with care. Usually *outliers* have special meaning and we should examine them. Maybe they tell us that few of our observations are special, which can already be a valuable information.
 
-### Mean vs. Median
+There is also a possibility that an outlier is an **extreme value** which is usually unfortunate. As compared to outliers, which are occuring naturally, *extreme values* occur for unnatural reason, such as error while we were collecting the data. 
 
-End with that it is outliers and extreme values which are influencing. Let's learn what to do with them.
+It is important to recognise that both outliers and extreme values can have significant impact on our analysis of population. 
 
-### Measures of Spread
-
-Range
-
+In the following example we will look at mean and median of a population. Median is not necessarily influenced by the outliers, while mean can be a lot.
 
 
 ### Percentages
