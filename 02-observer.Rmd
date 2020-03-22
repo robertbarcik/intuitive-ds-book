@@ -338,6 +338,8 @@ Based on mean, our most advanced *measure of central tendency* they appear almos
 
 ### Range
 
+Simplest way how we can look at how is our population distributed, is by looking at its range.
+
 
 ### Distributions
 
@@ -443,6 +445,8 @@ ggplot(df.example, aes(x = value)) +
 
 
 ## Predicting The Future?
+
+We are not focusing too much on inferential statistics, as for you as Embedded Data Scientist, you will be more often tasked with predicting of future values.
 
 Describing a population, in order to draw some actionable insights is a first step toward data-driven future and decision making. We were thanks to it able to create a lot of value - find ideal weight of new bread to be launched, sligthly optimize taxing system and help design a sunscreen product for optimal temperature. Often times though, this will not be enough and we will want to know, **what will happen in the future**. In essence, we already did it with our temperature example didn't we? The product which should be optimized for summer temperatures will *be used in the future*, which means that we already did dare predict the future.  
 
