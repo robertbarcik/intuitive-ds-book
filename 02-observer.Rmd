@@ -9,20 +9,20 @@ library(dplyr)
 
 ## About this level
 
-Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in the marketing department, you will know what to ask Data Scientists for and how you can use it. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Garbage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
+Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are **not yet directly able to contribute** to it (such as through coding), but you will be able to **use outputs of it and help with the inputs**. Thus if you are a campaigns manager in the marketing department, you will know what to ask Data Scientists for and how you can use what they create. Also, you will have some basic tools with which you can **evaluate** whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, "Garbage in, Garbage out". If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:
 
 Soft understanding of Data Science
 
 - Be Skeptical About Data
 - Data Science Project
-- Your Contribution
+- Your Contribution to Data Science Project
 
 Programming 
 
 - Data and Computing
 - Using Data
 
-Statistics
+Statistics & Machine Learning
 
 - Descriptive Statistics
 - Machine Learning
@@ -116,7 +116,7 @@ You need to think about an action, or a process of a customer though which he/sh
 
 Let's start from the very end, what should a project generate. It should be new information, in various forms, that creates benefit for a person or company that financed this project. Let me emphasize the point of that the project creates **new information, not new data**. This is because data by themselves has no benefit, and thereafter there would be no point in running a project that creates data and not information. This information can be in various forms, so let's take a look at some examples:
 
-- When I was at university I was tasked with creation of project, which would take **recordings of people walking** and it should create an information of whether people on the recordings are suffering from **Parkinson's disease** or not. Having this information creates various benefits, for instance (if working properly), expensive time for doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
+- When I was at university I was tasked with creation of project, which would take **recordings of people walking** and it should create an information of whether people on the recordings are suffering from Parkinson's disease or not. Having this information creates various benefits, for instance (if working properly), expensive time for doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement "Has Parkinson disease" or "Does not have Parkinson disease" to every recording.
 
 - Once I ran a project which was supposed to **determine a location of newly opened retail stores** in a country. The input for my project was the network of roads and cities in the country with their respective counts of inhabitants. The information which my project was creating was a potential position of retail stores that would be optimized for a distribution of roads and where people live. This information created a clear benefit - competitive advantage for particular retailers.
 
