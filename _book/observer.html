@@ -24,7 +24,7 @@
 <meta name="author" content="Robert Barcik" />
 
 
-<meta name="date" content="2020-03-21" />
+<meta name="date" content="2020-03-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -145,13 +145,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.6.3" data-path="observer.html"><a href="observer.html#knime"><i class="fa fa-check"></i><b>3.6.3</b> Knime</a></li>
 </ul></li>
 <li class="chapter" data-level="3.7" data-path="observer.html"><a href="observer.html#descriptive-statistics"><i class="fa fa-check"></i><b>3.7</b> Descriptive Statistics</a><ul>
-<li class="chapter" data-level="3.7.1" data-path="observer.html"><a href="observer.html#distributions"><i class="fa fa-check"></i><b>3.7.1</b> Distributions</a></li>
-<li class="chapter" data-level="3.7.2" data-path="observer.html"><a href="observer.html#percentiles"><i class="fa fa-check"></i><b>3.7.2</b> Percentiles</a></li>
-<li class="chapter" data-level="3.7.3" data-path="observer.html"><a href="observer.html#mean-vs.median"><i class="fa fa-check"></i><b>3.7.3</b> Mean vs. Median</a></li>
+<li class="chapter" data-level="3.7.1" data-path="observer.html"><a href="observer.html#range"><i class="fa fa-check"></i><b>3.7.1</b> Range</a></li>
+<li class="chapter" data-level="3.7.2" data-path="observer.html"><a href="observer.html#distributions"><i class="fa fa-check"></i><b>3.7.2</b> Distributions</a></li>
+<li class="chapter" data-level="3.7.3" data-path="observer.html"><a href="observer.html#quantiles-percentiles"><i class="fa fa-check"></i><b>3.7.3</b> Quantiles &amp; Percentiles</a></li>
 <li class="chapter" data-level="3.7.4" data-path="observer.html"><a href="observer.html#extreme-values-and-outliers"><i class="fa fa-check"></i><b>3.7.4</b> Extreme Values and Outliers</a></li>
-<li class="chapter" data-level="3.7.5" data-path="observer.html"><a href="observer.html#measures-of-spread"><i class="fa fa-check"></i><b>3.7.5</b> Measures of Spread</a></li>
-<li class="chapter" data-level="3.7.6" data-path="observer.html"><a href="observer.html#percentages"><i class="fa fa-check"></i><b>3.7.6</b> Percentages</a></li>
-<li class="chapter" data-level="3.7.7" data-path="observer.html"><a href="observer.html#comparing-distributions"><i class="fa fa-check"></i><b>3.7.7</b> Comparing Distributions</a></li>
+<li class="chapter" data-level="3.7.5" data-path="observer.html"><a href="observer.html#percentages"><i class="fa fa-check"></i><b>3.7.5</b> Percentages</a></li>
+<li class="chapter" data-level="3.7.6" data-path="observer.html"><a href="observer.html#comparing-distributions"><i class="fa fa-check"></i><b>3.7.6</b> Comparing Distributions</a></li>
 </ul></li>
 <li class="chapter" data-level="3.8" data-path="observer.html"><a href="observer.html#predicting-the-future"><i class="fa fa-check"></i><b>3.8</b> Predicting The Future?</a></li>
 <li class="chapter" data-level="3.9" data-path="observer.html"><a href="observer.html#basics-of-machine-learning"><i class="fa fa-check"></i><b>3.9</b> Basics of Machine Learning</a></li>
@@ -232,19 +231,19 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number">Chapter 3</span> Observer</h1>
 <div id="about-this-level" class="section level2">
 <h2><span class="header-section-number">3.1</span> About this level</h2>
-<p>Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are <strong>not yet directly able to contribute</strong> to it (such as through coding), but you will be able to <strong>use outputs of it and help with the inputs</strong>. Thus if you are a campaigns manager in the marketing department, you will know what to ask Data Scientists for and how you can use it. Also, you will have some basic tools with which you can <strong>evaluate</strong> whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, “Garbage in, Garbage out”. If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:</p>
+<p>Welcome to Level 2: Observer. Once you reach this level, you will be able to act as an Observer of a Data Science project. You are <strong>not yet directly able to contribute</strong> to it (such as through coding), but you will be able to <strong>use outputs of it and help with the inputs</strong>. Thus if you are a campaigns manager in the marketing department, you will know what to ask Data Scientists for and how you can use what they create. Also, you will have some basic tools with which you can <strong>evaluate</strong> whether the Data Scientist that your initiative is dependent on did a good job or not. As I mentioned, you will also be able to help out with inputs. Whether you know it or not - Data Science is dependent on people like you, who have the context knowledge. That is why there is the famous saying, “Garbage in, Garbage out”. If you will be able to point a Data Scientist to what he should use and what he should not use, he will be grateful (unless he is stubborn). We will need to develop your skills in three different areas:</p>
 <p>Soft understanding of Data Science</p>
 <ul>
 <li>Be Skeptical About Data</li>
 <li>Data Science Project</li>
-<li>Your Contribution</li>
+<li>Your Contribution to Data Science Project</li>
 </ul>
 <p>Programming</p>
 <ul>
 <li>Data and Computing</li>
 <li>Using Data</li>
 </ul>
-<p>Statistics</p>
+<p>Statistics &amp; Machine Learning</p>
 <ul>
 <li>Descriptive Statistics</li>
 <li>Machine Learning</li>
@@ -312,12 +311,6 @@ Figure 3.1: Is our data powerful enough to optimize the bus routes?
 <li>I was <strong>lazy</strong> and I <strong>did not know myself</strong>. I could tell the bank clerk that having another bank is not the real reason, but I just didn’t feel like it. Also, I don’t <em>really</em> know why am I leaving this bank. One morning I woke up and I felt like I do not want to be their client anymore.</li>
 <li>My branch advisor was I think <strong>cheating</strong>. He was happy that I agreed to the reason that I have a different bank. I could have used one of the reasons that I am unhappy with the service I am receiving at this branch. This would of course cause his colleagues troubles.</li>
 </ul>
-<div class="figure"><span id="fig:people-bias"></span>
-<img src="resources/02-observer/people-bias.jpg" alt="Remember that people have a lot of internal biases and will appear differently than what they really are. Photo by Juan Pablo Serrano Arenas from Pexels"  />
-<p class="caption">
-Figure 3.2: Remember that people have a lot of internal biases and will appear differently than what they really are. Photo by Juan Pablo Serrano Arenas from Pexels
-</p>
-</div>
 <p>Thus if you end up as the poor Data Scientist in this case,</p>
 <blockquote>
 <p>you should seek ways how to <em>overcome</em> the biased self-reported data.</p>
@@ -335,14 +328,14 @@ Figure 3.2: Remember that people have a lot of internal biases and will appear d
 <p><em>How does a Data Science project create benefit?</em></p>
 <p>Let’s start from the very end, what should a project generate. It should be new information, in various forms, that creates benefit for a person or company that financed this project. Let me emphasize the point of that the project creates <strong>new information, not new data</strong>. This is because data by themselves has no benefit, and thereafter there would be no point in running a project that creates data and not information. This information can be in various forms, so let’s take a look at some examples:</p>
 <ul>
-<li><p>When I was at university I was tasked with creation of project, which would take <strong>recordings of people walking</strong> and it should create an information of whether people on the recordings are suffering from <strong>Parkinson’s disease</strong> or not. Having this information creates various benefits, for instance (if working properly), expensive time for doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement “Has Parkinson disease” or “Does not have Parkinson disease” to every recording.</p></li>
+<li><p>When I was at university I was tasked with creation of project, which would take <strong>recordings of people walking</strong> and it should create an information of whether people on the recordings are suffering from Parkinson’s disease or not. Having this information creates various benefits, for instance (if working properly), expensive time for doctors is saved. Ultimately, people could self-administer this test at home without the need of visiting the doctor. The information created was the statement “Has Parkinson disease” or “Does not have Parkinson disease” to every recording.</p></li>
 <li><p>Once I ran a project which was supposed to <strong>determine a location of newly opened retail stores</strong> in a country. The input for my project was the network of roads and cities in the country with their respective counts of inhabitants. The information which my project was creating was a potential position of retail stores that would be optimized for a distribution of roads and where people live. This information created a clear benefit - competitive advantage for particular retailers.</p></li>
 <li><p>Numerous times in the past I was asked to determine customer’s <strong>probability to purchase an item</strong>. My project always took as an input various customer data such as their demographics while it predicted a probability to purchase a particular item (information). This information has a benefit that a business representative can then decide whether he/she will invest into marketing for a particular customer.</p></li>
 </ul>
 <div class="figure"><span id="fig:parkinson"></span>
 <img src="resources/02-observer/parkinson.jpg" alt="My showcasing how Data Science can diagnose Parkinson disease, through recording of gait on four points on the body."  />
 <p class="caption">
-Figure 3.3: My showcasing how Data Science can diagnose Parkinson disease, through recording of gait on four points on the body.
+Figure 3.2: My showcasing how Data Science can diagnose Parkinson disease, through recording of gait on four points on the body.
 </p>
 </div>
 <p>I could go on, but I guess you already have the picture of what is the single requirement of any Data Science project - <strong>creating an information from which we benefit</strong>. The beneficial information can now really vary in forms. It can be anything as you already saw, but I would like to broaden your horizon even more. The output of a Data Science project can be a single diagram, or even a sentence (thereafter it does not have to be predictive modelling or optimization only).</p>
@@ -363,12 +356,6 @@ Figure 3.3: My showcasing how Data Science can diagnose Parkinson disease, throu
 </blockquote>
 <p>As you already know, the basis of every Data Science project are <em>data</em> (input). As you have domain knowledge, you might know about data that Data Scientist is not aware of. I will demonstrate this from one project of mine from the past.</p>
 <p>My project was using log data from a mobile application, whereas users had to go through several screens in order to complete the purchase process. I collected all the log data and what it was showing was that a certain group of users was dropping off from the sales process at various points. I was struggling with it and I was unable to explain why this group of users (which had no clear characteristics) was dropping off at various times during the day. I was then approached by a call center representative, which for several years sells the same product over the phone. He did not even have to look at the data and gave me the answer! These were parents of young children! As the sales process takes an hour to get through all the screens, there is a solid probability that if you are a parent of a baby, the baby will start crying and you will of course leave your computer. The data would never reveal me this pattern, the domain knowledge did instantly. You can be the gentleman from the call centre, which moves the project a light year ahead!</p>
-<div class="figure"><span id="fig:baby-crying"></span>
-<img src="resources/02-observer/baby-crying.jpg" alt="Crying babies were patterns that data would never reveal to me. Photo by Ba Phi from Pexels."  />
-<p class="caption">
-Figure 3.4: Crying babies were patterns that data would never reveal to me. Photo by Ba Phi from Pexels.
-</p>
-</div>
 <p>Secondly, every data science project should produce an <em>information</em> (output) that will be used to create benefit. This component of the Data Science project is oftentimes underappreciated and you can be the one who fixes it. I will now go back to my projects where I was supposed to predict the probability that a customer purchases a product. I was given this task by our CRM department to optimize email campaigns - so that these are sent only to customers who have decent probability to buy the item. Everything worked well, the Data Science project ran through, the <em>information</em> was created. BUT, the created benefit was close to nothing. As it later turned out, customers are generally overfed with emails and digital channels. I then met with a representative from our branch segment and he said that this <em>information</em> could be of great use for our sellers. The sellers have only very limited time when the customer approaches them and thereafter having the <em>information</em> they will be able to sell more. The data, nor my knowledge of Data Scientist would never reveal this use of the <em>information</em> which I created, the domain knowledge did. You can be this representative, who will multiply the created benefit out of a Data Science project.</p>
 </div>
 <div id="data-and-computing" class="section level2">
@@ -378,14 +365,14 @@ Figure 3.4: Crying babies were patterns that data would never reveal to me. Phot
 <div class="figure"><span id="fig:punch-cards"></span>
 <img src="resources/02-observer/punch-cards.jpg" alt="Example of how one of the earliest versions of computers from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter"  />
 <p class="caption">
-Figure 3.5: Example of how one of the earliest versions of computers from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter
+Figure 3.3: Example of how one of the earliest versions of computers from IBM saw data - as punchards with holes (1s) and not-holes (0s). Picture by dansimmons on Twitter
 </p>
 </div>
 <p>How is it possible that two values are enough to represent anything to the computer? Through converting numbers into binary form. I do not want to bother you with the details of this method, I just want to tell you that <strong>any number is easily represented in a binary form</strong>.</p>
 <div class="figure"><span id="fig:text-to-binary"></span>
 <img src="resources/02-observer/text-to_binary.jpg" alt="Example of how texts and numbers can be encoded into binary."  />
 <p class="caption">
-Figure 3.6: Example of how texts and numbers can be encoded into binary.
+Figure 3.4: Example of how texts and numbers can be encoded into binary.
 </p>
 </div>
 <p>Now what we often times make mistake with is that we <strong>overestimate powers of computers</strong> and we think that they understand anything - texts, colours, pictures. Well, they don’t. They only really well understand numbers as these can be easily converted into binary form. Thereafter a lot of tasks of Data Scientists revolve around representing data well for the computer. If a Data Science project intends to work with images or texts, one of the most crucial tasks is, how do we convert these to numbers, so that they can be represented well for computers in binary forms?</p>
@@ -393,14 +380,14 @@ Figure 3.6: Example of how texts and numbers can be encoded into binary.
 <div class="figure"><span id="fig:transaction"></span>
 <img src="resources/02-observer/transaction.JPG" alt="Example of how we view a transaction."  />
 <p class="caption">
-Figure 3.7: Example of how we view a transaction.
+Figure 3.5: Example of how we view a transaction.
 </p>
 </div>
 <p>However what a presenter showed was something like following:</p>
 <div class="figure"><span id="fig:transaction-representation"></span>
 <img src="resources/02-observer/transaction-representation.jpg" alt="Example of how it might be necessary to alter transaction so that our computer views it correctly."  />
 <p class="caption">
-Figure 3.8: Example of how it might be necessary to alter transaction so that our computer views it correctly.
+Figure 3.6: Example of how it might be necessary to alter transaction so that our computer views it correctly.
 </p>
 </div>
 <p>One of the keys of their project is how the transactions were represented to the computer (and algorithm). We will get more into this later. Important message that I would like you to learn now is that;</p>
@@ -420,7 +407,7 @@ Figure 3.8: Example of how it might be necessary to alter transaction so that ou
 <div class="figure"><span id="fig:computer-components"></span>
 <img src="resources/02-observer/computer-components.jpg" alt="Remember that for a Data Scientist hardware matters - mainly CPU and RAM powers."  />
 <p class="caption">
-Figure 3.9: Remember that for a Data Scientist hardware matters - mainly CPU and RAM powers.
+Figure 3.7: Remember that for a Data Scientist hardware matters - mainly CPU and RAM powers.
 </p>
 </div>
 <p><em>What is a csv?</em></p>
@@ -428,7 +415,7 @@ Figure 3.9: Remember that for a Data Scientist hardware matters - mainly CPU and
 <div class="figure"><span id="fig:csv-example-1"></span>
 <img src="resources/02-observer/csv-example-1.JPG" alt="One customer representation in csv form."  />
 <p class="caption">
-Figure 3.10: One customer representation in csv form.
+Figure 3.8: One customer representation in csv form.
 </p>
 </div>
 <p>It is quite ugly right? The reason is that data in this form are <strong>not meant for a human eye</strong>, but for programs to read which can in turn display the data in a nicer way for us. Later on when you will be importing such data, you only need to specify two things so that our program knows how to read it in well:</p>
@@ -464,7 +451,7 @@ Figure 3.10: One customer representation in csv form.
 <div class="figure"><span id="fig:one-customer"></span>
 <img src="resources/02-observer/one-customer.JPG" alt="One customer representation in csv form."  />
 <p class="caption">
-Figure 3.11: One customer representation in csv form.
+Figure 3.9: One customer representation in csv form.
 </p>
 </div>
 <p><em>What is a “flat table”?</em></p>
@@ -472,7 +459,7 @@ Figure 3.11: One customer representation in csv form.
 <div class="figure"><span id="fig:flat-table"></span>
 <img src="resources/02-observer/flat-table.JPG" alt="Multiple customers representation in csv form - flat table."  />
 <p class="caption">
-Figure 3.12: Multiple customers representation in csv form - flat table.
+Figure 3.10: Multiple customers representation in csv form - flat table.
 </p>
 </div>
 <p><em>What is granularity?</em></p>
@@ -480,7 +467,7 @@ Figure 3.12: Multiple customers representation in csv form - flat table.
 <div class="figure"><span id="fig:bad-flat-table"></span>
 <img src="resources/02-observer/bad-flat-table.JPG" alt="It would not make too much sense trying to represent data on different granularities in this way."  />
 <p class="caption">
-Figure 3.13: It would not make too much sense trying to represent data on different granularities in this way.
+Figure 3.11: It would not make too much sense trying to represent data on different granularities in this way.
 </p>
 </div>
 <p>Ugly right? It would be hard to manipulate such data. We need to solve this by introducing more tables, whereas these are on <strong>different granularity level</strong>. We will call this relational database.</p>
@@ -490,7 +477,7 @@ Figure 3.13: It would not make too much sense trying to represent data on differ
 <div class="figure"><span id="fig:relational-database"></span>
 <img src="resources/02-observer/relational-database.JPG" alt="Correct representation of data on different granularities - relational database."  />
 <p class="caption">
-Figure 3.14: Correct representation of data on different granularities - relational database.
+Figure 3.12: Correct representation of data on different granularities - relational database.
 </p>
 </div>
 <p>When you will be contributing to a Data Science project, keep the data granularity in mind. If the data of different granularities enter the project, it is necessary to harmonize their granularities. This can be done for instance through data aggregation which you will learn on the next level.</p>
@@ -531,21 +518,32 @@ Figure 3.14: Correct representation of data on different granularities - relatio
 </div>
 <div id="descriptive-statistics" class="section level2">
 <h2><span class="header-section-number">3.7</span> Descriptive Statistics</h2>
-<p>In the last chapter we discussed that one of the simplest ways for creating valuable information with Data Science is by describing a population which is of our interest. Our toolset is quite limited though so far - we can only use <em>measures of central tendency</em>. It is now time to revisit this idea and expand on it with distributions, visualisations and <em>measures of spread</em>.</p>
+<p>Our toolset is quite limited though so far - we can only use <em>measures of central tendency</em>. It is now time to revisit this idea and expand on it with <strong>distributions, percentiles, visualisations and measures of spread</strong>. I would start by showing you <em>why</em> measures of central tendency are often times not enough, and we need to learn further tools. Consider two populations, each one is several measurements of temperature:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">stable_climate &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">14</span>, <span class="dv">15</span>, <span class="dv">16</span>)
+unstable_climate &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">4</span>,<span class="dv">10</span>, <span class="dv">14</span>, <span class="dv">18</span>, <span class="dv">20</span>)</code></pre></div>
+<p>When we intuitively look at these two populations, they are very different. The first set of temperatures seem to come from a rather “stable” climate when temperatures range between 11-16 degrees. The second set of temperatures seem to be coming from a way more “unstable” climate. On the first day, we seemed to have only 4 degrees and on last day even 20 degrees! Let’s see what happens if we deploy our learned <em>measures of central tendency</em> on these two populations.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(stable_climate)</code></pre></div>
+<pre><code>## [1] 13.5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">mean</span>(unstable_climate)</code></pre></div>
+<pre><code>## [1] 13.2</code></pre>
+<p>Based on mean, our most advanced <em>measure of central tendency</em> they appear almost non-different, which is very contradictive to our intuition! The reason is that measures of central tendency will not grasp how are data spreaded, for that, we will need to examine how are observations distributed and spreaded, which is a topic of this chapter.</p>
+<div id="range" class="section level3">
+<h3><span class="header-section-number">3.7.1</span> Range</h3>
+<p>Simplest way how we can look at how is our population distributed, is by looking at its range.</p>
+</div>
 <div id="distributions" class="section level3">
-<h3><span class="header-section-number">3.7.1</span> Distributions</h3>
-<p><em>A picture is worth a thousand words</em>, is an old proverb which is true also for us. Within Data Science, this topic is called Data Visualisation and is very broad. We only tip our toes into its waters now by learning how can we <strong>visualise a distribution</strong>.</p>
-<p>Let’s revisit an example from a previous chapter, where we had salaries distributed such as this:</p>
+<h3><span class="header-section-number">3.7.2</span> Distributions</h3>
+<p><em>A picture is worth a thousand words</em>, is an old proverb which is true also for us. Within Data Science, this topic is called Data Visualisation and is very broad. We only tip our toes into its waters now by learning how can we <strong>visualise a distribution</strong>. Why would we even want to visualise a distribution? Let’s revisit an example from a previous chapter, where we had salaries distributed such as this:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">salaries_country &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">350</span>, <span class="dv">400</span>, <span class="dv">450</span>, <span class="dv">470</span>, <span class="dv">500</span>, <span class="dv">520</span>, <span class="dv">1200</span>, <span class="dv">1270</span>, <span class="dv">1300</span>, <span class="dv">1460</span>, <span class="dv">1500</span>)</code></pre></div>
 <p>In this case, it was easy for us to intuitively grasp an idea of what is going on in the population. What is our population looked though like this:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">head</span>(large_salaries_population, <span class="dv">100</span>)</code></pre></div>
-<pre><code>##   [1] 671 501 701 642 528 635 681 499 472 723 648 555 549 593 589 483 670 617
-##  [19] 682 580 547 721 682 520 599 652 602 567 636 628 584 640 530 730 502 671
-##  [37] 480 608 681 575 622 603 520 502 604 569 502 618 417 579 642 685 592 688
-##  [55] 579 651 534 696 579 605 534 581 622 658 570 706 678 484 600 583 590 659
-##  [73] 622 637 535 557 597 655 691 581 659 567 555 582 701 633 573 639 671 487
-##  [91] 645 547 481 616 610 618 693 540 601 551</code></pre>
-<p>It gets messy right? We can try to order the numbers, but still <strong>our intuitive thinking is failing</strong> when population gets larger. That is why we turn into distributions plot. It is one of the simplest plot within Data Visualisation techniques:</p>
+<pre><code>##   [1] 576 551 904 576 588 623 564 480 639 609 478 595 648 579 676 647 628 729
+##  [19] 698 680 635 607 567 673 646 642 595 591 451 559 389 630 758 639 768 502
+##  [37] 630 611 814 581 644 653 571 656 599 652 503 633 506 456 604 666 625 486
+##  [55] 757 523 716 547 712 693 608 660 518 641 637 585 539 632 638 610 613 533
+##  [73] 476 588 724 610 695 582 573 546 593 634 574 502 516 462 633 659 480 590
+##  [91] 478 576 649 552 564 580 594 622 557 486</code></pre>
+<p>It gets messy right? We can try to order the numbers, but still <strong>our intuitive thinking is failing</strong> when population gets larger. That is why we turn into <strong>distributions plot</strong>. It is one of the simplest plot within Data Visualisation techniques:</p>
 <ul>
 <li>It has two axis: x-axis (horizontal) and y-axis (vertical)</li>
 <li>X-axis displays our values or units of measurement (in our case salaries in Euro). This axis is splitted into small <strong>bins</strong>, each bin holds a range of our values - for example range of 50 Euro, ranging from 900 Euro to 950 Euro.</li>
@@ -556,35 +554,61 @@ Figure 3.14: Correct representation of data on different granularities - relatio
 <p><img src="intuitive-ds-book_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>Our intution works again doesn’t it? By looking at the plot of salary distribution, we can imagine what is happening in the population. We can clearly see part of population whose salaries are distributed around 600 Euro, whereas this is majority of population. Second hump occurs around 1000 Euro, where is a wealthier group of people distributed. If we now worked for tax office and our task would be to determine a boundary for different tax levels, based on this distribution plot, we would be able to complete the task - we would probably put this cut somewhere around 800 Euro to clearly separate these two populations.</p>
 </div>
-<div id="percentiles" class="section level3">
-<h3><span class="header-section-number">3.7.2</span> Percentiles</h3>
-<p>We hav ein the last chapter learned about mode, median and mean. Out of these, median and mean will be very useful for you when you will be thinking essentally about any population. We expand our knowledge now on <em>median</em> with a knowledge that this is so called **50th per</p>
-<p>Where in the population you lie, to compare yourself.</p>
-<p>Quantiles</p>
-<p>Boxplot is another way, how to show distribution of population.</p>
+<div id="quantiles-percentiles" class="section level3">
+<h3><span class="header-section-number">3.7.3</span> Quantiles &amp; Percentiles</h3>
+<p>We have in the last chapter learned about mode, median and mean. Out of these, median and mean will be very useful for you when you will be thinking essentally about any population. We expand our knowledge now on <em>median</em> with a knowledge that this is also so called <strong>2nd quantile</strong> and as well <strong>50th percentile</strong>.</p>
+<p>Do you remember how we said that that median can be obtained by ordering the population from smallest to largest and taking the middle observation, which represents then a median. If we ordered 5 people by height, the person standing right in the middle (3rd person) would represent median height. How useful is this knowledge for us? We are able to <strong>compare</strong> the rest of the population to this median height. We know that everyone standing to the right of this person is taller, and everyone to the left has lower height.</p>
+<div class="figure"><span id="fig:boxplot-1"></span>
+<img src="resources/02-observer/boxplot-1.jpg" alt="Median represents observation in &quot;the middle&quot;."  />
+<p class="caption">
+Figure 3.13: Median represents observation in “the middle”.
+</p>
 </div>
-<div id="mean-vs.median" class="section level3">
-<h3><span class="header-section-number">3.7.3</span> Mean vs. Median</h3>
-<p>End with that it is outliers and extreme values which are influencing. Let’s learn what to do with them.</p>
+<p>Wouldn’t it be useful if we could be more detailed and not only compare the population to the exact middle? <strong>Quantiles</strong> are a way for us to do so. Similarly how median did split population into two parts, with equal number of observations in each; quantiles will split population into <strong>four parts</strong> each with approximately same number of observations.</p>
+<div class="figure"><span id="fig:boxplot-2"></span>
+<img src="resources/02-observer/boxplot-2.jpg" alt="Quantiles split the population into 4 parts, each having approximately 25% of observations."  />
+<p class="caption">
+Figure 3.14: Quantiles split the population into 4 parts, each having approximately 25% of observations.
+</p>
+</div>
+<p>Next tool which Data Scientist believe is very useful, is to look how far are 1st and 3rd quantile from each other, this is called “Interquantile Range (IQR)”. In other words, IQR tells us, in what <em>range</em> the middle 50% of the population lies.</p>
+<div class="figure"><span id="fig:boxplot-3"></span>
+<img src="resources/02-observer/boxplot-3.jpg" alt="Interquantile range shows us a range of middle 50% of the population."  />
+<p class="caption">
+Figure 3.15: Interquantile range shows us a range of middle 50% of the population.
+</p>
+</div>
+<div class="figure"><span id="fig:boxplot-4"></span>
+<img src="resources/02-observer/boxplot-4.jpg" alt="Multiplying of IQR with either 1.5 or 3 will allow us to find observations which lie too far from the rest of the population."  />
+<p class="caption">
+Figure 3.16: Multiplying of IQR with either 1.5 or 3 will allow us to find observations which lie too far from the rest of the population.
+</p>
+</div>
+<p>Finally, our picture starts to be a little cluttered and hard to look at. That is why Statisticians came with a very simple method of how all the previously discussed measures (median, quantiles, IQR…) can be put into one plot, called <strong>Box plot</strong> (or Boxplot). This powerful visualisation tool will allow us to instantly visualise the population.</p>
+<div class="figure"><span id="fig:boxplot-5"></span>
+<img src="resources/02-observer/boxplot-5.jpg" alt="Boxplot is a simple and powerful tool for examining a population."  />
+<p class="caption">
+Figure 3.17: Boxplot is a simple and powerful tool for examining a population.
+</p>
+</div>
+<p>Where in the population you lie, to compare yourself.</p>
 </div>
 <div id="extreme-values-and-outliers" class="section level3">
 <h3><span class="header-section-number">3.7.4</span> Extreme Values and Outliers</h3>
-<p>How do we find them in boxplot?</p>
-</div>
-<div id="measures-of-spread" class="section level3">
-<h3><span class="header-section-number">3.7.5</span> Measures of Spread</h3>
-<p>Range</p>
-<p>IQR</p>
+<p>You might have noticed in the boxplot above, that a few points are <em>outside</em> of the whiskers, which are representing a distance of 1.5 IQR from respective quantile. As we already mentioned, these whiskers usually have length of either 1.5 or 3 times of IQR and there is a sound statistical reason for that. As it seems, points which lie outside, may be regarded as <strong>outliers</strong>. Outlier is a point which is so far from the average of the population (the middle 50% of values), that it should be looked at with care. Usually <em>outliers</em> have special meaning and we should examine them. Maybe they tell us that few of our observations are special, which can already be a valuable information.</p>
+<p>There is also a possibility that an outlier is an <strong>extreme value</strong> which is usually unfortunate. As compared to outliers, which are occuring naturally, <em>extreme values</em> occur for unnatural reason, such as error while we were collecting the data.</p>
+<p>It is important to recognise that both outliers and extreme values can have significant impact on our analysis of population.</p>
+<p>In the following example we will look at mean and median of a population. Median is not necessarily influenced by the outliers, while mean can be a lot.</p>
 </div>
 <div id="percentages" class="section level3">
-<h3><span class="header-section-number">3.7.6</span> Percentages</h3>
+<h3><span class="header-section-number">3.7.5</span> Percentages</h3>
 <ul>
 <li>the danger of working with them (CRM campaigns doubling conversion rate)</li>
 <li>they are relative to some amount (which can be small)</li>
 </ul>
 </div>
 <div id="comparing-distributions" class="section level3">
-<h3><span class="header-section-number">3.7.7</span> Comparing Distributions</h3>
+<h3><span class="header-section-number">3.7.6</span> Comparing Distributions</h3>
 <p>Learn about comparing populations with distributions.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">df.example &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">model =</span> <span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>), <span class="dt">length.out =</span> <span class="dv">500</span>), 
                       <span class="dt">type =</span> <span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;t1&quot;</span>, <span class="st">&quot;t2&quot;</span>, <span class="st">&quot;t2&quot;</span>, <span class="st">&quot;t1&quot;</span>), 
@@ -606,6 +630,7 @@ d2 &lt;-<span class="st"> </span>df.example <span class="op">%&gt;%</span>
 </div>
 <div id="predicting-the-future" class="section level2">
 <h2><span class="header-section-number">3.8</span> Predicting The Future?</h2>
+<p>We are not focusing too much on inferential statistics, as for you as Embedded Data Scientist, you will be more often tasked with predicting of future values.</p>
 <p>Describing a population, in order to draw some actionable insights is a first step toward data-driven future and decision making. We were thanks to it able to create a lot of value - find ideal weight of new bread to be launched, sligthly optimize taxing system and help design a sunscreen product for optimal temperature. Often times though, this will not be enough and we will want to know, <strong>what will happen in the future</strong>. In essence, we already did it with our temperature example didn’t we? The product which should be optimized for summer temperatures will <em>be used in the future</em>, which means that we already did dare predict the future.</p>
 <p>Our capabilities of predicting a future are limited by a lot of factors, which you will slowly learn about throughout the course of this book, though there are two which I would like to touch upon now.</p>
 <p>Your prediction is limited by the scope of your past data…</p>
@@ -622,7 +647,7 @@ d2 &lt;-<span class="st"> </span>df.example <span class="op">%&gt;%</span>
 <div class="figure"><span id="fig:hollerith-machine"></span>
 <img src="resources/02-observer/hollerith-machine.jpg" alt="Data processing as a use of computers. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/"  />
 <p class="caption">
-Figure 3.15: Data processing as a use of computers. Picture by IBM History. See at: <a href="https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/" class="uri">https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/</a>
+Figure 3.18: Data processing as a use of computers. Picture by IBM History. See at: <a href="https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/" class="uri">https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/</a>
 </p>
 </div>
 <p>This was a primary solution for over half a century until commercial electronic computers arrived. Having computers with certain rules which were doing what otherwise humans could do, was really helping humanity. This automation was done by telling computers explicitly what to do through <em>rules</em>. Rules have problems though - they have hard and strict boundaries. If you want to design a great rule based system, you need to be really careful so that you encode all the <em>patterns</em> which are in the data. With the arrival of commercial electronic computers the rule based systems were becoming more and more complex. Firstly, it is very hard to encode all the matters into our model. Secondly, our population and data change over time. Due to that, even if you manage to encode all of the rules, very quickly will these become outdated simply due to the changing nature of our world.</p>
@@ -633,7 +658,7 @@ Figure 3.15: Data processing as a use of computers. Picture by IBM History. See 
 <div class="figure"><span id="fig:arthur-samuel"></span>
 <img src="resources/02-observer/arthur-samuel.jpg" alt="Arthur Samuel is one of the key persons in the history and evolution of Machine Learning. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/"  />
 <p class="caption">
-Figure 3.16: Arthur Samuel is one of the key persons in the history and evolution of Machine Learning. Picture by IBM History. See at: <a href="https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/" class="uri">https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/</a>
+Figure 3.19: Arthur Samuel is one of the key persons in the history and evolution of Machine Learning. Picture by IBM History. See at: <a href="https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/" class="uri">https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/</a>
 </p>
 </div>
 <p>Here we see the difference - instead of explicit instructions, we are going to seek for patterns and inference in our data. By doing so, we will not have to maintain the model manually anymore, like we had to with rules creation. Also, these patterns will have <em>soft</em> boundaries and conditions will not need to be met exactly, but a case needs to come close.</p>
@@ -641,18 +666,12 @@ Figure 3.16: Arthur Samuel is one of the key persons in the history and evolutio
 <div class="figure"><span id="fig:perceptron"></span>
 <img src="resources/02-observer/perceptron.png" alt="The Perceptron was the first version of the Machine Learning model as we know it today. It could theoretically be applied to any task at hand." width="827" />
 <p class="caption">
-Figure 3.17: The Perceptron was the first version of the Machine Learning model as we know it today. It could theoretically be applied to any task at hand.
+Figure 3.20: The Perceptron was the first version of the Machine Learning model as we know it today. It could theoretically be applied to any task at hand.
 </p>
 </div>
 <p>Let’s say that you are running a canteen where a few hundred people arrive every day for lunch. You are supposed to optimize which meals are being served, and also how many portions will be cooked. This should yield a benefit of lowering waste created in your canteen. How will you go about it?</p>
 <p>Your Option 1 is <strong>creation of certain rules</strong>. You look into your past and notice that your canteen never sold more than 400 meals in a day. On the other hand, you never sold less than 100 meals. This will be your first rule, to always cook between 100 and 400 meals. Whenever you serve a national dish - Wiener Schnitzel, you are always over 300 servings, people love it. However, if you serve Wiener Schnitzel 2 times in a week, the second time only very few people come, even though people love the meal, they want it only once a week. There is your second rule. If you serve rice as a side dish, some 30 people less always come as compared to potatoes, people tend to like rice less. There is your third rule. Now you can be working through a rule creation for a very long time and construct a list of explicit rules according to which you will operate the canteen.</p>
 <p>Your Option 2 is <strong>use of Machine Learning</strong>. You will collect as much data about the past consumption in your canteen. Often times people make a mistake of thinking that I only <em>throw</em> data into Machine Learning algorithms (such as The Perceptron) and it will save you a lot of time. No, you still need to invest your time, but into <em>preparing the data</em> for the algorithm, instead of creating the rules yourself. Thus you will not only collect the meals, their consumption, but also things like public holidays, allergens in the meals. All of this will be nicely prepared, fitted into the Machine Learning model, which will discover various patterns. Now whenever you will be planning to cook a meal, you will push it into your model, and it will <em>predict</em> what will be the consumption.</p>
-<div class="figure"><span id="fig:canteen"></span>
-<img src="resources/02-observer/canteen.jpg" alt="Should we use rule creation or Machine Learning to optimize our servings at canteen?"  />
-<p class="caption">
-Figure 3.18: Should we use rule creation or Machine Learning to optimize our servings at canteen?
-</p>
-</div>
 <p><em>How do I use data for Machine Learning?</em></p>
 <p>The definition from Arthur Samuel from 1959 has a second part which might anwer just this question:</p>
 <blockquote>
@@ -680,7 +699,7 @@ Figure 3.18: Should we use rule creation or Machine Learning to optimize our ser
 <div class="figure"><span id="fig:machine-learning-areas-1"></span>
 <img src="resources/02-observer/machine-learning-areas-1.png" alt="The first of Machine Learning that we will focus on is Supervised Learning." width="360" />
 <p class="caption">
-Figure 3.19: The first of Machine Learning that we will focus on is Supervised Learning.
+Figure 3.21: The first of Machine Learning that we will focus on is Supervised Learning.
 </p>
 </div>
 <p>If we go back to our example regarding canteen meal consumption, this is an example of Supervised Learning. Let’s look at what we have as <strong>training data</strong>:</p>
@@ -713,7 +732,7 @@ Figure 3.19: The first of Machine Learning that we will focus on is Supervised L
 <div class="figure"><span id="fig:deer"></span>
 <img src="resources/02-observer/deer.jpg" alt="Can human activity negatively influence deers? Photo by steve-130217 from Pexels."  />
 <p class="caption">
-Figure 3.20: Can human activity negatively influence deers? Photo by steve-130217 from Pexels.
+Figure 3.22: Can human activity negatively influence deers? Photo by steve-130217 from Pexels.
 </p>
 </div>
 <p>Data were collected over the span of several years. Researchers did a specific method of pellet observation to determine in which areas of the forest the deer spend their time. During these years, few new roads were built and one electrical line. My task was to build a Supervised model which could be used in other Swedish forests, when there will be a plan to build roads or electrical lines. By having such a model, environmentalists could stop constructions which would negatively influence the deer population. The question which now bothered me was <strong>what is the right target feature which I should use</strong>?</p>
@@ -740,7 +759,7 @@ Figure 3.20: Can human activity negatively influence deers? Photo by steve-13021
 <div class="figure"><span id="fig:raw-data"></span>
 <img src="resources/02-observer/raw-data.jpg" alt="Training data will always be different from unseen, unlabelled data for which our model should predict."  />
 <p class="caption">
-Figure 3.21: Training data will always be different from unseen, unlabelled data for which our model should predict.
+Figure 3.23: Training data will always be different from unseen, unlabelled data for which our model should predict.
 </p>
 </div>
 <p>Let’s relate to some examples that we already went through and observe whether unseen data will be different to training data:</p>
@@ -757,7 +776,7 @@ Figure 3.21: Training data will always be different from unseen, unlabelled data
 <div class="figure"><span id="fig:overfit"></span>
 <img src="resources/02-observer/overfit.jpg" alt="Overfitted model is great at describing our training data, but poor when it comes to unseen data."  />
 <p class="caption">
-Figure 3.22: Overfitted model is great at describing our training data, but poor when it comes to unseen data.
+Figure 3.24: Overfitted model is great at describing our training data, but poor when it comes to unseen data.
 </p>
 </div>
 <p>It is not great, right? The reason why is what I described earlier, your training and unseen data are <strong>always different</strong>. The solution to this is to aim for our model to <strong>generalize better</strong>.</p>
@@ -768,14 +787,14 @@ Figure 3.22: Overfitted model is great at describing our training data, but poor
 <div class="figure"><span id="fig:balanced-fit"></span>
 <img src="resources/02-observer/balanced-fit.jpg" alt="Balanced model describes our training data well and also generalizes well for unseen data."  />
 <p class="caption">
-Figure 3.23: Balanced model describes our training data well and also generalizes well for unseen data.
+Figure 3.25: Balanced model describes our training data well and also generalizes well for unseen data.
 </p>
 </div>
 <p>This looks more reasonable right? We call this a <em>balanced fit</em> as this model generalizes well. Being a little <em>ignorant</em> toward our training data allowed us to fit a model which has better predictive power on unseen data. We have to be careful to not be <em>too ignorant</em> toward the training data. If we were, what would happen is that we would fit <strong>underfitted model</strong>. Such a model as bad at describing both - training and unseen data.</p>
 <div class="figure"><span id="fig:underfit"></span>
 <img src="resources/02-observer/underfit.jpg" alt="Underfitted model is bad at describing both training as well as unseen data."  />
 <p class="caption">
-Figure 3.24: Underfitted model is bad at describing both training as well as unseen data.
+Figure 3.26: Underfitted model is bad at describing both training as well as unseen data.
 </p>
 </div>
 <p>The concept through which we just went is in literature often times called <em>Bias-variance tradeoff</em>. I do not want to teach you the idea through this terminology as I find it a little confusing and tricky to remember. Keep in mind the terms of <strong>overfitting, underfitting and balanced fit</strong>.</p>
@@ -784,7 +803,7 @@ Figure 3.24: Underfitted model is bad at describing both training as well as uns
 <div class="figure"><span id="fig:all-datasets"></span>
 <img src="resources/02-observer/all-datasets.jpg" alt="An overview in terminology and use of datasets for training and validation of Machine Learning model."  />
 <p class="caption">
-Figure 3.25: An overview in terminology and use of datasets for training and validation of Machine Learning model.
+Figure 3.27: An overview in terminology and use of datasets for training and validation of Machine Learning model.
 </p>
 </div>
 <p>We start our process of thinking on the top - some data are <strong>labelled</strong> and some are <strong>unlabelled</strong>. In case of our canteen, labelled data are our past data of meal consumption. Unlabelled data is tomorrow - we only know independent features, such as what we are going to cook, we do not know how many people will consume it.</p>
@@ -800,7 +819,7 @@ Figure 3.25: An overview in terminology and use of datasets for training and val
 <div class="figure"><span id="fig:machine-learning-areas-2"></span>
 <img src="resources/02-observer/machine-learning-areas-2.png" alt="First area of Supervised Learning that we will focus on is Regression." width="359" />
 <p class="caption">
-Figure 3.26: First area of Supervised Learning that we will focus on is Regression.
+Figure 3.28: First area of Supervised Learning that we will focus on is Regression.
 </p>
 </div>
 <p>In <em>regression supervised learning</em> our target variable is of numerical form. Here are some examples of numerical target features:</p>
@@ -823,7 +842,7 @@ Figure 3.26: First area of Supervised Learning that we will focus on is Regressi
 <div class="figure"><span id="fig:mapping-regression"></span>
 <img src="resources/02-observer/mapping-regression.jpg" alt="By inputting a value of our independent feature into regression model, we obtain its prediction."  />
 <p class="caption">
-Figure 3.27: By inputting a value of our independent feature into regression model, we obtain its prediction.
+Figure 3.29: By inputting a value of our independent feature into regression model, we obtain its prediction.
 </p>
 </div>
 <p>We can replicate this process on our dataset.</p>
@@ -838,14 +857,14 @@ Figure 3.27: By inputting a value of our independent feature into regression mod
 <div class="figure"><span id="fig:single-error"></span>
 <img src="resources/02-observer/single-error.jpg" alt="Single error (on one observation) is obtained by taking the difference between actual and predicted value."  />
 <p class="caption">
-Figure 3.28: Single error (on one observation) is obtained by taking the difference between actual and predicted value.
+Figure 3.30: Single error (on one observation) is obtained by taking the difference between actual and predicted value.
 </p>
 </div>
 <p>The very same procedure we now do for all houses which we are making predictions for.</p>
 <div class="figure"><span id="fig:all-errors"></span>
 <img src="resources/02-observer/all-errors.jpg" alt="We repeat the same procedure and obtain a single error from all observations."  />
 <p class="caption">
-Figure 3.29: We repeat the same procedure and obtain a single error from all observations.
+Figure 3.31: We repeat the same procedure and obtain a single error from all observations.
 </p>
 </div>
 <p>All that we now need to do is to calculate the average out of these errors. To calculate an average error, we only need to sum all of the errors made by the model and divide by number of observations. There is a small trick though. Some of the errors have negative and some have positive sign, as they were obtained using same calculation <strong>actual value - predicted value</strong>.</p>
@@ -865,7 +884,7 @@ mean_error =<span class="st"> </span>sum_of_errors <span class="op">/</span><spa
 <div class="figure"><span id="fig:lucrative-houses"></span>
 <img src="resources/02-observer/lucrative-houses.jpg" alt="We repeat the same procedure and obtain a single error from all observations."  />
 <p class="caption">
-Figure 3.30: We repeat the same procedure and obtain a single error from all observations.
+Figure 3.32: We repeat the same procedure and obtain a single error from all observations.
 </p>
 </div>
 <p>Sometimes, the overall view on the error, such as absolute error or average error can be rather misleading. If you noticed, three of the most expensive houses have been heavily <strong>underpriced by the model</strong>. This is caused simply by the fact that our regression model is not equally good at all levels of house prices. Now from a context perspective, this can be a big issue as we are underpricing the most lucrative houses! Our lucrative clients can get pretty unhappy about that.</p>
@@ -878,7 +897,7 @@ Figure 3.30: We repeat the same procedure and obtain a single error from all obs
 <div class="figure"><span id="fig:machine-learning-areas-3"></span>
 <img src="resources/02-observer/machine-learning-areas-3.png" alt="Second are of Supervised learning that we will go through is Binary Classification." width="358" />
 <p class="caption">
-Figure 3.31: Second are of Supervised learning that we will go through is Binary Classification.
+Figure 3.33: Second are of Supervised learning that we will go through is Binary Classification.
 </p>
 </div>
 <p><em>How do I evaluate if the classification model is good?</em></p>
