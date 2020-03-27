@@ -301,7 +301,9 @@ If we are lucky enough and have representative sample, or great enough with our 
 ### Confidence Interval
 Add an example of using this method through confidence intervals.
 
-## Predicting Future Values
+## Predicting Future & Unforeseen Values
+
+### Predicting Future Values
 
 Are we some sort of fortune tellers with a glass ball claiming that we are able to predict a future? Fortunately not, we are relying on a simple understanding of our nature, depicted on a picture below. Data Scientists believe that many phenomena (such as purchases in our grocery store) are through certain nature's **mapping function** connected to inputs (such as weather). Our outcome which we are interested in predicting will then be determined by the inputs to such a large degree, that we will be able to predict the outcome. Let me slow down a bit.
 
@@ -317,6 +319,12 @@ Data Scientists' job is then to **estimate this function** (or approximate it). 
 2. How many of the significant inputs are they able to grasp and collect data about.
 
 The future prediction of Data Science will never be perfectly accurate. There will always be at least a small amount of **error**, which can be cause by one of the two aspects mentioned above. 9 out of 10 people will in the summer in a good weather purchase an ice cream when walking with their dog through the city. The 10th person will not decide to do so, as she is lactose sensitive, and you are offering only lactose based ice cream. In this case, Data Science missed one significant input; but that is perfectly fine isnt't it? We are able to correctly predict 9 out of 10 cases.
+
+### Predicting Unforeseen Values
+
+This book is being written at a time of a coronavirus crisis, so let's take an example which is nowadays very pressing. Imagine you are a company whose employees still have to come to the office. You are being worried whether they comply with all the recommendations such as washing hands and wearing face cover. 
+
+If you would like to set up a camera which would be recognising whether people wear face cover, it would be rather easy if every person looked the same and were in the same position. Then the computer would always look at the very same pixels and confirm whether you wear a face mask or you don't. Unfortunately for our Data Science project, every person is **different** - everyone is of different height, will be of different posture, has different colour of face cover. This *difference* and *variance* means that our algorithm for recognising face cover will have to correctly classify also previously unforseen values. In other words, when we will be training the algorithm, we will not be able to show it all possibilities which might arise in the future.
 
 ### Association Rules
 
