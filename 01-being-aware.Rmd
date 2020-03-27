@@ -320,6 +320,30 @@ Data Scientists' job is then to **estimate this function** (or approximate it). 
 
 The future prediction of Data Science will never be perfectly accurate. There will always be at least a small amount of **error**, which can be cause by one of the two aspects mentioned above. 9 out of 10 people will in the summer in a good weather purchase an ice cream when walking with their dog through the city. The 10th person will not decide to do so, as she is lactose sensitive, and you are offering only lactose based ice cream. In this case, Data Science missed one significant input; but that is perfectly fine isnt't it? We are able to correctly predict 9 out of 10 cases.
 
+### Correlation vs Causality
+
+In the 1990s, in some smaller cities in Germany a strange phenomena was observed. At the same time, larger numbers of storks started to occur in the city. Moreover, a lot of babies were being born. It is unclear whether the story of "Storks bring babies" occured here, or it was present before, neverthless people started to believe it. Storks coming to the city must have been bringing all the new babies which were being born.
+
+```{r storks-babies, echo = FALSE, fig.cap='Do storks bring babies? Picture by Pixabay on Pexels.'}
+knitr::include_graphics("resources/01-being-aware/storks-babies.jpg")
+```
+
+If we would use our newly gained knowledge on Data Science being able to predict the future, the picture below depicts how would the relationship look like. Nature supposedly gave us a *mapping function* where the input is storks coming to the city and the output is babies being born. This would mean that storks **cause** babies being born. This would be a phenomena called **causation**.
+
+```{r nature-process-2, echo = FALSE, fig.cap='Belief which many people had - storks coming to the city *cause* more babies to be born.'}
+knitr::include_graphics("resources/01-being-aware/nature-process-2.jpg")
+```
+
+Quite a few scientists (as well as Data Scientists) were intrigued by this phenomena and whether it is the truth. Upon observation of the cities in the upcoming years, they revealed a surprising pattern. Storks **do not cause** babies to be born. The process is a bit more complicated. In fact, it was found out that a lot of young couples were moving into the cities from rural areas. These young couples upon settling down in house, decided to have a baby. As you see, babies come first. Now what do the storks have to do with it? Storks like to set their nests on the roof of houses. As these young couples moved into the cities and built houses for themselves, storks simply had a lot of new houses on which they can comfortably build their nests. 
+
+What this means is that the **causation does not exist**. What exists though is **correlation**. Correlation is a term for when two things tend to happen, or occur at the same time. The case of storks and babies in German cities in 1990s was a perfect example of correlation. That is why we need to redraw our view of nature's function.
+
+```{r nature-process-3, echo = FALSE, fig.cap='Storks do not cause more babies being born. Hence only correlation occured, not a causation.'}
+knitr::include_graphics("resources/01-being-aware/nature-process-3.jpg")
+```
+
+What you should take from this story is that sometimes Data Science does not find a *mapping function* which depicts a *cause*, but only a mapping functions which depicts *correlation*. If we would come back to our ice cream purchase example when Data Scientist believes that warm weather will make you go and buy an ice-cream, this function approximation can work and will be accurate. It however does not mean that warm weather *causes* you to go and buy an ice cream. The truth might be that what caused you buy an ice cream was that you watched a weather forecast in the morning where they said that it is going to be a hot day today. Even though the *mapping function* which Data Scientist approximated works and correctly predicts that you will go and buy an ice cream, it might only be a correlation which causes the function to be accurate.
+
 ### Predicting Unforeseen Values
 
 This book is being written at a time of a coronavirus crisis, so let's take an example which is nowadays very pressing. Imagine you are a company whose employees still have to come to the office. You are being worried whether they comply with all the recommendations such as washing hands and wearing face cover. 
