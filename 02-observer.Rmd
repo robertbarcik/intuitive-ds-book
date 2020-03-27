@@ -443,8 +443,11 @@ ggplot(df.example, aes(x = value)) +
 
 ```
 
+## Exploratory Data Analysis
 
-## Predicting The Future?
+Every DS project should start by a phase called Exploratory Data Analysis, which often times include various visualisations such as the ones described above.
+
+## Baseline Model
 
 We are not focusing too much on inferential statistics, as for you as Embedded Data Scientist, you will be more often tasked with predicting of future values.
 
@@ -452,76 +455,22 @@ Describing a population, in order to draw some actionable insights is a first st
 
 Our capabilities of predicting a future are limited by a lot of factors, which you will slowly learn about throughout the course of this book, though there are two which I would like to touch upon now.
 
-Your prediction is limited by the scope of your past data...
-
-Your prediction is limited by the number of observations...
-
-Do not overestimate your capabilities. From now on, there will be a lot regarding machine learning and you might feel like these methods are really powerful for *future prediction*, but please always keep in mind our temperature prediction with median - in essence that was a similar model and what machine learning does is very similar to that (statistical models).
-
 Before we start with machine learning, keep in mind that is is always a good practice to build a **baseline model** which should be without the use of these techniques and only then turn to statistical methods, and see whether the use of these even makes sense.
 
 Predicting without Machine Learning - importance of non-ML baseline
 
-## Basics of Machine Learning
 
-*What is Machine Learning?*  
+## Limitations of data-based models
 
-Machine Learning is a crucial part of Data Science. Oftentimes when I see courses or training materials, this area is postponed until the student learns a lot of basics, such as data preprocessing. Only then, it is believed, you should be exposed to Machine Learning. I believe the opposite - **you should meet it already now** (as an Observer), due to two reasons. Firstly, as already mentioned, Machine Learning is something like a hearth of Data Science. Secondly, it will keep your motivation higher - you need to know some cool things that you will be able to do once you finish this book.  
+Your prediction is limited by the scope of your past data...
+Your prediction is limited by the number of observations...
+Do not overestimate your capabilities. From now on, there will be a lot regarding machine learning and you might feel like these methods are really powerful for *future prediction*, but please always keep in mind our temperature prediction with median - in essence that was a similar model and what machine learning does is very similar to that (statistical models).
 
-To explain to you properly what Machine Learning is, I need to go into the history of computing. Why did computers arise? They arose to simplify or automate tasks done by humans. One such task was to summarize consensus data (the survey done every 10 years which observes a population of a certain country). The problem in the 1880s was that it took over 8 years to summarize and process the data from a consensus, thereafter making it quite worthless due to the length of the process. One of the clerks, Herman Hollerith proposed a solution through a counting machine that successfully sped up the process.
 
-```{r hollerith-machine, echo = FALSE, fig.cap='Data processing as a use of computers. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/'}
-knitr::include_graphics("resources/02-observer/hollerith-machine.jpg")
-```
+## Independent Features and Target Feature
 
-This was a primary solution for over half a century until commercial electronic computers arrived. Having computers with certain rules which were doing what otherwise humans could do, was really helping humanity. This automation was done by telling computers explicitly what to do through *rules*. Rules have problems though - they have hard and strict boundaries. If you want to design a great rule based system, you need to be really careful so that you encode all the *patterns* which are in the data. With the arrival of commercial electronic computers the rule based systems were becoming more and more complex. Firstly, it is very hard to encode all the matters into our model. Secondly, our population and data change over time. Due to that, even if you manage to encode all of the rules, very quickly will these become outdated simply due to the changing nature of our world.  
+## Labelled and Unlabelled Data
 
-The story of Machine Learning continues at IBM, as here in **1952 Arthur Samuel** came up with the first phrase of Machine Learning. He was interested in designing a computer program to play checkers, while the electrical computer had only a very limited memory available. He was thereafter motivated to write *functions* which will analyse the game on the go and decide on the next move. You see, this machine no longer had explicit instructions on how to work. If you open the Wikipedia page about Machine Learning, most likely it will be defined through the definition of Arthur Samuel from 1959:
-
-> Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence.
-
-```{r arthur-samuel, echo = FALSE, fig.cap='Arthur Samuel is one of the key persons in the history and evolution of Machine Learning. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/'}
-knitr::include_graphics("resources/02-observer/arthur-samuel.jpg")
-```
-
-Here we see the difference - instead of explicit instructions, we are going to seek for patterns and inference in our data. By doing so, we will not have to maintain the model manually anymore, like we had to with rules creation. Also, these patterns will have *soft* boundaries and conditions will not need to be met exactly, but a case needs to come close.  
-
-Are we already at the definition of Machine Learning how we know it today? Not quite. You see that even though we are able to let the program decide through identified patterns, instead of explicit instructions, we are not *generalized* yet. The computer of Arthur Samuel was designed to be good at specific task and we cannot take it and generalize it to playing cards for example, or optimize bus transportation. The next leap forward came from Frank Rosenblatt in 1957 who developed the idea of **perceptron**. Even though it took many years after Rosenblatt introduced the concept, the idea which he proposed was crucial. The Perceptron is a *function* which could be used for many tasks and not only for one specific. 
-
-```{r perceptron, echo = FALSE, fig.cap='The Perceptron was the first version of the Machine Learning model as we know it today. It could theoretically be applied to any task at hand.'}
-knitr::include_graphics("resources/02-observer/perceptron.png")
-```
-
-Let's say that you are running a canteen where a few hundred people arrive every day for lunch. You are supposed to optimize which meals are being served, and also how many portions will be cooked. This should yield a benefit of lowering waste created in your canteen. How will you go about it?  
-
-Your Option 1 is **creation of certain rules**. You look into your past and notice that your canteen never sold more than 400 meals in a day. On the other hand, you never sold less than 100 meals. This will be your first rule, to always cook between 100 and 400 meals. Whenever you serve a national dish - Wiener Schnitzel, you are always over 300 servings, people love it. However, if you serve Wiener Schnitzel 2 times in a week, the second time only very few people come, even though people love the meal, they want it only once a week. There is your second rule. If you serve rice as a side dish, some 30 people less always come as compared to potatoes, people tend to like rice less. There is your third rule. Now you can be working through a rule creation for a very long time and construct a list of explicit rules according to which you will operate the canteen.  
-
-Your Option 2 is **use of Machine Learning**. You will collect as much data about the past consumption in your canteen. Often times people make a mistake of thinking that I only *throw* data into Machine Learning algorithms (such as The Perceptron) and it will save you a lot of time. No, you still need to invest your time, but into *preparing the data* for the algorithm, instead of creating the rules yourself. Thus you will not only collect the meals, their consumption, but also things like public holidays, allergens in the meals. All of this will be nicely prepared, fitted into the Machine Learning model, which will discover various patterns. Now whenever you will be planning to cook a meal, you will push it into your model, and it will *predict* what will be the consumption.
-
-*How do I use data for Machine Learning?*
-
-The definition from Arthur Samuel from 1959 has a second part which might anwer just this question:
-
-> Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task.
-
-We are going to show our *Machine Learning model* a set of our data, which we will call **training data**. The underlying statistical and/or mathematical model will seek for the patterns. Once those are found, the model will be *trained* to recognise learned patterns. Once the model is trained, we can present some new data that the model has never seen and ask the model to make a **prediction** about this new data. Imagine a child which has never seen a monkey (*untrained model*). We will now walk the child through several zoos and show him various monkeys (*training data*). The child has learned to recognise and identify a monkey whenever it sees one (*trained model*).  
-
-How is our *trained model* beneficial to us? We can show it **unseen data**, which we usually call **unlabelled data** and ask the model to make a prediction for these. This is the case when we would ask the child what it sees and it should identify a monkey.
-
-If we go back to our example with canteen:
-
-- Training data is all our data from *past* which we can collect. We *know* how much of each meal was consumed.
-- Unlabelled data for which we would like to obtain prediction is our plan of what meal to cook *tomorrow*. We *want to know* how much of our planned meal tomorrow will be consumed.
-
-*Do I need Machine Learning?*  
-
-Now that we know what Machine Learning is, I would like to stop for a second and think about whether we need it at all. These are questions that even experienced Data Scientists often times forget to ask and they end up with what I call *"overkill"*. If you are considering application of Machine Learning, the first thing you should ask yourself is **whether simpler methods cannot answer your issue**.  The simple reason for this consideration is that Machine Learning could get expensive (we will get to the details in later chapters of the book). 
-
-I will recall one Kaggle competition to give you an example (we will get to those later as well). The competition was regarding a mobile game for kids. This game includes various activities such as videos, games and assessments (tests). The task for a Data Scientist was to predict how many attempts it will take the kid to pass an assessment. Our *training data* were all the assessments played in the past by hundreds of kids. There was also *unlabelled data*, the most recent assessment of kids.
-
-There were many people who instantly jumped to Machine Learning and spent hours trying to apply it to the problem at hand, while thinking that their solution is pretty decent. All of a sudden a solution came which contained only 10 lines of code. All that the author of this submission did was that he looked at the  average number of attempts that kids needed to solve a particular assessment. As there were only four unique assessments, he really only quickly calculated a mean out of *training data*. His calculation was hence only four numbers and he assigned to unlabelled data the one, which respective assessment a kid was about to solve.  
-
-By making such simple predictions, the author beat everyone's Machine Learning solution until that day. He set a new baseline of what people need to beat in order to **justify the use of Machine Learning**. Keep this in mind and in the future always consider whether a simpler solution might not answer your task. IF this Kaggle competition was real world, maybe this solution would be sufficient enough, and by being extremely cheap, we would satisfy the requirement.
 
 ## Supervised Learning
 
@@ -585,7 +534,7 @@ Now I still needed to incorporate in my model, the *change* itself. The data wer
 
 We will get more into details and nuances regarding target features on the next level of Contributor.
 
-## Pitfalls of Machine Learning
+## Underfitting and Overfitting
 
 *What is underfitting and overfitting?*
 
@@ -638,7 +587,7 @@ knitr::include_graphics("resources/02-observer/underfit.jpg")
 
 The concept through which we just went is in literature often times called *Bias-variance tradeoff*. I do not want to teach you the idea through this terminology as I find it a little confusing and tricky to remember. Keep in mind the terms of **overfitting, underfitting and balanced fit**.  
 
-*What is a validation set?*
+## Validation data
 
 We now know that we should avoid overfitting or underfitting of our model. How do we prevent it though? What we have in our toolkit now is only two sets of data - training data and unlabelled data. In the previous section we have used the term unseen data. We  saw that in order to evaluate whether our model achieves *balanced fit* we need to have two sets, for which we know the label. That is why we need to introduce a new concept called **validation data** which will clear all of these terms in your mind. Let's look at the following picture.
 
@@ -657,6 +606,7 @@ What would it mean if our canteen model is underfitted or overfitted? How would 
 We said that if model is **overfitted**, it is great at describing training data, but poor at describing unseen data. When we fitted the model, we saw that it is making great predictions about the first four months of our meal consumption. In most of the days, it can really pinpoint the exact amount of meals which were consumed. For instance, when we made Spaghetti Carbonara, the model correctly predicted that 187 portions are going to be consumed. That sounds amazing!  We use the model to make predictions for the most recent month, during which we one day cooked Spaghetti Bolognese, which are just different alternations of Spaghetti. We hence presume that our model will be again great. To our surprise, it predicts that 190 meals will be consumed, while in reality we sell only 110 meals. Our model is overfitted and failed to generalize to unseen (validation) data. We hence know that we cannot use it to predict our unlabelled data (tomorrow).  
 
 We defined **underfitted** model as one which is poor at describing *both* training and unseen data. This one will be hence even easier to spot. When we cooked Spaghetti Carbonara, it predicted 130 meals, while really 187 meals were consumed. In the last month, which the model did not see, when we cooked Spaghetti Bolognese, the prediction by the model was 143 meals, while we really sold 110 meals. We can see that the model was poor at describing both of these meals.
+
 
 ## Regression
 
@@ -804,6 +754,102 @@ knitr::include_graphics("resources/02-observer/machine-learning-areas-3.png")
 Discuss imbalanced classification issue.
 
 Discuss confusion matrix and predicting what actually matters for us.
+
+## The Two Cultures 
+```{r statistical-vs-machine-learning, echo = FALSE, fig.cap='Visualising the difference between Statistical and Machine Learning.'}
+knitr::include_graphics("resources/02-observer/statistical-vs-machine-learning.png")
+```
+
+https://www.analyticsvidhya.com/blog/2015/07/difference-machine-learning-statistical-modeling/
+https://blogs.perficient.com/2018/01/29/machine-learning-vs-statistical-learning/
+https://towardsdatascience.com/the-actual-difference-between-statistics-and-machine-learning-64b49f07ea3
+https://medium.com/data-science-analytics/statistical-learning-vs-machine-learning-f9682fdc339f
+
+I disagree with this question as it suggests that machine learning and statistics are different or conflicting sciences.... when the opposite is true!
+
+machine learning makes extensive use of statistics... a quick survey of any Machine learning or data mining software package will reveal Clustering techniques such as k-means also found in statistics.... will also show dimension reduction techniques such as Principal components analysis also a statistical technique... even logistic regression yet another.
+
+In my view the main difference is that traditionally statistics was used to proove a pre conceived theory and usually the analysis was design around that principal theory. Where with data mining or machine learning the opposite approach is usually the norm in that we have the outcome we just want to find a way to predict it rather than ask the question or form the theory is this the outcome!
+
+The real problem is that this question is misguided. It is not machine learning vs statistics, it is machine learning against real scientific advance. If a machine learning device gives the right predictions 90% of the time but I cannot understand "why", what is the contribution of machine learning to science at large? Imagine if machine learning techniques were used to predict the positions of planets: there would be a lot of smug people thinking that they can accurately predict a number of things with their SVMs, but what would they really know about the problem they have in their hands? Obviously, science does not really advance by numerical predictions, it advances by means of models (mental, mathematical) who let us see far beyond than just numbers.
+
+I have limited experience in SVMs and regression trees. What strikes me as lacking in ML from a stats point of view is a well developed concept of inference.
+
+Inference in ML seems to boil down almost exclusively to the predictice accuracy, as measured by (for example) mean classification error (MCE), or balanced error rate (BER) or similar. ML is in the very good habit of dividing data randomly (usually 2:1) into a training set and a test set. Models are fit using the training set and performance (MCE, BER etc) is assessed using the test set. This is an excellent practice and is only slowly making its way into mainstream statistics.
+
+ML also makes heavy use of resampling methods (especially cross-validation), whose origins appear to be in statistics.
+
+However, ML seems to lack a fully developed concept of inference - beyond predictive accuracy. This has two results.
+
+1) There does not seem to be an appreciation that any prediction (parameter estimation etc.) is subject to a random error and perhaps systemmatics error (bias). Statisticians will accept that this is an inevitable part of prediction and will try and estimate the error. Statistical techniques will try and find an estimate that has minimum bias and random error. Their techniques are usually driven by a model of the data process, but not always (eg. Bootstrap).
+
+2) There does not seem to be a deep understanding in ML of the limits of applying a model to new data to a new sample from the same population (in spite of what I said earlier about the training-test data set approach). Various statistical techniques, among them cross validation and penalty terms applied to likelihood-based methods, guide statisticians in the trade-off between parsimony and model complexity. Such guidelines in ML seem much more ad hoc.
+
+I've seen several papers in ML where cross validation is used to optimise a fitting of many models on a training dataset - producing better and better fit as the model complexity increases. There appears little appreciation that the tiny gains in accuracy are not worth the extra complexity and this naturally leads to over-fitting. Then all these optimised models are applied to the test set as a check on predictive performance and to prevent overfitting. Two things have been forgotten (above). The predictive performance will have a stochastic component. Secondly multiple tests against a test set will again result in over-fitting. The "best" model will be choisen by the ML practitioner without a full appreciation he/she has cherry picked from one realisation of many possible outomes of this experiment. The best of several tested models will almost certainly not reflect the true performance on new data.
+
+Ken Thompson: When in doubt, use brute force.
+
+## Basics of Machine Learning
+
+*What is Machine Learning?*  
+
+Machine Learning is a crucial part of Data Science. Oftentimes when I see courses or training materials, this area is postponed until the student learns a lot of basics, such as data preprocessing. Only then, it is believed, you should be exposed to Machine Learning. I believe the opposite - **you should meet it already now** (as an Observer), due to two reasons. Firstly, as already mentioned, Machine Learning is something like a hearth of Data Science. Secondly, it will keep your motivation higher - you need to know some cool things that you will be able to do once you finish this book.  
+
+To explain to you properly what Machine Learning is, I need to go into the history of computing. Why did computers arise? They arose to simplify or automate tasks done by humans. One such task was to summarize consensus data (the survey done every 10 years which observes a population of a certain country). The problem in the 1880s was that it took over 8 years to summarize and process the data from a consensus, thereafter making it quite worthless due to the length of the process. One of the clerks, Herman Hollerith proposed a solution through a counting machine that successfully sped up the process.
+
+```{r hollerith-machine, echo = FALSE, fig.cap='Data processing as a use of computers. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/tabulator/'}
+knitr::include_graphics("resources/02-observer/hollerith-machine.jpg")
+```
+
+This was a primary solution for over half a century until commercial electronic computers arrived. Having computers with certain rules which were doing what otherwise humans could do, was really helping humanity. This automation was done by telling computers explicitly what to do through *rules*. Rules have problems though - they have hard and strict boundaries. If you want to design a great rule based system, you need to be really careful so that you encode all the *patterns* which are in the data. With the arrival of commercial electronic computers the rule based systems were becoming more and more complex. Firstly, it is very hard to encode all the matters into our model. Secondly, our population and data change over time. Due to that, even if you manage to encode all of the rules, very quickly will these become outdated simply due to the changing nature of our world.  
+
+The story of Machine Learning continues at IBM, as here in **1952 Arthur Samuel** came up with the first phrase of Machine Learning. He was interested in designing a computer program to play checkers, while the electrical computer had only a very limited memory available. He was thereafter motivated to write *functions* which will analyse the game on the go and decide on the next move. You see, this machine no longer had explicit instructions on how to work. If you open the Wikipedia page about Machine Learning, most likely it will be defined through the definition of Arthur Samuel from 1959:
+
+> Machine learning (ML) is the scientific study of algorithms and statistical models that computer systems use to perform a specific task without using explicit instructions, relying on patterns and inference instead. It is seen as a subset of artificial intelligence.
+
+```{r arthur-samuel, echo = FALSE, fig.cap='Arthur Samuel is one of the key persons in the history and evolution of Machine Learning. Picture by IBM History. See at: https://www.ibm.com/ibm/history/ibm100/us/en/icons/ibm700series/impacts/'}
+knitr::include_graphics("resources/02-observer/arthur-samuel.jpg")
+```
+
+Here we see the difference - instead of explicit instructions, we are going to seek for patterns and inference in our data. By doing so, we will not have to maintain the model manually anymore, like we had to with rules creation. Also, these patterns will have *soft* boundaries and conditions will not need to be met exactly, but a case needs to come close.  
+
+Are we already at the definition of Machine Learning how we know it today? Not quite. You see that even though we are able to let the program decide through identified patterns, instead of explicit instructions, we are not *generalized* yet. The computer of Arthur Samuel was designed to be good at specific task and we cannot take it and generalize it to playing cards for example, or optimize bus transportation. The next leap forward came from Frank Rosenblatt in 1957 who developed the idea of **perceptron**. Even though it took many years after Rosenblatt introduced the concept, the idea which he proposed was crucial. The Perceptron is a *function* which could be used for many tasks and not only for one specific. 
+
+```{r perceptron, echo = FALSE, fig.cap='The Perceptron was the first version of the Machine Learning model as we know it today. It could theoretically be applied to any task at hand.'}
+knitr::include_graphics("resources/02-observer/perceptron.png")
+```
+
+Let's say that you are running a canteen where a few hundred people arrive every day for lunch. You are supposed to optimize which meals are being served, and also how many portions will be cooked. This should yield a benefit of lowering waste created in your canteen. How will you go about it?  
+
+Your Option 1 is **creation of certain rules**. You look into your past and notice that your canteen never sold more than 400 meals in a day. On the other hand, you never sold less than 100 meals. This will be your first rule, to always cook between 100 and 400 meals. Whenever you serve a national dish - Wiener Schnitzel, you are always over 300 servings, people love it. However, if you serve Wiener Schnitzel 2 times in a week, the second time only very few people come, even though people love the meal, they want it only once a week. There is your second rule. If you serve rice as a side dish, some 30 people less always come as compared to potatoes, people tend to like rice less. There is your third rule. Now you can be working through a rule creation for a very long time and construct a list of explicit rules according to which you will operate the canteen.  
+
+Your Option 2 is **use of Machine Learning**. You will collect as much data about the past consumption in your canteen. Often times people make a mistake of thinking that I only *throw* data into Machine Learning algorithms (such as The Perceptron) and it will save you a lot of time. No, you still need to invest your time, but into *preparing the data* for the algorithm, instead of creating the rules yourself. Thus you will not only collect the meals, their consumption, but also things like public holidays, allergens in the meals. All of this will be nicely prepared, fitted into the Machine Learning model, which will discover various patterns. Now whenever you will be planning to cook a meal, you will push it into your model, and it will *predict* what will be the consumption.
+
+*How do I use data for Machine Learning?*
+
+The definition from Arthur Samuel from 1959 has a second part which might anwer just this question:
+
+> Machine learning algorithms build a mathematical model based on sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task.
+
+We are going to show our *Machine Learning model* a set of our data, which we will call **training data**. The underlying statistical and/or mathematical model will seek for the patterns. Once those are found, the model will be *trained* to recognise learned patterns. Once the model is trained, we can present some new data that the model has never seen and ask the model to make a **prediction** about this new data. Imagine a child which has never seen a monkey (*untrained model*). We will now walk the child through several zoos and show him various monkeys (*training data*). The child has learned to recognise and identify a monkey whenever it sees one (*trained model*).  
+
+How is our *trained model* beneficial to us? We can show it **unseen data**, which we usually call **unlabelled data** and ask the model to make a prediction for these. This is the case when we would ask the child what it sees and it should identify a monkey.
+
+If we go back to our example with canteen:
+
+- Training data is all our data from *past* which we can collect. We *know* how much of each meal was consumed.
+- Unlabelled data for which we would like to obtain prediction is our plan of what meal to cook *tomorrow*. We *want to know* how much of our planned meal tomorrow will be consumed.
+
+*Do I need Machine Learning?*  
+
+Now that we know what Machine Learning is, I would like to stop for a second and think about whether we need it at all. These are questions that even experienced Data Scientists often times forget to ask and they end up with what I call *"overkill"*. If you are considering application of Machine Learning, the first thing you should ask yourself is **whether simpler methods cannot answer your issue**.  The simple reason for this consideration is that Machine Learning could get expensive (we will get to the details in later chapters of the book). 
+
+I will recall one Kaggle competition to give you an example (we will get to those later as well). The competition was regarding a mobile game for kids. This game includes various activities such as videos, games and assessments (tests). The task for a Data Scientist was to predict how many attempts it will take the kid to pass an assessment. Our *training data* were all the assessments played in the past by hundreds of kids. There was also *unlabelled data*, the most recent assessment of kids.
+
+There were many people who instantly jumped to Machine Learning and spent hours trying to apply it to the problem at hand, while thinking that their solution is pretty decent. All of a sudden a solution came which contained only 10 lines of code. All that the author of this submission did was that he looked at the  average number of attempts that kids needed to solve a particular assessment. As there were only four unique assessments, he really only quickly calculated a mean out of *training data*. His calculation was hence only four numbers and he assigned to unlabelled data the one, which respective assessment a kid was about to solve.  
+
+By making such simple predictions, the author beat everyone's Machine Learning solution until that day. He set a new baseline of what people need to beat in order to **justify the use of Machine Learning**. Keep this in mind and in the future always consider whether a simpler solution might not answer your task. IF this Kaggle competition was real world, maybe this solution would be sufficient enough, and by being extremely cheap, we would satisfy the requirement.
+
 
 
 ## Level 2 Reached
